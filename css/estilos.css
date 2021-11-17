@@ -1,0 +1,188 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    font-family: 'Raleway', sans-serif;
+    }
+body{
+    min-height: 100%;
+    background-color: #F6F5F5;
+}
+header{
+    padding: 0px;
+
+}
+.navbar{
+    z-index: 1;
+    font-family: 'Raleway', sans-serif;
+
+}
+.carousel{
+    margin-top: -100px;
+}
+.nav-item{
+    padding: 10px;
+    border-radius: 10px;
+}
+.nav-link:hover{
+    background-color: rgba(6, 59, 27, 0.501);
+    border-radius: 10px;
+}
+.dropdown-menu{
+    background-color: rgb(253, 253, 253);
+    padding: 10px;
+}
+.dropdown-item{
+    padding: 5px;
+}
+
+.titulo-slider{
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+}
+.post-rigth{
+    margin-right: -500px;
+    margin-bottom: 130px;
+}
+.post-left{
+    margin-left: -500px;
+    margin-bottom: 150px;
+}
+.subtitulo1{
+  margin-left: -300px;
+  margin-top: 40px;
+ font-size: 25px;
+}
+.subtitulo2{
+ display:block; 
+ margin-top: -75px;
+ margin-left: 300px;
+ font-size: 45px;
+ font-weight: bold;
+}
+.premios-tour{
+    display: flex;
+}
+.card{
+    width: 18rem;
+    text-align: center;
+}
+
+.btn-informacion{
+background-color: rgb(182, 180, 180);
+}
+.btn-informacion a{
+   text-decoration: none;
+   color: rgba(0, 0, 0, 0.842);
+   font-weight: 600;
+   font-size: 16px;
+    }
+    .btn-informacion span{
+        font-size: 14px;
+        font-weight: bolder;
+        color: rgba(0, 0, 0, 0.742);
+         }
+.card1{
+    width: 25rem;
+    text-align: center;
+}
+.card1 li{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+@media only screen and (max-width: 600px) {
+.offcanvas{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: rgba(12, 49, 7, 0.774);
+    z-index: 10000000;
+}
+.carousel-indicators{
+    z-index: 1;
+}
+.carousel-indicators button{
+    z-index: 1;
+}
+.circulo{
+    z-index: 1;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.btn-close{
+    background-color: rgb(207, 207, 207);
+}
+.navbar-toggler{
+    background-color: #628045cc;
+    height: 30px;
+    width: 38px;
+    margin-top: -10px;
+}
+.navbar-toggler span{
+   color: white;
+    height: 30px;
+    width: 30px;
+    margin-top: -5px;
+    margin-left: -10px;
+}
+.nav-item{
+    padding: 5px;
+}
+.nav-link{
+    margin-left:5px;
+}
+.nav-link:hover{
+    background-color: rgba(6, 59, 27, 0);
+}
+.nav-item:hover{
+    background-color: rgba(0, 0, 0, 0.501);
+    border-radius: 0px;
+}
+.dropdown-menu{
+    background-color: rgb(255, 255, 255);
+}
+.carousel{
+    height: 200px;
+}
+.carousel-item img{
+    height: 210px;
+    width: 100%;
+}
+.titulo-slider{
+    font-family: 'Raleway', sans-serif;
+    font-size: 23px;
+    font-weight: 900;
+}
+.post-rigth{
+    margin-right: -20px;
+    margin-bottom: 5px;
+}
+.post-left{
+    margin-left:-5px;
+    margin-bottom: 5px;
+}
+.subtitulo1{
+  margin-left: -100px;
+  margin-top: 12px;
+ font-size: 13px;
+}
+.subtitulo2{
+ display:block; 
+ margin-top: -37px;
+ margin-left: 160px;
+ font-size: 15px;
+ font-weight: bold;
+}
+
+}

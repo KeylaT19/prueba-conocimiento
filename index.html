@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agencia de viaje en Ecuador">
+    <title>Tour Ecuador</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="preload">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet" rel="preload">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+        rel="preload">
+    <!--Estilos para css-->
+    <link rel="stylesheet" href="css/estilos.css" media="print" onload="this.media='all'">
+    <link rel=" icon " href="image/logo5.ico">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <section class="container-fluid">
+                <picture>
+                    <source srcset="image/logo5.webp" type="image/webp">
+                    <img class="logo" src="image/logo5.png" data-scr="image/logo5.png" width="80" height="80"
+                        alt="logo Tour Ecuador">
+                </picture>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon active"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title" id="offcanvasNavbarLabel">Tour Ecuador</h3>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active " aria-current="page" href="#">Home <span
+                                        class="bi bi-house-fill"></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Acerca de Nosotros <span
+                                        class="bi bi-people-fill"></span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown"> Tours</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Full Day</a></li>
+                                    <li><a class="dropdown-item" href="#">Tours a la Costa y Playas</a></li>
+                                    <li><a class="dropdown-item" href="#">Tours a la Siera y Andes</a></li>
+                                    <li><a class="dropdown-item" href="#">Tours a la Amazonía </a></li>
+                                    <li><a class="dropdown-item" href="#">Tours a las Islas Galápagos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Contactanos</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active login" href="#">Iniciar Sesión <span
+                                        class="bi bi-person-circle"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </nav>
+        <section id="slider" class="carousel carousel-ligth " data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button data-bs-target="#slider" data-bs-slide-to="0" class="active " aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <article class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <picture>
+                        <source srcset="image/Foto-header.webp" type="image/webp">
+                        <img src="image/Foto-header.png" data-scr="image/Foto-header.png" height="500" width="1370" class="d-block"
+                            alt="Laguna de Quilatoa">
+                    </picture>
+                    <div class="carousel-caption post-rigth d-md-block">
+                        <h2 class="titulo-slider">Laguna de Quilatoa</h2>
+                        <p class="subtitulo1">Viaja Seguro en familia con</p>
+                        <p class="subtitulo2">Tour Ecuador</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <picture>
+                        <source srcset="image/Playas-header.webp" type="image/webp">
+                        <img src="image/Playas-header.png" data-scr="image/Playas-header.png" height="500" width="1370" class="d-block"
+                            alt="Playa la Libertad">
+                    </picture>
+                    <div class="carousel-caption post-left d-md-block">
+                        <h2 class="titulo-slider">Playa la Libertad</h2>
+                        <p class="subtitulo1">Viaja Seguro en familia con</p>
+                        <p class="subtitulo2">Tour Ecuador</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <picture>
+                        <source srcset="image/yasuni.webp" type="image/webp">
+                        <img src="image/yasuni.png" data-scr="image/yasuni.png" height="500" width="1370" class="d-block "
+                            alt="Parque Nacional Yasuní">
+                    </picture>
+                    <div class="carousel-caption post-rigth d-md-block">
+                        <h2 class="titulo-slider">Parque Nacional Yasuní</h2>
+                        <p class="subtitulo1">Viaja Seguro en familia con</p>
+                        <p class="subtitulo2">Tour Ecuador</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <picture>
+                        <source srcset="image/isla-lobos.webp" type="image/webp">
+                        <img src="image/isla-lobos.png" data-scr="image/isla-lobos.png" height="500" width="1370" class="d-block "
+                            alt="Isla Lobos">
+                    </picture>
+                    <div class="carousel-caption post-left d-md-block">
+                        <h2 class="titulo-slider">Isla Lobos</h2>
+                        <p class="subtitulo1">Viaja Seguro en familia con</p>
+                        <p class="subtitulo2">Tour Ecuador</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </header>
+
+    <section>
+        <article class="container">
+            <h2>Te Ofrecemos la Mejor Experiencia</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8lJN6Cl2sVI"
+                title="Video de Presentación Tour Ecuador"></iframe>
+            <p>Somos una empresa especializada en turismo que inicio sus actividades en la cuidad de Guayaquil, en el
+                2016 y
+                hasta la actualidad seguimos brindando servicios turísticos de una manera responsable, amable y segura,
+                alentando la unión familiar.</p>
+            <button class="btn btn-informacion"><a href="#">Más Información<span
+                        class="bi bi-caret-right-fill"></span></a></button>
+        </article>
+        <aside>
+            <h3>Publicaciones Favoritas</h3>
+            <hr class="divisor">
+            <div>
+                <picture>
+                    <source srcset="image/hoteles.webp" type="image/webp">
+                    <img src="image/hoteles.png" data-scr="image/hoteles.png" width="199" height="150"
+                        alt="Mejores hoteles de Ecuador">
+                </picture>
+                <p>Los mejores hoteles de Ecuador</p>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="image/lugares-turisticos.webp" type="image/webp">
+                    <img src="image/lugares-turisticos.png" data-scr="image/lugares-turisticos.png" width="199"
+                        height="150" alt="Lugares turisticos">
+                </picture>
+                <p>5 Lugares Turísticos más visitado de Ecuador</p>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="image/gastronomia.webp" type="image/webp">
+                    <img src="image/gastronomia.png" data-scr="image/gastronomia.png" width="199" height="150"
+                        alt="gastronomia de Ecuador">
+                </picture>
+                <p>Diversidad en la Economía de Ecuador</p>
+            </div>
+        </aside>
+    </section>
+    <main>
+        <h2>Gana premios junto a Tour Ecuador</h2>
+        <section class="premios-tour">
+            <article class="card">
+                <picture>
+                    <source srcset="image/registar.webp" type="image/webp">
+                    <img src="image/registar.png" data-scr="image/registar.png" width="200" height="200"
+                        class="card-img-top" alt="registrarse">
+                </picture>
+                <div class="card-body">
+                    <h4 class="card-title"><a href="#">Registrate</a></h4>
+                    <p class="card-text">Da clic en la opción de login, luego crea tu usuario y contraseña</p>
+                </div>
+            </article>
+            <article class="card">
+                <picture>
+                    <source srcset="image/acumular-puntos.webp" type="image/webp">
+                    <img src="image/acumular-puntos.png" data-scr="image/acumular-puntos.png" width="200" height="200"
+                        class="card-img-top" alt="Acumular puntos">
+                </picture>
+                <div class="card-body">
+                    <h4 class="card-title"><a href="#">Acumular Puntos</a></h4>
+                    <p class="card-text">Por cada viaje, nuestra compañia te regalará puntos que se convierten
+                        en premios</p>
+                </div>
+            </article>
+            <article class="card">
+                <picture>
+                    <source srcset="image/premios.webp" type="image/webp">
+                    <img src="image/premios.png" data-scr="image/premios.png" width="200" height="200"
+                        class="card-img-top" alt="Listas de premios">
+                </picture>
+                <div class="card-body">
+                    <h4 class="card-title"><a href="#">Escoge tu Premio</a></h4>
+                    <p class="card-text">Puedes escoger un premio de acuerdo a tus puntos acumulados</p>
+                </div>
+            </article>
+        </section>
+        <section class="banner">
+            <picture>
+                <source srcset="image/banner-galapagos.webp" type="image/webp">
+                <img src="image/banner-galapagos.jpg" data-scr="image/banner-galapagos.jpg" height="500" width="1347"
+                    alt="Promociones de viajes a Galápagos">
+            </picture>
+            <article class="container-banner">
+                <h3>Se acerca el Feriado de Diciembre</h3>
+                <p>Para este feriado se ha realizado paquetes turisticos para que disfrutes en familia.</p>
+                <h5>Has tus reservaciones con tiempo.</h5>
+                <button class="btn btn-informacion"><a href="#">Haga clic aquí<span
+                            class="bi bi-caret-right-fill"></span></a></button>
+            </article>
+        </section>
+        <section class="container">
+            <h2>Lugares Turísticos de Ecuador</h2>
+            <button class="btn btn-informacion"><a href="#">Ver más<span
+                        class="bi bi-caret-right-fill"></span></a></button>
+            <article class="row">
+                <div class="col-lg-3">
+                    <picture>
+                        <source srcset="image/Leon-marino-de-Galapagos.webp" type="image/webp">
+                        <img class="galeria" src="image/Leon-marino-de-Galapagos.jpg"
+                            data-scr="image/Leon-marino-de-Galapagos.jpg" width="250" height="300"
+                            alt="Galápagos-Isla Isabel">
+                    </picture>
+                    <p>Galápagos-Isla Isabel</p>
+                </div>
+                <div class="col-lg-3">
+                    <picture>
+                        <source srcset="image/baños.webp" type="image/webp">
+                        <img class="galeria" src="image/baños.jpg" data-scr="image/baños.jpg" width="250" height="300"
+                            alt="Ambato-Baños">
+                    </picture>
+                    <p>Ambato-Baños</p>
+                </div>
+                <div class="col-lg-3">
+                    <picture>
+                        <source srcset="image/montañita.webp" type="image/webp">
+                        <img class="galeria" src="image/montañita.jpg" data-scr="image/montañita.jpg" width="250"
+                            height="300" alt="Santa Elena- Montañita">
+                    </picture>
+                    <p>Santa Elena- Montañita</p>
+                </div>
+                <div class="col-lg-3">
+                    <picture>
+                        <source srcset="image/quito.webp" type="image/webp">
+                        <img class="galeria" src="image/quito.jpg" data-scr="image/quito.jpg" width="250" height="300"
+                            alt="Pichincha- Quito">
+                    </picture>
+                    <p>Pichincha- Quito</p>
+                </div>
+                <div class="col-lg-3">
+                    <picture>
+                        <source srcset="image/Guayaquil.webp" type="image/webp">
+                        <img class="galeria" src="image/Guayaquil.png" data-scr="image/Guayaquil.png" width="250"
+                            height="300" alt="Guayas- Guayaquil">
+                    </picture>
+                    <p>Guayas- Guayaquil</p>
+                </div>
+                <div class="col-lg-3">
+                    <picture>
+                        <source srcset="image/Santa-elena.webp" type="image/webp">
+                        <img class="galeria" src="image/Santa-elena.jpg" data-scr="image/Santa-elena.jpg" width="250"
+                            height="300" alt="Santa Elena- Salinas">
+                    </picture>
+                    <p>Santa Elena- Salinas</p>
+                </div>
+                <div class="col-lg-3">
+                    <picture>
+                        <source srcset="image/Chimborazo.webp" type="image/webp">
+                        <img class="galeria" src="image/Chimborazo.png" data-scr="image/Chimborazo.png" width="250"
+                            height="300" alt="Chimborazo- Riobamba">
+                    </picture>
+                    <p>Chimborazo- Riobamba</p>
+                </div>
+                <div class="col-lg-3">
+                    <picture>
+                        <source srcset="image/quilotoa.webp" type="image/webp">
+                        <img class="galeria" src="image/quilotoa.jpg" data-scr="image/quilotoa.jpg" width="250"
+                            height="300" alt="Santo Domingo- Quilotoa">
+                    </picture>
+                    <p>Santo Domingo- Quilotoa</p>
+                </div>
+            </article>
+        </section>
+        <section class="contactanos">
+            <h2>¿Deseas Acesoría?</h2>
+            <p>Con gustos te ayudaremos</p>
+            <picture>
+                <source srcset="image/telegrafo.webp" type="image/webp">
+                <img src="image/telegrafo.jpg" data-scr="image/telegrafo.jpg" height="500" width="1347"
+                    alt="Imagen del Telegrafo en Quito">
+            </picture>
+            <article class="card1">
+                <h2>Contactanos</h2>
+                <ul>
+                    <li><a href="https://wa.me/593968636340 " rel="nofollow noopener" class="btn-wsp" target="_blank"
+                            title="WhatsApp">
+                            <span class="bi bi-whatsapp"></span> (+593) 968636340</a></li>
+                    <li><a href="mailto:tourecuardo@gmail.com" rel="nofollow noopener" target="_blank" title="Correo">
+                            <span class="bi bi-envelope"></span> tourecuardo@gmail.com</a></li>
+                </ul>
+                <hr class="divisor">
+                <div class="card-body">
+                    <form action="" method="post">
+                        <ul>
+                            <li>
+                                <label for="name">Nombre:</label>
+                                <input type="text" id="name" name="user_name" value="Ingrese su Nombre">
+                            </li>
+                            <li>
+                                <label for="mail">Correo electrónico:</label>
+                                <input type="email" id="mail" name="user_email" value="Ingrese su Correo">
+                            </li>
+                            <li>
+                                <label for="msg">Mensaje:</label>
+                                <textarea id="msg" name="user_message">Escriba un Mensaje</textarea>
+                            </li>
+                            <li>
+                                <button class="btn btn-success" type="submit">Envíe su mensaje</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer-left">
+            <picture>
+                <source srcset="image/logo5.webp" type="image/webp">
+                <img src="image/logo5.png" data-scr="image/logo5.png" width="90" height="90" alt="logo Tour Ecuador">
+            </picture>
+            <article class="redes-sociales">
+                <p> Siguenos en </p>
+                <a class="btn-facebook" aria-label="Ir a Facebook" rel="nofollow noopener" target="_blank"
+                    href="https://www.facebook.com/Nivelics"><span class="bi bi-facebook"></span></a>
+                <a class="btn-twitter" aria-label="Ir a Twitter" rel="nofollow noopener" target="_blank"
+                    href="https://twitter.com/Nivelics"><span class="bi bi-twitter"></span></a>
+                <a class="btn-instagram" aria-label="Ir a Instagram" rel="nofollow noopener" target="_blank"
+                    href="https://www.instagram.com/nivelics/?hl=es"><span class="bi bi-instagram"></span></a>
+            </article>
+        </section>
+        <section class="footer-center">
+            <ul>
+                <li><a href="#" aria-label="Acerca de Nosotros">Acerca de Nosotros</a></li>
+                <li><a href="#" aria-label="Blog">Blog</a></li>
+                <li>
+                    <p>Login</p>
+                    <ul>
+                        <li><a href="#" aria-label="Ir a Iniciar Sesión">Iniciar Sesión</a></li>
+                        <li><a href="#" aria-label="Ir a Registrarse">Registrarse</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Tours</p>
+                    <ul>
+                        <li><a href="#" aria-label="Ir a Full Day">Full Day</a></li>
+                        <li><a href="#" aria-label="Ir a Tours Costa">Tours Costa</a></li>
+                        <li><a href="#" aria-label="Ir a Tours Sierra">Tours Sierra</a></li>
+                        <li><a href="#" aria-label="Ir a Tours Amazonía">Tours Amazonía</a></li>
+                        <li><a href="#" aria-label="Ir a Tours Galápagos">Tours Galápagos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="footer-right">
+            <p>Contactenos</p>
+            <ul>
+                <li><a href="https://wa.me/593968636340 " rel="nofollow noopener" class="btn-wsp" target="_blank"
+                        title="WhatsApp">
+                        <span class="bi bi-whatsapp"></span> (+593) 968636340</a></li>
+                <li><a aria-label="Ir a Telegram" href="https://t.me/keylatriana" rel="nofollow noopener"
+                        target="_blank">
+                        <span class="bi bi-telegram"></span> TourEcuador</a></li>
+                <li><a href="mailto:tourecuardo@gmail.com" rel="nofollow noopener" target="_blank" title="Correo">
+                        <span class="bi bi-envelope"></span> tourecuardo@gmail.com</a></li>
+            </ul>
+
+        </section>
+        <div class="footer-bottom">
+            <p>© Copyright 2021 | Tour Ecuador</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"
+        integrity="sha256-chZm2VfM5r7hxFu6TGArcJmYU+Y19fT+mg58IBVCtdU=" crossorigin="anonymous"></script>
+</body>
+
+</html>
