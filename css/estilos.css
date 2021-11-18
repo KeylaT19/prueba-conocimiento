@@ -19,7 +19,7 @@ header{
     padding: 0px;
     
 }
-.nav-menu{
+.nav{
     z-index: 1000;
 }
 .navbar{
@@ -43,34 +43,34 @@ header{
   margin-top:-10px ;
   right: 40px;
 }
-.menu, .dropdown{
+.nav__menu, .nav__dropdown{
     list-style: none;
     padding:0;
     margin:0;
     z-index: 1000;
 }
-.menu{
+.nav__menu{
     background-color: rgba(0, 0, 0, 0.685);
     width: 100%;
     margin-left: -600px;
     transition: all 0.5s;
 }
-.nav-item:hover{
+.nav__item:hover{
     background-color: rgb(56, 56, 56);
 }
 
-.nav-link{
+.nav__link{
     display: block;
     padding: 10px;
     color: white;
     font-size: 14px;
     text-decoration: none;
 }
-.dropdown .nav-link{
+.nav__dropdown .nav__link{
     background-color: rgba(128, 128, 128, 0.87);
     padding-left: 40px;
 }
-.dropdown{
+.nav__dropdown{
     height: 0;
     overflow: hidden;
     transition: all 0.3s;
@@ -81,7 +81,7 @@ header{
 .desplegar{
     overflow: visible;
 }
-.slider-presentation{
+.slider{
     margin-top: -285px;
     z-index: 10;
 }
@@ -90,7 +90,7 @@ li{
 }
 
 @media only screen and (min-width: 1024px) {
-    .nav-menu{
+    .nav{
         display: flex;
         position: relative;
         width: 100%;
@@ -102,7 +102,7 @@ li{
     .logo{
         visibility: visible;
     }
-    .menu{
+    .nav__menu{
         background-color: rgba(0, 0, 0, 0);
         margin-left: 0;
         width: 65%;
@@ -111,21 +111,21 @@ li{
         position: absolute;
         right: 1px;
     }
-    .container-submenu{
+    .container__submenu{
      position: relative;
     }
-    .nav-item{
+    .nav__item{
         margin-left: 40px;
         font-size: 20px;
     }
-    .dropdown .nav-link{
+    .nav__dropdown .nav__link{
         background-color: rgba(20, 20, 20, 0.76);
         padding-left: 10px;
     }
-    .dropdown .nav-link:hover{
+    .nav__dropdown .nav__link:hover{
         background-color: rgba(209, 209, 209, 0.76);
     }
-    .dropdown{
+    .nav__dropdown{
     margin-top: -20px;
     position: absolute;
     margin-left: -50px;
@@ -136,11 +136,11 @@ li{
     opacity: 1;
     visibility: hidden;
     }
-   .container-submenu:hover .dropdown{
+   .container__submenu:hover .nav__dropdown{
        opacity: 1;
        visibility: visible;
    }
-   .slider-presentation{
+   .slider{
     margin-top: -85px;
     z-index: 10;
 }
