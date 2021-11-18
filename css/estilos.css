@@ -85,6 +85,10 @@ header{
     margin-top: -285px;
     z-index: 10;
 }
+li{ 
+    list-style: none;
+}
+
 @media only screen and (min-width: 1024px) {
     .nav-menu{
         display: flex;
@@ -139,6 +143,9 @@ header{
    .slider-presentation{
     margin-top: -85px;
     z-index: 10;
+}
+.container{
+    padding: 40px;
 }
 }
 
