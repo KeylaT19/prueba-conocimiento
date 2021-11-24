@@ -1,0 +1,163 @@
+header{
+    z-index: 2;
+    width: 100%;
+    a{
+        display: inline-block;
+        color:color(grayscale,black);
+        font-weight: 600;
+    }
+    nav{
+        padding: 1rem 2rem 0 1rem;
+        margin-left: -10px;
+        width:110%;
+        .logo{
+          visibility: hidden;
+        }
+        .navbar{
+            background-color:color(primary,dark);
+            color: color(grayscale,white);
+            display: block;
+            font-size: map-get($sizes,base);
+            font-weight: 600;
+            margin-top: -100px;
+            padding: 20px;
+            position: relative;
+            i{
+                font-size: 3rem;
+                margin-top:-5px;
+                position:absolute;
+                text-align: center;;
+                right: 40px;
+            }
+        }
+        .nav__menu, .nav__dropdown{
+            list-style: none;
+            padding:0;
+            margin:0;
+        }
+        .nav__menu{
+            background-color:color(complementary,one);
+            width: 100%;
+            margin-left: -105%;
+            transition: all 0.5s;
+            .nav__item{
+                span{
+                    font-size: 1.5rem;
+                }
+            }
+            .nav__link{
+                color: color(grayscale,white);
+                display: block;
+                font-size: 1em;
+                padding: 10px 20px;
+                text-decoration: none;
+               
+            }
+            .nav__dropdown .nav__link{
+                background-color:color(complementary,two);
+                padding-left: 40px;
+            }
+            .nav__dropdown{
+                height: 0;
+                overflow: hidden;
+                transition: all 0.3s;
+            }
+        }
+        
+        .mostrar{
+            margin-left:0;
+        }  
+    }
+}
+@include mq-min(sm){
+    .navbar{
+        width:100%;
+    }
+}
+@include mq-min(md){
+    .navbar{
+        width:95%;
+    }
+}
+@include mq-min(lg){
+    header{
+        left: 0%;
+        top:0%;
+        .nav{
+            display: flex;
+            position: relative;
+            width: 100%;
+            .navbar{
+                display: none;
+            }
+            .logo{
+                visibility: visible;
+            }
+            .nav__menu{
+                background-color: transparent;
+                display: flex;
+                justify-content: space-evenly;
+                margin-left: 0;
+                margin-top: 5px;
+                position: absolute;
+                right: 1px;
+                width: 80%;
+
+                .container__submenu{
+                    position: relative;
+                   }
+                .nav__dropdown .nav__link{
+                    background-color: color(complementary,four);
+                    padding-left: 20px;
+                    &:hover{
+                        background-color:color(complementary,three);
+                    }
+                }
+                .nav__dropdown{
+                    margin-top: -20px;
+                    margin-left: -50px;
+                    overflow: visible;
+                    opacity: 1;
+                    position: absolute;
+                    top: 60px;
+                    visibility: hidden;
+                    width: 200px;
+                }
+               .container__submenu:hover .nav__dropdown{
+                   opacity: 1;
+                   visibility: visible;
+               }
+            }
+            
+        }
+    }
+}
+@include mq-min(xl){
+    header{
+        left: 0%;
+        top:0%;
+        .nav{
+            display: flex;
+            position: relative;
+            width: 100%;
+            .navbar{
+                display: none;
+            }
+            .logo{
+                visibility: visible;
+            }
+            .nav__menu{
+                background-color: transparent;
+                display: flex;
+                justify-content: space-evenly;
+                margin-left: 0;
+                margin-top: 5px;
+                position: absolute;
+                right: 1px;
+                width: 65%;
+            }
+            
+        }
+    }
+    
+}

@@ -1,0 +1,81 @@
+main{
+    .awards{
+        height: auto;
+        margin-bottom: 20px;
+        text-align: center;
+        &__card{
+            background-color:color(complementary,five);
+            border-radius: 5px;
+            line-height: 30px;
+            margin-bottom: 20px;
+            margin-left: auto; 
+            margin-right: auto;
+            padding: 10px;
+            text-align: center;
+            width: 30rem;
+            .card-title{
+              @extend %subtitle;
+              a{
+                color:color(grayscale,black);
+                &:hover{
+                    color: color(complementary,three);
+                }
+              }
+            }
+            .card-text{
+               font-weight: 500
+            }
+        }
+        &__image{
+            background-color: color(grayscale,white);
+            border-radius: 5px;
+            width: 25rem;
+        }
+    }
+}
+@include mq-min(md){
+   main{
+        .awards-ecuador{
+            display:flex ;
+            &__card{
+                border-radius: 5px;
+                line-height: 30px;
+                margin-bottom: 20px;
+                margin-left: auto; 
+                margin-right: auto;
+                padding: 10px;
+                text-align: center;
+                width: 23rem;
+            }
+            &__image{
+                background-color: white;
+                border-radius: 5px;
+                width: 20rem;
+            }
+        }
+   }
+}
+@include mq-min(lg){
+    main{
+        .awards-ecuador{
+            display:flex ;
+            &__card{
+                border-radius: 5px;
+                line-height: 30px;
+                margin-bottom: 20px;
+                margin-left: auto; 
+                margin-right: auto;
+                padding: 10px;
+                text-align: center;
+                width: 30rem;
+            }
+            &__image{
+                background-color: white;
+                border-radius: 5px;
+                width: 25rem;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,285 @@
+main{
+    .ecuador-places{
+        position: relative;
+        text-align: center;
+        margin-bottom: 70px;
+        &__top{
+            
+            .title-section{
+                text-align: center;
+            }
+        }
+        &__link{
+            a{
+                position: absolute;
+                width:11rem;
+                top:101%;
+                left: 35%;
+            }
+        }
+        &__description{
+            p{
+                background-color: color(complementary,six);
+                color: color(grayscale,white);
+                font-size: 1rem;
+                font-weight: 500;
+                padding: 10px;
+                position: absolute;
+                margin-left: 1.5%;
+                margin-top: -13%;
+                text-align: center;
+                width: 140px;
+            }
+        }
+    }
+    
+}
+@include mq-min(s){
+    main{
+        .ecuador-places{
+            position: relative;
+            text-align: center;
+            margin-bottom: 70px;
+            &__top{
+                
+                .title-section{
+                    text-align: center;
+                }
+            }
+            &__link{
+                a{
+                    position: absolute;
+                    width:11rem;
+                    top:100%;
+                    left: 35%;
+                }
+            }
+            &__description{
+    
+                p{
+                    background-color: color(complementary,six);
+                    color: color(grayscale,white);
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    padding: 10px;
+                    position: absolute;
+                    margin-left: 1.5%;
+                    margin-top: -19%;
+                    text-align: center;
+                    width: 160px;
+                    height: 7%;
+                    justify-content: center;
+                }
+            }
+            &__image{
+                width: 160px;
+            }
+        }
+    }
+}
+@include mq-min(ss){
+    main{
+        .ecuador-places{
+            position: relative;
+            text-align: center;
+            margin-bottom: 70px;
+            &__top{
+                
+                .title-section{
+                    text-align: center;
+                }
+            }
+            &__link{
+                a{
+                    position: absolute;
+                    width:11rem;
+                    top:80%;
+                    left: 68%;
+                }
+            }
+            &__description{
+                p{
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    padding: 10px;
+                    position: absolute;
+                    margin-left: 1.5%;
+                    margin-top: -13%;
+                    text-align: center;
+                    width: 124px;
+                    height: 8.5%;
+                    justify-content: center;
+                }
+            }
+            
+            &__image{
+                height:167.3px;
+                width: 124.35px;
+            }
+        }
+    }
+}
+@include mq-min(sm){
+    main{
+        .ecuador-places{
+            position: relative;
+            text-align: center;
+            margin-bottom: 70px;
+            &__top{
+                
+                .title-section{
+                    text-align: center;
+                }
+            }
+            &__link{
+                a{
+                    position: absolute;
+                    width:11rem;
+                    top:83%;
+                    left: 73%;
+                }
+            }
+            &__description{
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    padding: 10px;
+                    position: absolute;
+                    margin-left: 0.6%;
+                    margin-top: -11.5%;
+                    text-align: center;
+                    width: 29.6%;
+                    height: 8%;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+@include mq-min(md){
+    main{
+        .ecuador-places{
+            position: relative;
+            text-align: center;
+            margin-bottom: 70px;
+            &__top{
+                .title-section{
+                    margin-bottom: 30px;
+                    margin-left: 2%;
+                    text-align: left;
+                }
+            }
+            &__link{
+                a{
+                    position: absolute;
+                    width:11rem;
+                    top:0;
+                    left: 83%;
+                }
+            }
+            &__description{
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    padding: 10px;
+                    position: absolute;
+                    margin-left: 0.3%;
+                    margin-top: -9%;
+                    text-align: center;
+                    width: 175px;
+                    height: 13%;
+                    justify-content: center;
+                }
+            }
+            &__image{
+                width: 175px;
+            }
+        }
+    }
+}
+@include mq-min(lg){
+    main{
+        .ecuador-places{
+            position: relative;
+            text-align: center;
+            margin-bottom: 70px;
+            &__top{
+                .title-section{
+                    margin-bottom: 30px;
+                    text-align: left;
+                }
+            }
+            &__link{
+                a{
+                    position: absolute;
+                    width:11rem;
+                    top:3%;
+                    left: 84%;
+                }
+            }
+            &__description{
+                p{
+                    font-size: 2rem;
+                    font-weight: 500;
+                    padding: 10px;
+                    position: absolute;
+                    margin-left: 1.1%;
+                    margin-top: -8.6%;
+                    text-align: center;
+                    width: 220px;
+                    height: 13%;
+                    justify-content: center;
+                }
+            }
+            &__image{
+                width: 220px;
+                height: 250px;
+            }
+        }
+    }
+
+}
+@include mq-min(xl){
+    main{
+        .ecuador-places{
+            position: relative;
+            text-align: center;
+            margin-bottom: 70px;
+            &__top{
+                .title-section{
+                    margin-bottom: 30px;
+                    margin-left: 0;
+                    text-align: left;
+                }
+            }
+            &__link{
+                
+                a{
+                    position: absolute;
+                    width:11rem;
+                    top:3%;
+                    left: 84%;
+                }
+            }
+            &__description{
+                
+                p{
+                    font-size: 2rem;
+                    font-weight: 500;
+                    padding: 10px;
+                    position: absolute;
+                    margin-left: 0.1%;
+                    margin-top: -5.6%;
+                    text-align: center;
+                    height: 68px;
+                    width: 270px;
+                    justify-content: center;
+                }
+            }
+            &__image{
+                width: 270px;
+                height: 300px;
+            }
+        }
+    }
+}

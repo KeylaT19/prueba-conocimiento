@@ -1,0 +1,95 @@
+// ==========================================================================
+// FontStack
+// ==========================================================================
+
+$font-size         : 1.6rem;
+$font-primary      : 'Raleway', sans-serif;
+$font-icon         : 'iconFont'; 
+
+// ==========================================================================
+// COLORS : Eje.: background: color( primary, light );
+// ==========================================================================
+
+$colors: (
+   primary: (
+      base     : #0F752C, 
+      light    : #43D96D,
+      dark     : #132A13
+   ),
+   secondary: (
+      base     : rgba(209, 209, 209, 0.66),
+      light    : #C2D3CD, 
+      dark     : #c2d3cdb2,
+   ),
+   complementary: (
+      one      : rgba(20, 20, 20, 0.96),
+      two      : rgba(163, 162, 162, 0.87),
+      three    : rgba(14, 94, 14, 0.677),
+      four     : rgba(20, 20, 20, 0.76),
+      five     : #caece2,
+      six      : rgba(20, 20, 20, 0.66),
+      seven    : rgba(255, 255, 255, 0.72),
+   ),
+   alerts: (
+      sucess   : #28A745,
+      error    : #DC3545,
+      warning  : #FFC100,
+      info     : #0074FC
+   ),
+   controls:(
+      base     : #0074FC,
+      dark     : #0056B3,
+   ),
+   grayscale: (
+      white    : #ffffff,
+      gray-1   : #f2f2f2, 
+      gray-2   : #eeeeee,
+      gray-3   : #cccccc,
+      gray-4   : #999999,
+      gray-5   : #666666,
+      gray-6   : #333333,
+      gray-7   : #4A4A4A,
+      base     : #1b1b1b,
+      black    : #000000
+   ),
+   border:(
+      color-1  : #ced4da,
+      color-2  : #999999
+   )
+);
+
+// ==========================================================================
+// SPACING : Eje.: padding: map-get($sizes, "tiny");
+// ==========================================================================
+
+$sizes: (
+   tiny   : 1.2rem,  // 12px
+   small  : 1.4rem, // 14px
+   base   : 1.6rem,    // 16px
+   thumb  : 2rem, // 20px
+   half   : 2.4rem,  // 24px
+   medium : 3.6rem, // 36px
+   slarge : 4.38rem,// 43px
+   large  : 4.8rem,    // 48px
+   xlarge : 5.6rem,  // 56px
+   huge   : 6.4rem     // 64px
+);
+
+// ==========================================================================
+// Breakpoints
+// ==========================================================================
+
+$breakpoints: (
+   s   : 360px,
+   ss  : 428px,
+   sm  : 540px,
+   md  : 720px,
+   lg  : 960px,
+   xl  : 1140px,
+);
+
+// ==========================================================================
+// Alignment
+// ==========================================================================
+
+$alignment: left, center, right, justify;

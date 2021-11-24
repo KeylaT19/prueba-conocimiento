@@ -1,0 +1,84 @@
+.feed{
+    background-color: color(grayscale,gray-2);
+    text-align: center;
+    .subtitle-section{
+        @extend %subtitle
+    }
+    &__card{
+        display: flex;
+        padding: 15px;
+        img{
+            width: 15rem;
+        }
+    }
+    
+    &__description{
+        background-color:color(grayscale,white);
+        margin-bottom: 6px;
+        p{  
+            font-weight: 600;
+            margin-top: 25%;
+        }
+    }
+
+}
+@include mq-min(s){
+    .feed{
+        &__image{
+            width: 20rem;
+        }    
+    }
+}
+@include mq-min(sm){
+    .feed{
+        &__image{
+            width: 30rem;
+        }   
+    }
+    
+}
+@include mq-min(md){
+    .feed{
+        text-align: center;
+        margin-bottom: 30px;
+        &__card{
+            display: flex;
+            padding: 10px;
+            margin-bottom: -5px;
+        }
+        &__image{
+            width: 20rem;
+        }
+        &__description{
+            background-color:color(grayscale,white);
+            margin-bottom: 6px;
+        }
+
+    }
+}
+@include mq-min(lg){
+    .feed{ 
+        margin-bottom: 150px;
+        text-align: center;
+        justify-content: flex-end;
+        &__card{    
+            display: flex;
+            padding: 15px;
+        }
+        &__image{
+            width: 20rem;
+        }
+        &__description{
+            background-color:color(grayscale,white);
+            margin-bottom: 6px;
+        }
+    }
+}
+@include mq-min(xl){
+    .feed{
+        margin-left: 100px;
+        margin-right: -5%;
+        margin-bottom: 50px;
+    }  
+}
+

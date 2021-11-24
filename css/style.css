@@ -1,0 +1,2729 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+/* line 6, ../scss/config/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 26, ../scss/config/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+/* line 31, ../scss/config/_reset.scss */
+*[hidden] {
+  display: none;
+}
+
+/* line 34, ../scss/config/_reset.scss */
+body {
+  line-height: 1.5;
+}
+
+/* line 37, ../scss/config/_reset.scss */
+menu, ol, ul {
+  list-style: none;
+}
+
+/* line 40, ../scss/config/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 43, ../scss/config/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 48, ../scss/config/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 53, ../scss/config/_reset.scss */
+hr {
+  border-top: 1px solid #f2f2f2;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../../fonts/iconos/fonts/icomoon.eot?j8vm88");
+  src: url("../../fonts/iconos/fonts/icomoon.eot?j8vm88#iefix") format("embedded-opentype"), url("../../fonts/iconos/fonts/icomoon.ttf?j8vm88") format("truetype"), url("../../fonts/iconos/fonts/icomoon.woff?j8vm88") format("woff"), url("../../fonts/iconos/fonts/icomoon.svg?j8vm88#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+/* line 16, ../scss/config/_fonts.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak-as: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-ExtraLight.woff2") format("woff2"), url("../fonts/Raleway/Raleway-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Raleway/Raleway-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-Black.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-BoldItalic.woff2") format("woff2"), url("../fonts/Raleway/Raleway-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-ExtraBold.woff2") format("woff2"), url("../fonts/Raleway/Raleway-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-Thin.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-Light.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway/Raleway-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-ExtraLightItalic.woff2") format("woff2"), url("../fonts/Raleway/Raleway-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+/* line 1, ../scss/config/_extends.scss */
+main .title-section {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 8, ../scss/config/_extends.scss */
+.feed .subtitle-section, main .awards__card .card-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media (min-width: 428px) {
+  /* line 15, ../scss/config/_extends.scss */
+  main .title-section {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  /* line 21, ../scss/config/_extends.scss */
+  .feed .subtitle-section, main .awards__card .card-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+@media (min-width: 720px) {
+  /* line 29, ../scss/config/_extends.scss */
+  main .title-section {
+    font-family: "Raleway", sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+
+  /* line 35, ../scss/config/_extends.scss */
+  .feed .subtitle-section, main .awards__card .card-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+@media (min-width: 960px) {
+  /* line 43, ../scss/config/_extends.scss */
+  main .title-section {
+    font-family: "Raleway", sans-serif;
+    font-size: 4.38rem;
+    margin-bottom: 20px;
+  }
+
+  /* line 48, ../scss/config/_extends.scss */
+  .feed .subtitle-section, main .awards__card .card-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 2.4rem;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+/* line 2, ../scss/base/_body.scss */
+*,
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 6, ../scss/base/_body.scss */
+html {
+  font-size: 62.5%;
+  height: 100%;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+/* line 13, ../scss/base/_body.scss */
+body {
+  font-family: "Raleway", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* line 24, ../scss/base/_body.scss */
+p {
+  margin-bottom: 1.6rem;
+}
+
+/* line 28, ../scss/base/_body.scss */
+.main-container {
+  min-height: 100vh;
+}
+
+/* line 1, ../scss/base/_links.scss */
+a, button {
+  color: #0074FC;
+  text-decoration: none;
+  outline: 0;
+  transition: color .1s ease-out;
+}
+/* line 8, ../scss/base/_links.scss */
+a.button:hover, button.button:hover {
+  text-decoration: none;
+}
+/* line 13, ../scss/base/_links.scss */
+a:hover, a:focus, button:hover, button:focus {
+  color: #0056B3;
+}
+@media (max-width: 539px) {
+  /* line 13, ../scss/base/_links.scss */
+  a:hover, a:focus, button:hover, button:focus {
+    text-decoration: none;
+  }
+}
+/* line 19, ../scss/base/_links.scss */
+a.underline-link, button.underline-link {
+  color: #0074FC;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+/* line 27, ../scss/base/_links.scss */
+a.text-link, button.text-link {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 700;
+  line-height: 1;
+  outline: none;
+  background-color: transparent;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+/* line 41, ../scss/base/_links.scss */
+a.text-link.text-primary-base, button.text-link.text-primary-base {
+  color: #0F752C;
+}
+/* line 43, ../scss/base/_links.scss */
+a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
+  color: #132A13;
+}
+/* line 47, ../scss/base/_links.scss */
+a.text-link.text-secondary-base, button.text-link.text-secondary-base {
+  color: rgba(209, 209, 209, 0.66);
+}
+/* line 49, ../scss/base/_links.scss */
+a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hover {
+  color: #c2d3cdb2;
+}
+/* line 53, ../scss/base/_links.scss */
+a.text-link.text-primary-base, button.text-link.text-primary-base {
+  color: #132A13;
+  font-size: 2rem;
+  text-decoration: underline;
+  text-transform: none;
+}
+/* line 58, ../scss/base/_links.scss */
+a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
+  color: #0F752C;
+}
+
+/* line 4, ../scss/base/_flexbox.scss */
+.d-flex {
+  display: flex;
+}
+
+/* line 4, ../scss/base/_flexbox.scss */
+.d-inline-flex {
+  display: inline-flex;
+}
+
+/* line 4, ../scss/base/_flexbox.scss */
+.d-block {
+  display: block;
+}
+
+/* line 4, ../scss/base/_flexbox.scss */
+.d-inline-block {
+  display: inline-block;
+}
+
+/* line 4, ../scss/base/_flexbox.scss */
+.d-grid {
+  display: grid;
+}
+
+/* line 4, ../scss/base/_flexbox.scss */
+.d-none {
+  display: none;
+}
+
+@media (min-width: 540px) {
+  /* line 12, ../scss/base/_flexbox.scss */
+  .d-sm-flex {
+    display: flex;
+  }
+
+  /* line 12, ../scss/base/_flexbox.scss */
+  .d-sm-block {
+    display: block;
+  }
+
+  /* line 12, ../scss/base/_flexbox.scss */
+  .d-sm-grid {
+    display: grid;
+  }
+
+  /* line 12, ../scss/base/_flexbox.scss */
+  .d-sm-none {
+    display: none;
+  }
+
+  /* line 12, ../scss/base/_flexbox.scss */
+  .d-sm-inline-block {
+    display: inline-block;
+  }
+}
+@media (min-width: 720px) {
+  /* line 21, ../scss/base/_flexbox.scss */
+  .d-md-flex {
+    display: flex;
+  }
+
+  /* line 21, ../scss/base/_flexbox.scss */
+  .d-md-block {
+    display: block;
+  }
+
+  /* line 21, ../scss/base/_flexbox.scss */
+  .d-md-grid {
+    display: grid;
+  }
+
+  /* line 21, ../scss/base/_flexbox.scss */
+  .d-md-none {
+    display: none;
+  }
+
+  /* line 21, ../scss/base/_flexbox.scss */
+  .d-md-inline-block {
+    display: inline-block;
+  }
+}
+@media (min-width: 960px) {
+  /* line 30, ../scss/base/_flexbox.scss */
+  .d-lg-flex {
+    display: flex;
+  }
+
+  /* line 30, ../scss/base/_flexbox.scss */
+  .d-lg-block {
+    display: block;
+  }
+
+  /* line 30, ../scss/base/_flexbox.scss */
+  .d-lg-grid {
+    display: grid;
+  }
+
+  /* line 30, ../scss/base/_flexbox.scss */
+  .d-lg-none {
+    display: none;
+  }
+
+  /* line 30, ../scss/base/_flexbox.scss */
+  .d-lg-inline-block {
+    display: inline-block;
+  }
+}
+@media (min-width: 1140px) {
+  /* line 39, ../scss/base/_flexbox.scss */
+  .d-xl-flex {
+    display: flex;
+  }
+
+  /* line 39, ../scss/base/_flexbox.scss */
+  .d-xl-block {
+    display: block;
+  }
+
+  /* line 39, ../scss/base/_flexbox.scss */
+  .d-xl-grid {
+    display: grid;
+  }
+
+  /* line 39, ../scss/base/_flexbox.scss */
+  .d-xl-none {
+    display: none;
+  }
+
+  /* line 39, ../scss/base/_flexbox.scss */
+  .d-xl-inline-block {
+    display: inline-block;
+  }
+}
+/* line 48, ../scss/base/_flexbox.scss */
+.fd-row {
+  display: row;
+}
+
+/* line 48, ../scss/base/_flexbox.scss */
+.fd-row-reverse {
+  display: row-reverse;
+}
+
+/* line 48, ../scss/base/_flexbox.scss */
+.fd-column {
+  display: column;
+}
+
+/* line 48, ../scss/base/_flexbox.scss */
+.fd-column-reverse {
+  display: column-reverse;
+}
+
+/* line 56, ../scss/base/_flexbox.scss */
+.jc-flex-start {
+  justify-content: flex-start;
+}
+
+/* line 56, ../scss/base/_flexbox.scss */
+.jc-flex-end {
+  justify-content: flex-end;
+}
+
+/* line 56, ../scss/base/_flexbox.scss */
+.jc-center {
+  justify-content: center;
+}
+
+/* line 56, ../scss/base/_flexbox.scss */
+.jc-space-between {
+  justify-content: space-between;
+}
+
+/* line 56, ../scss/base/_flexbox.scss */
+.jc-space-around {
+  justify-content: space-around;
+}
+
+/* line 56, ../scss/base/_flexbox.scss */
+.jc-space-evenly {
+  justify-content: space-evenly;
+}
+
+/* line 64, ../scss/base/_flexbox.scss */
+.ai-flex-start {
+  align-items: flex-start;
+}
+
+/* line 64, ../scss/base/_flexbox.scss */
+.ai-flex-end {
+  align-items: flex-end;
+}
+
+/* line 64, ../scss/base/_flexbox.scss */
+.ai-center {
+  align-items: center;
+}
+
+/* line 64, ../scss/base/_flexbox.scss */
+.ai-baseline {
+  align-items: baseline;
+}
+
+/* line 64, ../scss/base/_flexbox.scss */
+.ai-stretch {
+  align-items: stretch;
+}
+
+/* line 72, ../scss/base/_flexbox.scss */
+.ac-flex-start {
+  align-content: flex-start;
+}
+
+/* line 72, ../scss/base/_flexbox.scss */
+.ac-flex-end {
+  align-content: flex-end;
+}
+
+/* line 72, ../scss/base/_flexbox.scss */
+.ac-center {
+  align-content: center;
+}
+
+/* line 72, ../scss/base/_flexbox.scss */
+.ac-space-between {
+  align-content: space-between;
+}
+
+/* line 72, ../scss/base/_flexbox.scss */
+.ac-space-around {
+  align-content: space-around;
+}
+
+/* line 72, ../scss/base/_flexbox.scss */
+.ac-stretch {
+  align-content: stretch;
+}
+
+/* line 80, ../scss/base/_flexbox.scss */
+.as-flex-start {
+  align-self: flex-start;
+}
+
+/* line 80, ../scss/base/_flexbox.scss */
+.as-flex-end {
+  align-self: flex-end;
+}
+
+/* line 80, ../scss/base/_flexbox.scss */
+.as-center {
+  align-self: center;
+}
+
+/* line 80, ../scss/base/_flexbox.scss */
+.as-baseline {
+  align-self: baseline;
+}
+
+/* line 80, ../scss/base/_flexbox.scss */
+.as-stretch {
+  align-self: stretch;
+}
+
+/* line 1, ../scss/base/_grid.scss */
+.container {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 720px) {
+  /* line 1, ../scss/base/_grid.scss */
+  .container {
+    max-width: 860px;
+  }
+}
+@media (min-width: 960px) {
+  /* line 1, ../scss/base/_grid.scss */
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* line 19, ../scss/base/_grid.scss */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+@media (max-width: 539px) {
+  /* line 19, ../scss/base/_grid.scss */
+  .grid {
+    grid-gap: 0;
+  }
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-1 {
+  grid-column: span 1;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-2 {
+  grid-column: span 2;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-3 {
+  grid-column: span 3;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-4 {
+  grid-column: span 4;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-5 {
+  grid-column: span 5;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-6 {
+  grid-column: span 6;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-7 {
+  grid-column: span 7;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-8 {
+  grid-column: span 8;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-9 {
+  grid-column: span 9;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-10 {
+  grid-column: span 10;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-11 {
+  grid-column: span 11;
+}
+
+/* line 29, ../scss/base/_grid.scss */
+.grid-12 {
+  grid-column: span 12;
+}
+
+@media (min-width: 428px) {
+  /* line 35, ../scss/base/_grid.scss */
+  .grid-sm-1 {
+    grid-column: span 1;
+  }
+
+  /* line 35, ../scss/base/_grid.scss */
+  .grid-sm-2 {
+    grid-column: span 2;
+  }
+
+  /* line 35, ../scss/base/_grid.scss */
+  .grid-sm-3 {
+    grid-column: span 3;
+  }
+
+  /* line 35, ../scss/base/_grid.scss */
+  .grid-sm-4 {
+    grid-column: span 4;
+  }
+
+  /* line 35, ../scss/base/_grid.scss */
+  .grid-sm-5 {
+    grid-column: span 5;
+  }
+
+  /* line 35, ../scss/base/_grid.scss */
+  .grid-sm-6 {
+    grid-column: span 6;
+  }
+
+  /* line 35, ../scss/base/_grid.scss */
+  .grid-sm-7 {
+    grid-column: span 7;
+  }
+
+  /* line 35, ../scss/base/_grid.scss */
+  .grid-sm-8 {
+    grid-column: span 8;
+  }
+
+  /* line 35, ../scss/base/_grid.scss */
+  .grid-sm-9 {
+    grid-column: span 9;
+  }
+
+  /* line 35, ../scss/base/_grid.scss */
+  .grid-sm-10 {
+    grid-column: span 10;
+  }
+
+  /* line 35, ../scss/base/_grid.scss */
+  .grid-sm-11 {
+    grid-column: span 11;
+  }
+
+  /* line 35, ../scss/base/_grid.scss */
+  .grid-sm-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 540px) {
+  /* line 42, ../scss/base/_grid.scss */
+  .grid-sm-1 {
+    grid-column: span 1;
+  }
+
+  /* line 42, ../scss/base/_grid.scss */
+  .grid-sm-2 {
+    grid-column: span 2;
+  }
+
+  /* line 42, ../scss/base/_grid.scss */
+  .grid-sm-3 {
+    grid-column: span 3;
+  }
+
+  /* line 42, ../scss/base/_grid.scss */
+  .grid-sm-4 {
+    grid-column: span 4;
+  }
+
+  /* line 42, ../scss/base/_grid.scss */
+  .grid-sm-5 {
+    grid-column: span 5;
+  }
+
+  /* line 42, ../scss/base/_grid.scss */
+  .grid-sm-6 {
+    grid-column: span 6;
+  }
+
+  /* line 42, ../scss/base/_grid.scss */
+  .grid-sm-7 {
+    grid-column: span 7;
+  }
+
+  /* line 42, ../scss/base/_grid.scss */
+  .grid-sm-8 {
+    grid-column: span 8;
+  }
+
+  /* line 42, ../scss/base/_grid.scss */
+  .grid-sm-9 {
+    grid-column: span 9;
+  }
+
+  /* line 42, ../scss/base/_grid.scss */
+  .grid-sm-10 {
+    grid-column: span 10;
+  }
+
+  /* line 42, ../scss/base/_grid.scss */
+  .grid-sm-11 {
+    grid-column: span 11;
+  }
+
+  /* line 42, ../scss/base/_grid.scss */
+  .grid-sm-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 720px) {
+  /* line 50, ../scss/base/_grid.scss */
+  .grid-md-1 {
+    grid-column: span 1;
+  }
+
+  /* line 50, ../scss/base/_grid.scss */
+  .grid-md-2 {
+    grid-column: span 2;
+  }
+
+  /* line 50, ../scss/base/_grid.scss */
+  .grid-md-3 {
+    grid-column: span 3;
+  }
+
+  /* line 50, ../scss/base/_grid.scss */
+  .grid-md-4 {
+    grid-column: span 4;
+  }
+
+  /* line 50, ../scss/base/_grid.scss */
+  .grid-md-5 {
+    grid-column: span 5;
+  }
+
+  /* line 50, ../scss/base/_grid.scss */
+  .grid-md-6 {
+    grid-column: span 6;
+  }
+
+  /* line 50, ../scss/base/_grid.scss */
+  .grid-md-7 {
+    grid-column: span 7;
+  }
+
+  /* line 50, ../scss/base/_grid.scss */
+  .grid-md-8 {
+    grid-column: span 8;
+  }
+
+  /* line 50, ../scss/base/_grid.scss */
+  .grid-md-9 {
+    grid-column: span 9;
+  }
+
+  /* line 50, ../scss/base/_grid.scss */
+  .grid-md-10 {
+    grid-column: span 10;
+  }
+
+  /* line 50, ../scss/base/_grid.scss */
+  .grid-md-11 {
+    grid-column: span 11;
+  }
+
+  /* line 50, ../scss/base/_grid.scss */
+  .grid-md-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 960px) {
+  /* line 58, ../scss/base/_grid.scss */
+  .grid-lg-1 {
+    grid-column: span 1;
+  }
+
+  /* line 58, ../scss/base/_grid.scss */
+  .grid-lg-2 {
+    grid-column: span 2;
+  }
+
+  /* line 58, ../scss/base/_grid.scss */
+  .grid-lg-3 {
+    grid-column: span 3;
+  }
+
+  /* line 58, ../scss/base/_grid.scss */
+  .grid-lg-4 {
+    grid-column: span 4;
+  }
+
+  /* line 58, ../scss/base/_grid.scss */
+  .grid-lg-5 {
+    grid-column: span 5;
+  }
+
+  /* line 58, ../scss/base/_grid.scss */
+  .grid-lg-6 {
+    grid-column: span 6;
+  }
+
+  /* line 58, ../scss/base/_grid.scss */
+  .grid-lg-7 {
+    grid-column: span 7;
+  }
+
+  /* line 58, ../scss/base/_grid.scss */
+  .grid-lg-8 {
+    grid-column: span 8;
+  }
+
+  /* line 58, ../scss/base/_grid.scss */
+  .grid-lg-9 {
+    grid-column: span 9;
+  }
+
+  /* line 58, ../scss/base/_grid.scss */
+  .grid-lg-10 {
+    grid-column: span 10;
+  }
+
+  /* line 58, ../scss/base/_grid.scss */
+  .grid-lg-11 {
+    grid-column: span 11;
+  }
+
+  /* line 58, ../scss/base/_grid.scss */
+  .grid-lg-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 1140px) {
+  /* line 66, ../scss/base/_grid.scss */
+  .grid-xl-1 {
+    grid-column: span 1;
+  }
+
+  /* line 66, ../scss/base/_grid.scss */
+  .grid-xl-2 {
+    grid-column: span 2;
+  }
+
+  /* line 66, ../scss/base/_grid.scss */
+  .grid-xl-3 {
+    grid-column: span 3;
+  }
+
+  /* line 66, ../scss/base/_grid.scss */
+  .grid-xl-4 {
+    grid-column: span 4;
+  }
+
+  /* line 66, ../scss/base/_grid.scss */
+  .grid-xl-5 {
+    grid-column: span 5;
+  }
+
+  /* line 66, ../scss/base/_grid.scss */
+  .grid-xl-6 {
+    grid-column: span 6;
+  }
+
+  /* line 66, ../scss/base/_grid.scss */
+  .grid-xl-7 {
+    grid-column: span 7;
+  }
+
+  /* line 66, ../scss/base/_grid.scss */
+  .grid-xl-8 {
+    grid-column: span 8;
+  }
+
+  /* line 66, ../scss/base/_grid.scss */
+  .grid-xl-9 {
+    grid-column: span 9;
+  }
+
+  /* line 66, ../scss/base/_grid.scss */
+  .grid-xl-10 {
+    grid-column: span 10;
+  }
+
+  /* line 66, ../scss/base/_grid.scss */
+  .grid-xl-11 {
+    grid-column: span 11;
+  }
+
+  /* line 66, ../scss/base/_grid.scss */
+  .grid-xl-12 {
+    grid-column: span 12;
+  }
+}
+/* line 1, ../scss/base/_buttons.scss */
+.btn {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  padding: 1.35rem 2.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1;
+  outline: none;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+@media (min-width: 720px) {
+  /* line 1, ../scss/base/_buttons.scss */
+  .btn {
+    width: auto;
+  }
+}
+/* line 16, ../scss/base/_buttons.scss */
+.btn.btn-primary {
+  background: rgba(14, 94, 14, 0.677);
+  color: #ffffff;
+  opacity: 0.9;
+}
+/* line 68, ../scss/config/_mixins.scss */
+.btn.btn-primary:hover {
+  background: rgba(9, 63, 9, 0.677);
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+/* line 73, ../scss/config/_mixins.scss */
+.btn.btn-primary:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(15, 117, 44, 0.25);
+  text-decoration: none;
+}
+/* line 78, ../scss/config/_mixins.scss */
+.btn.btn-primary:active {
+  background: rgba(7, 50, 7, 0.677);
+}
+/* line 81, ../scss/config/_mixins.scss */
+.btn.btn-primary.disabled, .btn.btn-primary:disabled {
+  opacity: 0.55;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #666666;
+  box-shadow: none;
+  cursor: auto;
+}
+/* line 89, ../scss/config/_mixins.scss */
+.btn.btn-primary.disabled:hover, .btn.btn-primary:disabled:hover {
+  background: #ffffff;
+}
+/* line 92, ../scss/config/_mixins.scss */
+.btn.btn-primary.disabled:focus, .btn.btn-primary:disabled:focus {
+  box-shadow: none;
+}
+/* line 19, ../scss/base/_buttons.scss */
+.btn.btn-primary.outline {
+  background: transparent;
+  color: rgba(14, 94, 14, 0.677);
+  border: 0.13rem solid rgba(14, 94, 14, 0.677);
+}
+/* line 68, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:hover {
+  background: transparent;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+/* line 73, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(15, 117, 44, 0.25);
+  text-decoration: none;
+}
+/* line 78, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:active {
+  background: transparent;
+}
+/* line 81, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline.disabled, .btn.btn-primary.outline:disabled {
+  opacity: 0.55;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #666666;
+  box-shadow: none;
+  cursor: auto;
+}
+/* line 89, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline.disabled:hover, .btn.btn-primary.outline:disabled:hover {
+  background: #ffffff;
+}
+/* line 92, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline.disabled:focus, .btn.btn-primary.outline:disabled:focus {
+  box-shadow: none;
+}
+/* line 22, ../scss/base/_buttons.scss */
+.btn.btn-primary.outline:hover, .btn.btn-primary.outline:active {
+  background: rgba(14, 94, 14, 0.677);
+  color: #ffffff;
+}
+/* line 68, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:hover:hover, .btn.btn-primary.outline:active:hover {
+  background: rgba(9, 63, 9, 0.677);
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+/* line 73, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:hover:focus, .btn.btn-primary.outline:active:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(15, 117, 44, 0.25);
+  text-decoration: none;
+}
+/* line 78, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:hover:active, .btn.btn-primary.outline:active:active {
+  background: rgba(7, 50, 7, 0.677);
+}
+/* line 81, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:hover.disabled, .btn.btn-primary.outline:hover:disabled, .btn.btn-primary.outline:active.disabled, .btn.btn-primary.outline:active:disabled {
+  opacity: 0.55;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #666666;
+  box-shadow: none;
+  cursor: auto;
+}
+/* line 89, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:hover.disabled:hover, .btn.btn-primary.outline:hover:disabled:hover, .btn.btn-primary.outline:active.disabled:hover, .btn.btn-primary.outline:active:disabled:hover {
+  background: #ffffff;
+}
+/* line 92, ../scss/config/_mixins.scss */
+.btn.btn-primary.outline:hover.disabled:focus, .btn.btn-primary.outline:hover:disabled:focus, .btn.btn-primary.outline:active.disabled:focus, .btn.btn-primary.outline:active:disabled:focus {
+  box-shadow: none;
+}
+/* line 27, ../scss/base/_buttons.scss */
+.btn.btn-secondary {
+  background: rgba(209, 209, 209, 0.66);
+  color: #1b1b1b;
+}
+/* line 68, ../scss/config/_mixins.scss */
+.btn.btn-secondary:hover {
+  background: rgba(191, 191, 191, 0.66);
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+/* line 73, ../scss/config/_mixins.scss */
+.btn.btn-secondary:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(15, 117, 44, 0.25);
+  text-decoration: none;
+}
+/* line 78, ../scss/config/_mixins.scss */
+.btn.btn-secondary:active {
+  background: rgba(184, 184, 184, 0.66);
+}
+/* line 81, ../scss/config/_mixins.scss */
+.btn.btn-secondary.disabled, .btn.btn-secondary:disabled {
+  opacity: 0.55;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #666666;
+  box-shadow: none;
+  cursor: auto;
+}
+/* line 89, ../scss/config/_mixins.scss */
+.btn.btn-secondary.disabled:hover, .btn.btn-secondary:disabled:hover {
+  background: #ffffff;
+}
+/* line 92, ../scss/config/_mixins.scss */
+.btn.btn-secondary.disabled:focus, .btn.btn-secondary:disabled:focus {
+  box-shadow: none;
+}
+/* line 29, ../scss/base/_buttons.scss */
+.btn.btn-secondary.outline {
+  background: transparent;
+  color: rgba(209, 209, 209, 0.66);
+  border: 0.15rem solid rgba(209, 209, 209, 0.66);
+}
+/* line 68, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:hover {
+  background: transparent;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+/* line 73, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(15, 117, 44, 0.25);
+  text-decoration: none;
+}
+/* line 78, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:active {
+  background: transparent;
+}
+/* line 81, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline.disabled, .btn.btn-secondary.outline:disabled {
+  opacity: 0.55;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #666666;
+  box-shadow: none;
+  cursor: auto;
+}
+/* line 89, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline.disabled:hover, .btn.btn-secondary.outline:disabled:hover {
+  background: #ffffff;
+}
+/* line 92, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline.disabled:focus, .btn.btn-secondary.outline:disabled:focus {
+  box-shadow: none;
+}
+/* line 32, ../scss/base/_buttons.scss */
+.btn.btn-secondary.outline:hover, .btn.btn-secondary.outline:active {
+  background: rgba(209, 209, 209, 0.66);
+  color: #ffffff;
+}
+/* line 68, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:hover:hover, .btn.btn-secondary.outline:active:hover {
+  background: rgba(191, 191, 191, 0.66);
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+/* line 73, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:hover:focus, .btn.btn-secondary.outline:active:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(15, 117, 44, 0.25);
+  text-decoration: none;
+}
+/* line 78, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:hover:active, .btn.btn-secondary.outline:active:active {
+  background: rgba(184, 184, 184, 0.66);
+}
+/* line 81, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:hover.disabled, .btn.btn-secondary.outline:hover:disabled, .btn.btn-secondary.outline:active.disabled, .btn.btn-secondary.outline:active:disabled {
+  opacity: 0.55;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #666666;
+  box-shadow: none;
+  cursor: auto;
+}
+/* line 89, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:hover.disabled:hover, .btn.btn-secondary.outline:hover:disabled:hover, .btn.btn-secondary.outline:active.disabled:hover, .btn.btn-secondary.outline:active:disabled:hover {
+  background: #ffffff;
+}
+/* line 92, ../scss/config/_mixins.scss */
+.btn.btn-secondary.outline:hover.disabled:focus, .btn.btn-secondary.outline:hover:disabled:focus, .btn.btn-secondary.outline:active.disabled:focus, .btn.btn-secondary.outline:active:disabled:focus {
+  box-shadow: none;
+}
+/* line 38, ../scss/base/_buttons.scss */
+.btn.small {
+  padding: 1.1rem 1.6rem;
+  font-size: 1.35rem;
+}
+/* line 42, ../scss/base/_buttons.scss */
+.btn.medium {
+  font-size: 1.4rem;
+  padding: 11px 38px;
+}
+
+/* line 1, ../scss/components/_header.scss */
+header {
+  z-index: 2;
+  width: 100%;
+}
+/* line 4, ../scss/components/_header.scss */
+header a {
+  display: inline-block;
+  color: #000000;
+  font-weight: 600;
+}
+/* line 9, ../scss/components/_header.scss */
+header nav {
+  padding: 1rem 2rem 0 1rem;
+  margin-left: -10px;
+  width: 110%;
+}
+/* line 13, ../scss/components/_header.scss */
+header nav .logo {
+  visibility: hidden;
+}
+/* line 16, ../scss/components/_header.scss */
+header nav .navbar {
+  background-color: #132A13;
+  color: #ffffff;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: -100px;
+  padding: 20px;
+  position: relative;
+}
+/* line 25, ../scss/components/_header.scss */
+header nav .navbar i {
+  font-size: 3rem;
+  margin-top: -5px;
+  position: absolute;
+  text-align: center;
+  right: 40px;
+}
+/* line 33, ../scss/components/_header.scss */
+header nav .nav__menu, header nav .nav__dropdown {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 38, ../scss/components/_header.scss */
+header nav .nav__menu {
+  background-color: rgba(20, 20, 20, 0.96);
+  width: 100%;
+  margin-left: -105%;
+  transition: all 0.5s;
+}
+/* line 44, ../scss/components/_header.scss */
+header nav .nav__menu .nav__item span {
+  font-size: 1.5rem;
+}
+/* line 48, ../scss/components/_header.scss */
+header nav .nav__menu .nav__link {
+  color: #ffffff;
+  display: block;
+  font-size: 1em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+/* line 56, ../scss/components/_header.scss */
+header nav .nav__menu .nav__dropdown .nav__link {
+  background-color: rgba(163, 162, 162, 0.87);
+  padding-left: 40px;
+}
+/* line 60, ../scss/components/_header.scss */
+header nav .nav__menu .nav__dropdown {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+/* line 67, ../scss/components/_header.scss */
+header nav .mostrar {
+  margin-left: 0;
+}
+
+@media (min-width: 540px) {
+  /* line 73, ../scss/components/_header.scss */
+  .navbar {
+    width: 100%;
+  }
+}
+@media (min-width: 720px) {
+  /* line 78, ../scss/components/_header.scss */
+  .navbar {
+    width: 95%;
+  }
+}
+@media (min-width: 960px) {
+  /* line 83, ../scss/components/_header.scss */
+  header {
+    left: 0%;
+    top: 0%;
+  }
+  /* line 86, ../scss/components/_header.scss */
+  header .nav {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+  /* line 90, ../scss/components/_header.scss */
+  header .nav .navbar {
+    display: none;
+  }
+  /* line 93, ../scss/components/_header.scss */
+  header .nav .logo {
+    visibility: visible;
+  }
+  /* line 96, ../scss/components/_header.scss */
+  header .nav .nav__menu {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 0;
+    margin-top: 5px;
+    position: absolute;
+    right: 1px;
+    width: 80%;
+  }
+  /* line 106, ../scss/components/_header.scss */
+  header .nav .nav__menu .container__submenu {
+    position: relative;
+  }
+  /* line 109, ../scss/components/_header.scss */
+  header .nav .nav__menu .nav__dropdown .nav__link {
+    background-color: rgba(20, 20, 20, 0.76);
+    padding-left: 20px;
+  }
+  /* line 112, ../scss/components/_header.scss */
+  header .nav .nav__menu .nav__dropdown .nav__link:hover {
+    background-color: rgba(14, 94, 14, 0.677);
+  }
+  /* line 116, ../scss/components/_header.scss */
+  header .nav .nav__menu .nav__dropdown {
+    margin-top: -20px;
+    margin-left: -50px;
+    overflow: visible;
+    opacity: 1;
+    position: absolute;
+    top: 60px;
+    visibility: hidden;
+    width: 200px;
+  }
+  /* line 126, ../scss/components/_header.scss */
+  header .nav .nav__menu .container__submenu:hover .nav__dropdown {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media (min-width: 1140px) {
+  /* line 136, ../scss/components/_header.scss */
+  header {
+    left: 0%;
+    top: 0%;
+  }
+  /* line 139, ../scss/components/_header.scss */
+  header .nav {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+  /* line 143, ../scss/components/_header.scss */
+  header .nav .navbar {
+    display: none;
+  }
+  /* line 146, ../scss/components/_header.scss */
+  header .nav .logo {
+    visibility: visible;
+  }
+  /* line 149, ../scss/components/_header.scss */
+  header .nav .nav__menu {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 0;
+    margin-top: 5px;
+    position: absolute;
+    right: 1px;
+    width: 65%;
+  }
+}
+/* line 1, ../scss/components/_footer.scss */
+footer {
+  background-color: #132A13;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* line 6, ../scss/components/_footer.scss */
+footer a {
+  color: #ffffff;
+  font-weight: 400;
+}
+/* line 10, ../scss/components/_footer.scss */
+footer .footer__left {
+  margin-top: 20px;
+  padding: auto;
+}
+/* line 13, ../scss/components/_footer.scss */
+footer .footer__left p {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: -15px;
+  margin-bottom: 5px;
+}
+/* line 20, ../scss/components/_footer.scss */
+footer .footer__left .nav-social {
+  word-spacing: 15px;
+  margin-top: 15px;
+}
+/* line 23, ../scss/components/_footer.scss */
+footer .footer__left .nav-social a {
+  background-color: #ffffff;
+  border-radius: 50px;
+  font-size: 2rem;
+  padding: 13px 10px 6px 10px;
+}
+/* line 28, ../scss/components/_footer.scss */
+footer .footer__left .nav-social a span {
+  margin-top: 10%;
+  font-size: 2.5rem;
+}
+/* line 33, ../scss/components/_footer.scss */
+footer .footer__left .nav-social .btn-facebook {
+  color: #1531C6;
+}
+/* line 36, ../scss/components/_footer.scss */
+footer .footer__left .nav-social .btn-twitter {
+  color: #3DB0C9;
+}
+/* line 39, ../scss/components/_footer.scss */
+footer .footer__left .nav-social .btn-instagram {
+  color: #CC376D;
+}
+/* line 44, ../scss/components/_footer.scss */
+footer .footer__center {
+  display: block;
+  margin-top: 20px;
+}
+/* line 47, ../scss/components/_footer.scss */
+footer .footer__center h2 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+/* line 52, ../scss/components/_footer.scss */
+footer .footer__center .block-servicios {
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  text-align: left;
+}
+/* line 56, ../scss/components/_footer.scss */
+footer .footer__center .block-servicios .block-menu {
+  margin-left: 25px;
+}
+/* line 59, ../scss/components/_footer.scss */
+footer .footer__center .block-servicios .block-menu .block-submenu a {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 30px;
+}
+/* line 67, ../scss/components/_footer.scss */
+footer .footer__center .block-servicios .block-contacto {
+  line-height: 30px;
+}
+/* line 72, ../scss/components/_footer.scss */
+footer .footer__bottom {
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+@media (min-width: 540px) {
+  /* line 79, ../scss/components/_footer.scss */
+  .block-servicios {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* line 82, ../scss/components/_footer.scss */
+  .block-servicios .block-menu {
+    margin-left: 0;
+  }
+}
+@media (min-width: 720px) {
+  /* line 88, ../scss/components/_footer.scss */
+  footer {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+  /* line 92, ../scss/components/_footer.scss */
+  footer .footer__left {
+    width: 20%;
+  }
+  /* line 95, ../scss/components/_footer.scss */
+  footer .footer__center {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 80%;
+  }
+  /* line 100, ../scss/components/_footer.scss */
+  footer .footer__center h2 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.6rem;
+  }
+  /* line 105, ../scss/components/_footer.scss */
+  footer .footer__center .block-servicios {
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+  }
+  /* line 111, ../scss/components/_footer.scss */
+  footer .footer__center .block-servicios .block-menu {
+    margin-left: 0;
+  }
+  /* line 115, ../scss/components/_footer.scss */
+  footer .footer__center .block-contacto {
+    line-height: 30px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  /* line 121, ../scss/components/_footer.scss */
+  footer .footer__bottom {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+/* line 1, ../scss/components/_aside.scss */
+.feed {
+  background-color: #eeeeee;
+  text-align: center;
+}
+/* line 7, ../scss/components/_aside.scss */
+.feed__card {
+  display: flex;
+  padding: 15px;
+}
+/* line 10, ../scss/components/_aside.scss */
+.feed__card img {
+  width: 15rem;
+}
+/* line 15, ../scss/components/_aside.scss */
+.feed__description {
+  background-color: #ffffff;
+  margin-bottom: 6px;
+}
+/* line 18, ../scss/components/_aside.scss */
+.feed__description p {
+  font-weight: 600;
+  margin-top: 25%;
+}
+
+@media (min-width: 360px) {
+  /* line 27, ../scss/components/_aside.scss */
+  .feed__image {
+    width: 20rem;
+  }
+}
+@media (min-width: 540px) {
+  /* line 34, ../scss/components/_aside.scss */
+  .feed__image {
+    width: 30rem;
+  }
+}
+@media (min-width: 720px) {
+  /* line 41, ../scss/components/_aside.scss */
+  .feed {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  /* line 44, ../scss/components/_aside.scss */
+  .feed__card {
+    display: flex;
+    padding: 10px;
+    margin-bottom: -5px;
+  }
+  /* line 49, ../scss/components/_aside.scss */
+  .feed__image {
+    width: 20rem;
+  }
+  /* line 52, ../scss/components/_aside.scss */
+  .feed__description {
+    background-color: #ffffff;
+    margin-bottom: 6px;
+  }
+}
+@media (min-width: 960px) {
+  /* line 60, ../scss/components/_aside.scss */
+  .feed {
+    margin-bottom: 150px;
+    text-align: center;
+    justify-content: flex-end;
+  }
+  /* line 64, ../scss/components/_aside.scss */
+  .feed__card {
+    display: flex;
+    padding: 15px;
+  }
+  /* line 68, ../scss/components/_aside.scss */
+  .feed__image {
+    width: 20rem;
+  }
+  /* line 71, ../scss/components/_aside.scss */
+  .feed__description {
+    background-color: #ffffff;
+    margin-bottom: 6px;
+  }
+}
+@media (min-width: 1140px) {
+  /* line 78, ../scss/components/_aside.scss */
+  .feed {
+    margin-left: 100px;
+    margin-right: -5%;
+    margin-bottom: 50px;
+  }
+}
+/* line 2, ../scss/components/_banner.scss */
+main .banner {
+  color: #ffffff;
+}
+/* line 4, ../scss/components/_banner.scss */
+main .banner .container-banner {
+  display: block;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+/* line 10, ../scss/components/_banner.scss */
+main .banner__title {
+  font-size: 1.7em;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  top: 15%;
+  width: 100%;
+}
+/* line 18, ../scss/components/_banner.scss */
+main .banner__text {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+/* line 23, ../scss/components/_banner.scss */
+main .banner__link {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  /* line 33, ../scss/components/_banner.scss */
+  main .banner .container-banner {
+    display: block;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+  }
+  /* line 39, ../scss/components/_banner.scss */
+  main .banner__image {
+    width: 100%;
+  }
+  /* line 42, ../scss/components/_banner.scss */
+  main .banner__title {
+    font-size: 2.5em;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    width: 100%;
+  }
+  /* line 50, ../scss/components/_banner.scss */
+  main .banner__text {
+    font-size: 2.4rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+  }
+  /* line 58, ../scss/components/_banner.scss */
+  main .banner__link {
+    position: absolute;
+    padding-left: 40px;
+    padding-right: 40px;
+    top: 67%;
+    width: 100%;
+  }
+}
+@media (min-width: 960px) {
+  /* line 71, ../scss/components/_banner.scss */
+  main .banner .container-banner {
+    display: block;
+    text-align: right;
+  }
+  /* line 75, ../scss/components/_banner.scss */
+  main .banner__title {
+    font-size: 4.38rem;
+    padding: 20px;
+    position: absolute;
+    text-align: right;
+    top: 15%;
+    width: 100%;
+  }
+  /* line 83, ../scss/components/_banner.scss */
+  main .banner__text {
+    margin-left: 45%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 50%;
+  }
+  /* line 89, ../scss/components/_banner.scss */
+  main .banner__text p {
+    margin-bottom: 35px;
+  }
+  /* line 93, ../scss/components/_banner.scss */
+  main .banner .banner__link {
+    position: absolute;
+    margin-left: 45%;
+    text-align: center;
+    top: 78%;
+    width: 50%;
+  }
+}
+/* line 2, ../scss/components/_card.scss */
+main .awards {
+  height: auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 6, ../scss/components/_card.scss */
+main .awards__card {
+  background-color: #caece2;
+  border-radius: 5px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-align: center;
+  width: 30rem;
+}
+/* line 18, ../scss/components/_card.scss */
+main .awards__card .card-title a {
+  color: #000000;
+}
+/* line 20, ../scss/components/_card.scss */
+main .awards__card .card-title a:hover {
+  color: rgba(14, 94, 14, 0.677);
+}
+/* line 25, ../scss/components/_card.scss */
+main .awards__card .card-text {
+  font-weight: 500;
+}
+/* line 29, ../scss/components/_card.scss */
+main .awards__image {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 25rem;
+}
+
+@media (min-width: 720px) {
+  /* line 38, ../scss/components/_card.scss */
+  main .awards-ecuador {
+    display: flex;
+  }
+  /* line 40, ../scss/components/_card.scss */
+  main .awards-ecuador__card {
+    border-radius: 5px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+    width: 23rem;
+  }
+  /* line 50, ../scss/components/_card.scss */
+  main .awards-ecuador__image {
+    background-color: white;
+    border-radius: 5px;
+    width: 20rem;
+  }
+}
+@media (min-width: 960px) {
+  /* line 60, ../scss/components/_card.scss */
+  main .awards-ecuador {
+    display: flex;
+  }
+  /* line 62, ../scss/components/_card.scss */
+  main .awards-ecuador__card {
+    border-radius: 5px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+    width: 30rem;
+  }
+  /* line 72, ../scss/components/_card.scss */
+  main .awards-ecuador__image {
+    background-color: white;
+    border-radius: 5px;
+    width: 25rem;
+  }
+}
+/* line 2, ../scss/components/_galery.scss */
+main .ecuador-places {
+  position: relative;
+  text-align: center;
+  margin-bottom: 70px;
+}
+/* line 8, ../scss/components/_galery.scss */
+main .ecuador-places__top .title-section {
+  text-align: center;
+}
+/* line 13, ../scss/components/_galery.scss */
+main .ecuador-places__link a {
+  position: absolute;
+  width: 11rem;
+  top: 101%;
+  left: 35%;
+}
+/* line 21, ../scss/components/_galery.scss */
+main .ecuador-places__description p {
+  background-color: rgba(20, 20, 20, 0.66);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px;
+  position: absolute;
+  margin-left: 1.5%;
+  margin-top: -13%;
+  text-align: center;
+  width: 140px;
+}
+
+@media (min-width: 360px) {
+  /* line 39, ../scss/components/_galery.scss */
+  main .ecuador-places {
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  /* line 45, ../scss/components/_galery.scss */
+  main .ecuador-places__top .title-section {
+    text-align: center;
+  }
+  /* line 50, ../scss/components/_galery.scss */
+  main .ecuador-places__link a {
+    position: absolute;
+    width: 11rem;
+    top: 100%;
+    left: 35%;
+  }
+  /* line 59, ../scss/components/_galery.scss */
+  main .ecuador-places__description p {
+    background-color: rgba(20, 20, 20, 0.66);
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px;
+    position: absolute;
+    margin-left: 1.5%;
+    margin-top: -19%;
+    text-align: center;
+    width: 160px;
+    height: 7%;
+    justify-content: center;
+  }
+  /* line 74, ../scss/components/_galery.scss */
+  main .ecuador-places__image {
+    width: 160px;
+  }
+}
+@media (min-width: 428px) {
+  /* line 82, ../scss/components/_galery.scss */
+  main .ecuador-places {
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  /* line 88, ../scss/components/_galery.scss */
+  main .ecuador-places__top .title-section {
+    text-align: center;
+  }
+  /* line 93, ../scss/components/_galery.scss */
+  main .ecuador-places__link a {
+    position: absolute;
+    width: 11rem;
+    top: 80%;
+    left: 68%;
+  }
+  /* line 101, ../scss/components/_galery.scss */
+  main .ecuador-places__description p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px;
+    position: absolute;
+    margin-left: 1.5%;
+    margin-top: -13%;
+    text-align: center;
+    width: 124px;
+    height: 8.5%;
+    justify-content: center;
+  }
+  /* line 115, ../scss/components/_galery.scss */
+  main .ecuador-places__image {
+    height: 167.3px;
+    width: 124.35px;
+  }
+}
+@media (min-width: 540px) {
+  /* line 124, ../scss/components/_galery.scss */
+  main .ecuador-places {
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  /* line 130, ../scss/components/_galery.scss */
+  main .ecuador-places__top .title-section {
+    text-align: center;
+  }
+  /* line 135, ../scss/components/_galery.scss */
+  main .ecuador-places__link a {
+    position: absolute;
+    width: 11rem;
+    top: 83%;
+    left: 73%;
+  }
+  /* line 143, ../scss/components/_galery.scss */
+  main .ecuador-places__description p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px;
+    position: absolute;
+    margin-left: 0.6%;
+    margin-top: -11.5%;
+    text-align: center;
+    width: 29.6%;
+    height: 8%;
+    justify-content: center;
+  }
+}
+@media (min-width: 720px) {
+  /* line 161, ../scss/components/_galery.scss */
+  main .ecuador-places {
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  /* line 166, ../scss/components/_galery.scss */
+  main .ecuador-places__top .title-section {
+    margin-bottom: 30px;
+    margin-left: 2%;
+    text-align: left;
+  }
+  /* line 173, ../scss/components/_galery.scss */
+  main .ecuador-places__link a {
+    position: absolute;
+    width: 11rem;
+    top: 0;
+    left: 83%;
+  }
+  /* line 181, ../scss/components/_galery.scss */
+  main .ecuador-places__description p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px;
+    position: absolute;
+    margin-left: 0.3%;
+    margin-top: -9%;
+    text-align: center;
+    width: 175px;
+    height: 13%;
+    justify-content: center;
+  }
+  /* line 194, ../scss/components/_galery.scss */
+  main .ecuador-places__image {
+    width: 175px;
+  }
+}
+@media (min-width: 960px) {
+  /* line 202, ../scss/components/_galery.scss */
+  main .ecuador-places {
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  /* line 207, ../scss/components/_galery.scss */
+  main .ecuador-places__top .title-section {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  /* line 213, ../scss/components/_galery.scss */
+  main .ecuador-places__link a {
+    position: absolute;
+    width: 11rem;
+    top: 3%;
+    left: 84%;
+  }
+  /* line 221, ../scss/components/_galery.scss */
+  main .ecuador-places__description p {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 10px;
+    position: absolute;
+    margin-left: 1.1%;
+    margin-top: -8.6%;
+    text-align: center;
+    width: 220px;
+    height: 13%;
+    justify-content: center;
+  }
+  /* line 234, ../scss/components/_galery.scss */
+  main .ecuador-places__image {
+    width: 220px;
+    height: 250px;
+  }
+}
+@media (min-width: 1140px) {
+  /* line 244, ../scss/components/_galery.scss */
+  main .ecuador-places {
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  /* line 249, ../scss/components/_galery.scss */
+  main .ecuador-places__top .title-section {
+    margin-bottom: 30px;
+    margin-left: 0;
+    text-align: left;
+  }
+  /* line 257, ../scss/components/_galery.scss */
+  main .ecuador-places__link a {
+    position: absolute;
+    width: 11rem;
+    top: 3%;
+    left: 84%;
+  }
+  /* line 266, ../scss/components/_galery.scss */
+  main .ecuador-places__description p {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 10px;
+    position: absolute;
+    margin-left: 0.1%;
+    margin-top: -5.6%;
+    text-align: center;
+    height: 68px;
+    width: 270px;
+    justify-content: center;
+  }
+  /* line 279, ../scss/components/_galery.scss */
+  main .ecuador-places__image {
+    width: 270px;
+    height: 300px;
+  }
+}
+/* line 1, ../scss/components/_slider.scss */
+main {
+  margin-top: -265px;
+}
+/* line 4, ../scss/components/_slider.scss */
+main .slider__item {
+  color: #ffffff;
+  z-index: 10;
+}
+/* line 7, ../scss/components/_slider.scss */
+main .slider__item img {
+  width: 100%;
+}
+/* line 12, ../scss/components/_slider.scss */
+main .slider__description {
+  height: 165px;
+  line-height: 30px;
+  margin-top: -160px;
+  text-align: center;
+  width: 100%;
+}
+/* line 18, ../scss/components/_slider.scss */
+main .slider__description .titulo-slider {
+  font-size: 2.5rem;
+}
+/* line 21, ../scss/components/_slider.scss */
+main .slider__description p {
+  font-size: 1.2rem;
+}
+/* line 24, ../scss/components/_slider.scss */
+main .slider__description span {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+@media (min-width: 428px) {
+  /* line 32, ../scss/components/_slider.scss */
+  main {
+    margin-top: -265px;
+  }
+  /* line 35, ../scss/components/_slider.scss */
+  main .slider__item {
+    color: #ffffff;
+    z-index: 10;
+  }
+  /* line 38, ../scss/components/_slider.scss */
+  main .slider__item img {
+    width: 100%;
+  }
+  /* line 43, ../scss/components/_slider.scss */
+  main .slider__description {
+    height: 165px;
+    line-height: 40px;
+    margin-top: -160px;
+    text-align: center;
+    width: 100%;
+  }
+  /* line 49, ../scss/components/_slider.scss */
+  main .slider__description .titulo-slider {
+    font-size: 3rem;
+  }
+  /* line 52, ../scss/components/_slider.scss */
+  main .slider__description p {
+    font-size: 1.2rem;
+  }
+  /* line 55, ../scss/components/_slider.scss */
+  main .slider__description span {
+    font-size: 1.6em;
+    font-weight: 700;
+  }
+}
+@media (min-width: 720px) {
+  /* line 67, ../scss/components/_slider.scss */
+  main .slider__item img {
+    height: 30vh;
+  }
+  /* line 71, ../scss/components/_slider.scss */
+  main .slider__description {
+    height: 208px;
+    line-height: 40px;
+    margin-top: -200px;
+    text-align: center;
+    width: 100%;
+  }
+  /* line 77, ../scss/components/_slider.scss */
+  main .slider__description .titulo-slider {
+    font-size: 3.6rem;
+  }
+  /* line 80, ../scss/components/_slider.scss */
+  main .slider__description p {
+    font-size: 1.6rem;
+  }
+  /* line 83, ../scss/components/_slider.scss */
+  main .slider__description span {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 960px) {
+  /* line 91, ../scss/components/_slider.scss */
+  main {
+    margin-top: -100px;
+  }
+  /* line 94, ../scss/components/_slider.scss */
+  main .slider__item {
+    color: #ffffff;
+  }
+  /* line 96, ../scss/components/_slider.scss */
+  main .slider__item img {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 102, ../scss/components/_slider.scss */
+  main .slider__description .titulo-slider {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1140px) {
+  /* line 111, ../scss/components/_slider.scss */
+  main {
+    margin-top: -100px;
+  }
+  /* line 115, ../scss/components/_slider.scss */
+  main .slider__item img {
+    width: 100%;
+    height: 70vh;
+  }
+  /* line 121, ../scss/components/_slider.scss */
+  main .slider__description .titulo-slider {
+    font-size: 5.6rem;
+  }
+  /* line 124, ../scss/components/_slider.scss */
+  main .slider__description p {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+  /* line 128, ../scss/components/_slider.scss */
+  main .slider__description span {
+    font-size: 3.6rem;
+    font-weight: 700;
+  }
+}
+/* line 5, ../scss/components/_video.scss */
+main .experience {
+  top: 20px;
+  text-align: center;
+}
+/* line 8, ../scss/components/_video.scss */
+main .experience__group {
+  margin-bottom: 3.6rem;
+}
+/* line 11, ../scss/components/_video.scss */
+main .experience__description {
+  font-weight: 500;
+  padding: 20px;
+  text-align: justify;
+}
+/* line 16, ../scss/components/_video.scss */
+main .experience__link {
+  margin-top: -20px;
+}
+
+@media (min-width: 428px) {
+  /* line 23, ../scss/components/_video.scss */
+  main .experience {
+    top: 20px;
+    text-align: center;
+  }
+  /* line 26, ../scss/components/_video.scss */
+  main .experience__group {
+    margin-bottom: 3.6rem;
+  }
+  /* line 29, ../scss/components/_video.scss */
+  main .experience__description {
+    font-weight: 500;
+    padding: 20px;
+    text-align: justify;
+  }
+  /* line 34, ../scss/components/_video.scss */
+  main .experience__link {
+    margin-top: -20px;
+  }
+  /* line 39, ../scss/components/_video.scss */
+  main .experience__media video {
+    height: 178.32px;
+    width: 380.36px;
+  }
+}
+@media (min-width: 720px) {
+  /* line 49, ../scss/components/_video.scss */
+  main .experience {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* line 52, ../scss/components/_video.scss */
+  main .experience__group {
+    width: 95%;
+  }
+  /* line 56, ../scss/components/_video.scss */
+  main .experience__description {
+    font-weight: 500;
+    padding: 50px;
+    text-align: justify;
+  }
+}
+@media (min-width: 960px) {
+  /* line 66, ../scss/components/_video.scss */
+  main .experience {
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* line 69, ../scss/components/_video.scss */
+  main .experience__group {
+    width: 85%;
+  }
+  /* line 72, ../scss/components/_video.scss */
+  main .experience__description {
+    font-weight: 500;
+    padding: 50px;
+    text-align: justify;
+  }
+  /* line 78, ../scss/components/_video.scss */
+  main .experience__media video {
+    height: 320px;
+    width: 510px;
+  }
+}
+@media (min-width: 1140px) {
+  /* line 88, ../scss/components/_video.scss */
+  main .experience {
+    display: flex;
+  }
+  /* line 90, ../scss/components/_video.scss */
+  main .experience__group {
+    margin-left: -60px;
+    width: 95%;
+  }
+  /* line 94, ../scss/components/_video.scss */
+  main .experience__description {
+    font-weight: 500;
+    padding: 50px;
+    text-align: justify;
+  }
+  /* line 100, ../scss/components/_video.scss */
+  main .experience__media video {
+    height: 320px;
+    width: 650px;
+    margin-bottom: -40px;
+  }
+}
+/* line 2, ../scss/components/_contacto.scss */
+main .contacto {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+/* line 5, ../scss/components/_contacto.scss */
+main .contacto .container-contacto {
+  display: block;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+/* line 10, ../scss/components/_contacto.scss */
+main .contacto .container-contacto .linea {
+  border-top: 1.5px solid black;
+  height: 2px;
+  padding: 0;
+  width: 90%;
+  margin: 0 auto 10px auto;
+}
+/* line 18, ../scss/components/_contacto.scss */
+main .contacto__information {
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  top: 3%;
+  width: 100%;
+}
+/* line 25, ../scss/components/_contacto.scss */
+main .contacto__title {
+  font-size: 3rem;
+}
+/* line 28, ../scss/components/_contacto.scss */
+main .contacto__form {
+  background-color: rgba(255, 255, 255, 0.72);
+  border-radius: 12px;
+  color: #000000;
+  height: 440px;
+  left: 8%;
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  width: 85%;
+}
+/* line 39, ../scss/components/_contacto.scss */
+main .contacto__link {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+}
+/* line 44, ../scss/components/_contacto.scss */
+main .contacto__header {
+  line-height: 30px;
+  padding: 20px;
+}
+/* line 47, ../scss/components/_contacto.scss */
+main .contacto__header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+/* line 51, ../scss/components/_contacto.scss */
+main .contacto__header a {
+  color: #000000;
+  font-weight: 600;
+}
+/* line 56, ../scss/components/_contacto.scss */
+main .contacto__group {
+  display: block;
+  margin: 10px auto 0 auto;
+  text-align: left;
+  width: 87%;
+}
+/* line 61, ../scss/components/_contacto.scss */
+main .contacto__group label {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+/* line 65, ../scss/components/_contacto.scss */
+main .contacto__group input {
+  border: none;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  height: 30px;
+  margin: 0 auto 10px auto;
+  width: 100%;
+}
+/* line 72, ../scss/components/_contacto.scss */
+main .contacto__group input:focus {
+  cursor: pointer;
+  outline: none;
+}
+/* line 77, ../scss/components/_contacto.scss */
+main .contacto__group textarea {
+  border: none;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  height: 75px;
+  width: 100%;
+}
+/* line 83, ../scss/components/_contacto.scss */
+main .contacto__group textarea:focus {
+  cursor: pointer;
+  outline: none;
+}
+/* line 89, ../scss/components/_contacto.scss */
+main .contacto__actions {
+  text-align: center;
+  width: 40%;
+  padding: 0 auto 10px auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 720px) {
+  /* line 100, ../scss/components/_contacto.scss */
+  main .contacto {
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  /* line 103, ../scss/components/_contacto.scss */
+  main .contacto .container-contacto {
+    display: flex;
+    position: relative;
+    text-align: center;
+  }
+  /* line 107, ../scss/components/_contacto.scss */
+  main .contacto .container-contacto .linea {
+    border-top: 1.5px solid black;
+    height: 2px;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto 10px auto;
+  }
+  /* line 115, ../scss/components/_contacto.scss */
+  main .contacto__information {
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    top: 36%;
+    width: 50%;
+  }
+  /* line 121, ../scss/components/_contacto.scss */
+  main .contacto__information p {
+    font-size: 2rem;
+  }
+  /* line 125, ../scss/components/_contacto.scss */
+  main .contacto__image {
+    width: 100%;
+  }
+  /* line 128, ../scss/components/_contacto.scss */
+  main .contacto__title {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  /* line 132, ../scss/components/_contacto.scss */
+  main .contacto__form {
+    background-color: rgba(255, 255, 255, 0.72);
+    border-radius: 12px;
+    color: #000000;
+    height: 440px;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 13%;
+    width: 45%;
+  }
+  /* line 143, ../scss/components/_contacto.scss */
+  main .contacto__link {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+  }
+  /* line 148, ../scss/components/_contacto.scss */
+  main .contacto__header {
+    line-height: 30px;
+    padding: 20px;
+  }
+  /* line 151, ../scss/components/_contacto.scss */
+  main .contacto__header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  /* line 155, ../scss/components/_contacto.scss */
+  main .contacto__header a {
+    color: #000000;
+    font-weight: 600;
+  }
+  /* line 160, ../scss/components/_contacto.scss */
+  main .contacto__group {
+    display: block;
+    margin: 10px auto 0 auto;
+    text-align: left;
+    width: 87%;
+  }
+  /* line 165, ../scss/components/_contacto.scss */
+  main .contacto__group label {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+  }
+  /* line 169, ../scss/components/_contacto.scss */
+  main .contacto__group input {
+    border: none;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif;
+    height: 30px;
+    margin: 0 auto 10px auto;
+    width: 100%;
+  }
+  /* line 176, ../scss/components/_contacto.scss */
+  main .contacto__group input:focus {
+    cursor: pointer;
+    outline: none;
+  }
+  /* line 181, ../scss/components/_contacto.scss */
+  main .contacto__group textarea {
+    border: none;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif;
+    height: 75px;
+    width: 100%;
+  }
+  /* line 187, ../scss/components/_contacto.scss */
+  main .contacto__group textarea:focus {
+    cursor: pointer;
+    outline: none;
+  }
+  /* line 193, ../scss/components/_contacto.scss */
+  main .contacto__actions {
+    text-align: center;
+    width: 40%;
+    padding: 0 auto 10px auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1140px) {
+  /* line 205, ../scss/components/_contacto.scss */
+  main .contacto {
+    margin-bottom: 100px;
+  }
+  /* line 208, ../scss/components/_contacto.scss */
+  main .contacto .container-contacto .linea {
+    width: 77%;
+  }
+  /* line 212, ../scss/components/_contacto.scss */
+  main .contacto__title {
+    font-size: 5rem;
+  }
+  /* line 215, ../scss/components/_contacto.scss */
+  main .contacto__image {
+    height: 590px;
+  }
+  /* line 218, ../scss/components/_contacto.scss */
+  main .contacto__form {
+    height: 500px;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    width: 534px;
+  }
+  /* line 226, ../scss/components/_contacto.scss */
+  main .contacto__link {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+  }
+  /* line 231, ../scss/components/_contacto.scss */
+  main .contacto__header {
+    line-height: 40px;
+    padding: 20px;
+  }
+  /* line 234, ../scss/components/_contacto.scss */
+  main .contacto__header h2 {
+    font-size: 4rem;
+    margin: 10px auto 10px auto;
+  }
+  /* line 238, ../scss/components/_contacto.scss */
+  main .contacto__header a {
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  /* line 244, ../scss/components/_contacto.scss */
+  main .contacto__group {
+    display: block;
+    margin: 10px auto 0 auto;
+    text-align: left;
+    width: 77%;
+  }
+  /* line 249, ../scss/components/_contacto.scss */
+  main .contacto__group label {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+  }
+  /* line 253, ../scss/components/_contacto.scss */
+  main .contacto__group input {
+    border: none;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif;
+    height: 30px;
+    margin: 0 auto 10px auto;
+    width: 100%;
+  }
+  /* line 260, ../scss/components/_contacto.scss */
+  main .contacto__group input:focus {
+    cursor: pointer;
+    outline: none;
+  }
+  /* line 265, ../scss/components/_contacto.scss */
+  main .contacto__group textarea {
+    border: none;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif;
+    height: 75px;
+    width: 100%;
+  }
+  /* line 271, ../scss/components/_contacto.scss */
+  main .contacto__group textarea:focus {
+    cursor: pointer;
+    outline: none;
+  }
+  /* line 277, ../scss/components/_contacto.scss */
+  main .contacto__actions {
+    text-align: center;
+    width: 40%;
+    margin-top: 10px;
+    padding: 0 auto 10px auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

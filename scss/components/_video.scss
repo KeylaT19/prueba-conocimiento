@@ -1,0 +1,109 @@
+main{
+    .title-section{
+        @extend %title;
+    }
+    .experience{
+        top: 20px;
+        text-align: center;
+        &__group{
+            margin-bottom:map-get($sizes,medium);
+        }  
+        &__description{
+            font-weight: 500;
+            padding: 20px;
+            text-align: justify;
+        }
+        &__link{
+            margin-top: -20px;
+        }
+    }    
+} 
+@include mq-min(ss){
+    main{
+        .experience{
+            top: 20px;
+            text-align: center;
+            &__group{
+                margin-bottom:map-get($sizes,medium);
+            }  
+            &__description{
+                font-weight: 500;
+                padding: 20px;
+                text-align: justify;
+            }
+            &__link{
+                margin-top: -20px;
+            }
+            
+            &__media{
+                video{
+                    height:178.32px;
+                    width:380.36px;
+                }  
+            }
+        }    
+    } 
+}
+@include mq-min(md){
+   main{
+        .experience{
+            display:flex;
+            justify-content: space-evenly;
+            &__group{
+                width: 95%;
+                
+            }
+            &__description{
+                font-weight: 500;
+                padding: 50px;
+                text-align: justify;
+            }
+        }
+    }
+}
+@include mq-min(lg){
+    main{
+        .experience{
+            display:flex;
+            justify-content: flex-end;
+            &__group{
+                width: 85%;
+            }
+            &__description{
+                font-weight: 500;
+                padding: 50px;
+                text-align: justify;
+            }
+            &__media{
+                video{
+                    height:320px;
+                    width:510px;
+                }  
+            }
+        }
+    }    
+}
+@include mq-min(xl){
+    main{
+        .experience{
+            display:flex;
+            &__group{
+               margin-left: -60px;
+                width: 95%;
+            }
+            &__description{
+                font-weight: 500;
+                padding: 50px;
+                text-align: justify;
+            }
+            &__media{
+                video{
+                    height:320px;
+                    width:650px;
+                    margin-bottom: -40px;
+                }  
+            }
+        }
+    }    
+}
+

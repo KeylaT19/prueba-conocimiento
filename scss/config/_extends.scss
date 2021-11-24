@@ -1,0 +1,54 @@
+%title{
+    font-family: $font-primary ;
+    font-size: map-get($sizes,thumb);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+}
+%subtitle{
+    font-family: $font-primary ;
+    font-size: map-get($sizes,thumb);
+    margin-top: 20px;
+    text-align: center;
+}
+@include mq-min(ss){
+    %title{
+        font-family: $font-primary ;
+        font-size: 2rem;
+        margin-bottom: 20px;
+      
+    }
+    %subtitle{
+        font-family: $font-primary ;
+        font-size: 2rem;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+@include mq-min(md){
+    %title{
+        font-family: $font-primary ;
+        font-size: map-get($sizes,half);
+        margin-bottom: 20px;
+      
+    }
+    %subtitle{
+        font-family: $font-primary ;
+        font-size: map-get($sizes,thumb);
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+@include mq-min(lg){
+    %title{
+        font-family: $font-primary ;
+        font-size: map-get($sizes,slarge);
+        margin-bottom: 20px;
+    }
+    %subtitle{
+        font-family: $font-primary ;
+        font-size: map-get($sizes,half);
+        margin-top: 20px;
+        text-align: center;
+    }
+}
