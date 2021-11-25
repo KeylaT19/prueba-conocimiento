@@ -1,41 +1,76 @@
-.feed{
-    background-color: color(grayscale,gray-2);
-    text-align: center;
-    .subtitle-section{
-        @extend %subtitle
-    }
-    &__card{
-        display: flex;
-        padding: 15px;
-        img{
-            width: 15rem;
+.experience{
+    .feed{
+        background-color: color(grayscale,gray-2);
+        text-align: center;
+        .subtitle-section{
+            @extend %subtitle
+        }
+        .linea {
+            border-top: 3px solid white;
+            height: 5px;
+            padding: 0;
+            width: 90%;
+            margin: 10px auto 10px auto;
+          }
+        &__card{
+            display: flex;
+            padding: 15px;
+        }
+        
+        &__description{
+            background-color:color(grayscale,white);
+            margin-bottom: 6px;
+            p{  
+                font-weight: 600;
+                margin-top: 25%;
+            }
+        }
+        &__image{
+            width: 10rem;
+        } 
+        &__cantidad{
+            background-color:color(complementary,seven);
+            margin-bottom: 6px;
+            position: relative;
+            text-align: left;
+            width: 6rem;
+            p{
+                font-size:4rem;
+                font-weight: 600;
+                padding: 20px 10px 0px 10px;
+            } 
         }
     }
-    
-    &__description{
-        background-color:color(grayscale,white);
-        margin-bottom: 6px;
-        p{  
-            font-weight: 600;
-            margin-top: 25%;
-        }
-    }
-
 }
 @include mq-min(s){
-    .feed{
-        &__image{
-            width: 20rem;
-        }    
+    .experience{
+        .feed{
+            &__image{
+                width: 15rem;
+            }    
+            &__cantidad{
+                background-color:color(complementary,seven);
+                margin-bottom: 6px;
+                position: relative;
+                text-align: left;
+                width: 6rem;
+                p{
+                    font-size:5rem;
+                    font-weight: 600;
+                    padding: 30px 10px 0px 10px;
+                } 
+            } 
+        }
     }
 }
 @include mq-min(sm){
-    .feed{
-        &__image{
-            width: 30rem;
-        }   
+    .experience{
+        .feed{
+            &__image{
+                width: 20rem;
+            }  
+        }
     }
-    
 }
 @include mq-min(md){
     .feed{
@@ -52,6 +87,7 @@
         &__description{
             background-color:color(grayscale,white);
             margin-bottom: 6px;
+            text-align: center;
         }
 
     }

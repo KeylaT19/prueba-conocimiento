@@ -185,7 +185,7 @@ main .title-section {
 }
 
 /* line 8, ../scss/config/_extends.scss */
-.feed .subtitle-section, main .awards__card .card-title {
+.experience .feed .subtitle-section, main .awards__card .card-title {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   margin-top: 20px;
@@ -201,7 +201,7 @@ main .title-section {
   }
 
   /* line 21, ../scss/config/_extends.scss */
-  .feed .subtitle-section, main .awards__card .card-title {
+  .experience .feed .subtitle-section, main .awards__card .card-title {
     font-family: "Raleway", sans-serif;
     font-size: 2rem;
     margin-top: 20px;
@@ -217,7 +217,7 @@ main .title-section {
   }
 
   /* line 35, ../scss/config/_extends.scss */
-  .feed .subtitle-section, main .awards__card .card-title {
+  .experience .feed .subtitle-section, main .awards__card .card-title {
     font-family: "Raleway", sans-serif;
     font-size: 2rem;
     margin-top: 20px;
@@ -233,7 +233,7 @@ main .title-section {
   }
 
   /* line 48, ../scss/config/_extends.scss */
-  .feed .subtitle-section, main .awards__card .card-title {
+  .experience .feed .subtitle-section, main .awards__card .card-title {
     font-family: "Raleway", sans-serif;
     font-size: 2.4rem;
     margin-top: 20px;
@@ -1461,6 +1461,51 @@ header nav .mostrar {
     width: 65%;
   }
 }
+@media (min-width: 1440px) {
+  /* line 164, ../scss/components/_header.scss */
+  header {
+    left: 0%;
+    top: 0%;
+  }
+  /* line 167, ../scss/components/_header.scss */
+  header .nav {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+  /* line 171, ../scss/components/_header.scss */
+  header .nav .navbar {
+    display: none;
+  }
+  /* line 174, ../scss/components/_header.scss */
+  header .nav .logo {
+    visibility: visible;
+    height: 107px;
+    width: 108px;
+    margin-left: 30px;
+  }
+  /* line 180, ../scss/components/_header.scss */
+  header .nav .nav__menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 0;
+    margin-top: 5px;
+    position: absolute;
+    right: 1px;
+    height: 80%;
+    width: 65%;
+  }
+  /* line 190, ../scss/components/_header.scss */
+  header .nav__item {
+    font-size: 2.1rem;
+    margin-top: 20px;
+    text-align: center;
+  }
+  /* line 194, ../scss/components/_header.scss */
+  header .nav__item span {
+    font-size: 2.1rem;
+  }
+}
 /* line 1, ../scss/components/_footer.scss */
 footer {
   background-color: #132A13;
@@ -1613,89 +1658,126 @@ footer .footer__bottom {
     width: 100%;
   }
 }
-/* line 1, ../scss/components/_aside.scss */
-.feed {
+/* line 2, ../scss/components/_aside.scss */
+.experience .feed {
   background-color: #eeeeee;
   text-align: center;
 }
-/* line 7, ../scss/components/_aside.scss */
-.feed__card {
+/* line 8, ../scss/components/_aside.scss */
+.experience .feed .linea {
+  border-top: 3px solid white;
+  height: 5px;
+  padding: 0;
+  width: 90%;
+  margin: 10px auto 10px auto;
+}
+/* line 15, ../scss/components/_aside.scss */
+.experience .feed__card {
   display: flex;
   padding: 15px;
 }
-/* line 10, ../scss/components/_aside.scss */
-.feed__card img {
-  width: 15rem;
-}
-/* line 15, ../scss/components/_aside.scss */
-.feed__description {
+/* line 20, ../scss/components/_aside.scss */
+.experience .feed__description {
   background-color: #ffffff;
   margin-bottom: 6px;
 }
-/* line 18, ../scss/components/_aside.scss */
-.feed__description p {
+/* line 23, ../scss/components/_aside.scss */
+.experience .feed__description p {
   font-weight: 600;
   margin-top: 25%;
 }
+/* line 28, ../scss/components/_aside.scss */
+.experience .feed__image {
+  width: 10rem;
+}
+/* line 31, ../scss/components/_aside.scss */
+.experience .feed__cantidad {
+  background-color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 6px;
+  position: relative;
+  text-align: left;
+  width: 6rem;
+}
+/* line 37, ../scss/components/_aside.scss */
+.experience .feed__cantidad p {
+  font-size: 4rem;
+  font-weight: 600;
+  padding: 20px 10px 0px 10px;
+}
 
 @media (min-width: 360px) {
-  /* line 27, ../scss/components/_aside.scss */
-  .feed__image {
-    width: 20rem;
+  /* line 48, ../scss/components/_aside.scss */
+  .experience .feed__image {
+    width: 15rem;
+  }
+  /* line 51, ../scss/components/_aside.scss */
+  .experience .feed__cantidad {
+    background-color: rgba(255, 255, 255, 0.72);
+    margin-bottom: 6px;
+    position: relative;
+    text-align: left;
+    width: 6rem;
+  }
+  /* line 57, ../scss/components/_aside.scss */
+  .experience .feed__cantidad p {
+    font-size: 5rem;
+    font-weight: 600;
+    padding: 30px 10px 0px 10px;
   }
 }
 @media (min-width: 540px) {
-  /* line 34, ../scss/components/_aside.scss */
-  .feed__image {
-    width: 30rem;
+  /* line 69, ../scss/components/_aside.scss */
+  .experience .feed__image {
+    width: 20rem;
   }
 }
 @media (min-width: 720px) {
-  /* line 41, ../scss/components/_aside.scss */
+  /* line 76, ../scss/components/_aside.scss */
   .feed {
     text-align: center;
     margin-bottom: 30px;
   }
-  /* line 44, ../scss/components/_aside.scss */
+  /* line 79, ../scss/components/_aside.scss */
   .feed__card {
     display: flex;
     padding: 10px;
     margin-bottom: -5px;
   }
-  /* line 49, ../scss/components/_aside.scss */
+  /* line 84, ../scss/components/_aside.scss */
   .feed__image {
     width: 20rem;
   }
-  /* line 52, ../scss/components/_aside.scss */
+  /* line 87, ../scss/components/_aside.scss */
   .feed__description {
     background-color: #ffffff;
     margin-bottom: 6px;
+    text-align: center;
   }
 }
 @media (min-width: 960px) {
-  /* line 60, ../scss/components/_aside.scss */
+  /* line 96, ../scss/components/_aside.scss */
   .feed {
     margin-bottom: 150px;
     text-align: center;
     justify-content: flex-end;
   }
-  /* line 64, ../scss/components/_aside.scss */
+  /* line 100, ../scss/components/_aside.scss */
   .feed__card {
     display: flex;
     padding: 15px;
   }
-  /* line 68, ../scss/components/_aside.scss */
+  /* line 104, ../scss/components/_aside.scss */
   .feed__image {
     width: 20rem;
   }
-  /* line 71, ../scss/components/_aside.scss */
+  /* line 107, ../scss/components/_aside.scss */
   .feed__description {
     background-color: #ffffff;
     margin-bottom: 6px;
   }
 }
 @media (min-width: 1140px) {
-  /* line 78, ../scss/components/_aside.scss */
+  /* line 114, ../scss/components/_aside.scss */
   .feed {
     margin-left: 100px;
     margin-right: -5%;
@@ -2257,33 +2339,70 @@ main .slider__description span {
     width: 100%;
     height: 100%;
   }
-  /* line 102, ../scss/components/_slider.scss */
+  /* line 101, ../scss/components/_slider.scss */
+  main .slider__description {
+    height: 320px;
+    line-height: 40px;
+    margin-top: -290px;
+    text-align: center;
+    width: 100%;
+  }
+  /* line 107, ../scss/components/_slider.scss */
   main .slider__description .titulo-slider {
     margin-bottom: 20px;
   }
 }
 @media (min-width: 1140px) {
-  /* line 111, ../scss/components/_slider.scss */
+  /* line 116, ../scss/components/_slider.scss */
   main {
     margin-top: -100px;
   }
-  /* line 115, ../scss/components/_slider.scss */
+  /* line 120, ../scss/components/_slider.scss */
   main .slider__item img {
     width: 100%;
     height: 70vh;
   }
-  /* line 121, ../scss/components/_slider.scss */
+  /* line 126, ../scss/components/_slider.scss */
   main .slider__description .titulo-slider {
     font-size: 5.6rem;
   }
-  /* line 124, ../scss/components/_slider.scss */
+  /* line 129, ../scss/components/_slider.scss */
   main .slider__description p {
     font-size: 2.4rem;
     font-weight: 600;
   }
-  /* line 128, ../scss/components/_slider.scss */
+  /* line 133, ../scss/components/_slider.scss */
   main .slider__description span {
     font-size: 3.6rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1440px) {
+  /* line 142, ../scss/components/_slider.scss */
+  main {
+    margin-top: -130px;
+  }
+  /* line 146, ../scss/components/_slider.scss */
+  main .slider__item img {
+    width: 100%;
+    height: 70vh;
+  }
+  /* line 151, ../scss/components/_slider.scss */
+  main .slider__description {
+    line-height: 40px;
+  }
+  /* line 153, ../scss/components/_slider.scss */
+  main .slider__description .titulo-slider {
+    font-size: 6rem;
+  }
+  /* line 156, ../scss/components/_slider.scss */
+  main .slider__description p {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  /* line 160, ../scss/components/_slider.scss */
+  main .slider__description span {
+    font-size: 4.5rem;
     font-weight: 700;
   }
 }
@@ -2360,35 +2479,35 @@ main .experience__link {
   main .experience__group {
     width: 85%;
   }
-  /* line 72, ../scss/components/_video.scss */
+  /* line 73, ../scss/components/_video.scss */
   main .experience__description {
     font-weight: 500;
     padding: 50px;
     text-align: justify;
   }
-  /* line 78, ../scss/components/_video.scss */
+  /* line 79, ../scss/components/_video.scss */
   main .experience__media video {
     height: 320px;
     width: 510px;
   }
 }
 @media (min-width: 1140px) {
-  /* line 88, ../scss/components/_video.scss */
+  /* line 89, ../scss/components/_video.scss */
   main .experience {
     display: flex;
   }
-  /* line 90, ../scss/components/_video.scss */
+  /* line 91, ../scss/components/_video.scss */
   main .experience__group {
     margin-left: -60px;
-    width: 95%;
+    width: 110%;
   }
-  /* line 94, ../scss/components/_video.scss */
+  /* line 95, ../scss/components/_video.scss */
   main .experience__description {
     font-weight: 500;
     padding: 50px;
     text-align: justify;
   }
-  /* line 100, ../scss/components/_video.scss */
+  /* line 101, ../scss/components/_video.scss */
   main .experience__media video {
     height: 320px;
     width: 650px;

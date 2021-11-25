@@ -68,6 +68,7 @@ main{
             justify-content: flex-end;
             &__group{
                 width: 85%;
+                
             }
             &__description{
                 font-weight: 500;
@@ -82,14 +83,14 @@ main{
             }
         }
     }    
-}
+} 
 @include mq-min(xl){
     main{
         .experience{
             display:flex;
             &__group{
                margin-left: -60px;
-                width: 95%;
+                width: 110%;
             }
             &__description{
                 font-weight: 500;
