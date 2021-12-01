@@ -1,5 +1,4 @@
 %title{
-    font-family: $font-primary ;
     font-size: map-get($sizes,base);
     text-align: center;
     
@@ -15,14 +14,7 @@
 @include mq-min(ss){
     %title{
         font-size: map-get($sizes,half);
-        font-size: 600;
 
-    }
-}
-@include mq-min(md){
-    %title{
-        font-size: map-get($sizes,half);
-        padding: 0px 0 0px 0px;
     }
 }
 @include mq-min(lg){

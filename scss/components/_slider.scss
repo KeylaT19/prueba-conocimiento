@@ -31,16 +31,10 @@ main{
 @include mq-min(ss){
     main{
         .slider{
-            &__item{
-                color:color(grayscale,white);
-                z-index: 10;
-            }
-            
             &__description{
                 height:165.5px;
                 line-height: 33px;
                 top:43.5%;
-                text-align: center;
                 .titulo-slider{
                     font-size:3rem;
                 }
@@ -78,9 +72,6 @@ main{
     main{
         margin-top: -100px;
         .slider{
-            &__item{
-                color: color(grayscale,white);
-            }
             &__image{
                 margin-top: 0;
                 height: 100%;
@@ -88,7 +79,6 @@ main{
             &__description{
                 line-height: 40px;
                 top: 50%;
-                text-align: center;
                 .titulo-slider{
                     font-size: 4rem;
                 }

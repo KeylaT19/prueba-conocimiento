@@ -215,8 +215,9 @@ main{
             &__link{
                 a{
                     font-size: 1.4rem;
-                    top:5%;
                     left: 84%;
+                    top:5%;
+                    width: 10rem;
                 }
             }
             &__description{
@@ -244,7 +245,7 @@ main{
                     display: flex;
                     font-size: 3rem;
                     font-weight: 700;
-                    height: 100%;  
+                    height: 300px;  
                     justify-content: center;
                     left: 0;
                     position: absolute;
@@ -306,7 +307,7 @@ main{
             &__group{
                 padding-bottom: 34px;
                 &::before{
-                    height: 259px; 
+                    height: 326px; 
                     width: 314.5px; 
                     left: 6px;
                 }
