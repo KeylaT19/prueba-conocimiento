@@ -1,15 +1,8 @@
 header{
     z-index: 2;
-    width: 100%;
-    a{
-        display: inline-block;
-        color:color(grayscale,black);
-        font-weight: 600;
-    }
-    nav{
-        padding: 1rem 2rem 0 1rem;
-        margin-left: -10px;
-        width:110%;
+    .nav{
+        position: fixed;
+        width:100%;
         .logo{
           visibility: hidden;
         }
@@ -19,51 +12,52 @@ header{
             display: block;
             font-size: map-get($sizes,base);
             font-weight: 600;
-            margin-top: -100px;
-            padding: 20px;
-            position: relative;
+            padding: 16px 16px 13px 25px;
+            position: absolute;
+            top: 0;
+            width:100%;
             i{
-                font-size: 3rem;
-                margin-top:-5px;
+                font-size: 2.4rem;
                 position:absolute;
+                right: 30px;
                 text-align: center;;
-                right: 40px;
+                top: 25%;
             }
         }
-        .nav__menu, .nav__dropdown{
+        &__menu, &__dropdown{
             list-style: none;
             padding:0;
             margin:0;
         }
-        .nav__menu{
+        &__menu{
             background-color:color(complementary,one);
             width: 100%;
             margin-left: -105%;
             transition: all 0.5s;
-            .nav__item{
-                span{
-                    font-size: 1.5rem;
-                }
+            position: absolute;
+            top: 62.45%;
+        }
+        &__item{
+            span{
+                font-size: 1.5rem;
             }
-            .nav__link{
-                color: color(grayscale,white);
-                display: block;
-                font-size: 1em;
-                padding: 10px 20px;
-                text-decoration: none;
-               
-            }
-            .nav__dropdown .nav__link{
+        }
+        &__link{
+            color: color(grayscale,white);
+            display: block;
+            font-size:map-get($sizes,small );
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        &__dropdown{
+            height: 0;
+            overflow: hidden;
+            transition: all 0.3s;
+            &-item{
                 background-color:color(complementary,two);
                 padding-left: 40px;
             }
-            .nav__dropdown{
-                height: 0;
-                overflow: hidden;
-                transition: all 0.3s;
-            }
         }
-        
         .mostrar{
             margin-left:0;
         }  
@@ -74,17 +68,13 @@ header{
         width:100%;
     }
 }
-@include mq-min(md){
-    .navbar{
-        width:95%;
-    }
-}
 @include mq-min(lg){
     header{
-        left: 0%;
-        top:0%;
+        left: 0;
+        top:0;
         .nav{
             display: flex;
+            height: 10rem;
             position: relative;
             width: 100%;
             .navbar{
@@ -92,43 +82,49 @@ header{
             }
             .logo{
                 visibility: visible;
+                position: absolute;
+                top: 10%;
+                left: 3%;
             }
-            .nav__menu{
+            &__menu{
                 background-color: transparent;
                 display: flex;
                 justify-content: space-evenly;
                 margin-left: 0;
-                margin-top: 5px;
                 position: absolute;
                 right: 1px;
-                width: 80%;
-
-                .container__submenu{
+                top:40%;
+                width: 85%;
+                .container-submenu{
                     position: relative;
                    }
-                .nav__dropdown .nav__link{
-                    background-color: color(complementary,four);
-                    padding-left: 20px;
-                    &:hover{
-                        background-color:color(complementary,three);
-                    }
-                }
-                .nav__dropdown{
-                    margin-top: -20px;
-                    margin-left: -50px;
-                    overflow: visible;
-                    opacity: 1;
-                    position: absolute;
-                    top: 60px;
-                    visibility: hidden;
-                    width: 200px;
-                }
-               .container__submenu:hover .nav__dropdown{
+               .container-submenu:hover .nav__dropdown{
                    opacity: 1;
                    visibility: visible;
                }
             }
-            
+            &__link{
+                font-size:map-get($sizes,thumb);
+            }
+            &__dropdown {
+                margin-top: -20px;
+                margin-left: -50px;
+                overflow: visible;
+                opacity: 1;
+                position: absolute;
+                top: 60px;
+                visibility: hidden;
+                width: 200px;
+                &-item{
+                    background-color: color(complementary,four);
+                    font-size: 20px;
+                    padding-left: 20px;
+                    text-align: left;
+                    &:hover{
+                        background-color:color(complementary,three);
+                    }
+                }
+            }
         }
     }
 }
@@ -144,13 +140,14 @@ header{
                 display: none;
             }
             .logo{
-                visibility: visible;
+                left: 2%;
+                position: absolute;
+                top: 10%;
             }
-            .nav__menu{
+            &__menu{
                 background-color: transparent;
                 display: flex;
                 justify-content: space-evenly;
-                margin-left: 0;
                 margin-top: 5px;
                 position: absolute;
                 right: 1px;
@@ -165,32 +162,29 @@ header{
         left: 0%;
         top:0%;
         .nav{
-            display: flex;
             position: relative;
             width: 100%;
             .navbar{
                 display: none;
             }
             .logo{
-                visibility: visible;
                 height:107px;
+                top: 7%;
+                visibility: visible;
                 width:108px;
-                margin-left: 30px;
             }
-            .nav__menu{
+            &__menu{
                 display: flex;
                 justify-content: space-evenly;
-                margin-left: 0;
-                margin-top: 5px;
                 position: absolute;
-                right: 1px;
-                height: 80%;
-                width: 65%;
+                top:37%;
+                right: 4px;
+                height: 100%;
+                width: 65.1%;
+                text-align: left;
             }
             &__item {
                 font-size: 2.1rem;
-                margin-top: 20px;
-                text-align: center;
                 span{
                     font-size: 2.1rem;
                 }

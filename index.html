@@ -16,15 +16,11 @@
 </head>
 
 <body class="container-body">
-    <header class="header">
+    <header>
         <nav class="nav">
             <div class="nav__logo">
-                <picture>
-                    <source srcset="image/logo5.webp" type="image/webp">
-                    <img class="logo" src="image/logo5.png" data-scr="image/logo5.png" width="80" height="80"
+                    <img class="logo" src="image/logo7.png" data-scr="image/logo5.png" width="80" height="80"
                         alt="logo Tour Ecuador">
-                </picture>
-
                 <span class="navbar" id="btnmenu">Tour Ecuador<i class="icon-menu"></i></span>
             </div>
             <ul class="nav__menu" id="menu">
@@ -34,14 +30,14 @@
                 <li class="nav__item">
                     <a class="nav__link" href="#">Acerca de Nosotros <span class="icon-group1"></span></a>
                 </li>
-                <li class="nav__item container__submenu">
+                <li class="nav__item container-submenu">
                     <a class="nav__link submenu" href="#"> Tours <span class="icon-chevron-small-down"></span></a>
                     <ul class="nav__dropdown ">
-                        <li class="dropdown__item"><a class="nav__link" href="#">Full Day</a></li>
-                        <li class="dropdown__item"><a class="nav__link" href="#">Tours a la Costa y Playas</a></li>
-                        <li class="dropdown__item"><a class="nav__link" href="#">Tours a la Siera y Andes</a></li>
-                        <li class="dropdown__item"><a class="nav__link" href="#">Tours a la Amazonía </a></li>
-                        <li class="dropdown__item"><a class="nav__link" href="#">Tours a las Islas Galápagos</a></li>
+                        <li class="nav__dropdown-item"><a class="nav__link" href="#">Full Day</a></li>
+                        <li class="nav__dropdown-item"><a class="nav__link" href="#">Tours a la Costa y Playas</a></li>
+                        <li class="nav__dropdown-item"><a class="nav__link" href="#">Tours a la Siera y Andes</a></li>
+                        <li class="nav__dropdown-item"><a class="nav__link" href="#">Tours a la Amazonía </a></li>
+                        <li class="nav__dropdown-item"><a class="nav__link" href="#">Tours a las Islas Galápagos</a></li>
                     </ul>
                 </li>
                 <li class="nav__item">
@@ -50,171 +46,172 @@
                 <li class="nav__item">
                     <a class="nav__link" href="#">Contactanos</a>
                 </li>
-                <li class="nav__item container__submenu ">
+                <li class="nav__item container-submenu ">
                     <a class="nav__link submenu login" id="submenu" href="#">Login <span
                             class="icon-person"></span></a>
                     <ul class="nav__dropdown">
-                        <li class="dropdown__item"><a class="nav__link" href="#">Iniciar Sesión</a></li>
-                        <li class="dropdown__item"></li><a class="nav__link" href="#">Registrate</a>
+                        <li class="nav__dropdown-item"><a class="nav__link" href="#">Iniciar Sesión</a></li>
+                        <li class="nav__dropdown-item"><a class="nav__link" href="#">Registrate</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="ai-center">
         <section class="slider">
             <div class="slider__item">
-                <picture>
-                    <source srcset="image/Foto-header.webp" type="image/webp">
-                    <img src="image/Foto-header.png" height="230" width="360" alt="Laguna de Quilatoa">
-                </picture>
                 <div class="slider__description">
                     <h2 class="titulo-slider">Laguna de Quilatoa</h2>
                     <div class="description">
-                        <p>Viaja Seguro en familia con <span>Tour Ecuador</span></p>
+                        <p>Viaja Seguro y en Familia con <span> Tour Ecuador</span></p>
                     </div>
                 </div>
+                <picture>
+                    <source srcset="image/Foto-header.webp" type="image/webp">
+                    <img class="slider__image" src="image/Foto-header.png" height="230" width="360" alt="Laguna de Quilatoa">
+                </picture>
             </div>
             <div class="slider__item">
-                <picture>
-                    <source srcset="image/Playas-header.webp" type="image/webp">
-                    <img src="image/Playas-header.png" height="230" width="360" class="d-block" alt="Playa la Libertad">
-                </picture>
                 <div class="slider__description">
                     <h2 class="titulo-slider">Playa la Libertad</h2>
                     <div class="description">
-                        <p>Viaja Seguro en familia con <span>Tour Ecuador</span></p>
+                        <p>Viaja Seguro y en Familia con <span> Tour Ecuador</span></p>
                     </div>
                 </div>
+                <picture>
+                    <source srcset="image/Playas-header.webp" type="image/webp">
+                    <img class="slider__image" src="image/Playas-header.png" height="230" width="360" alt="Playa la Libertad">
+                </picture>
             </div>
             <div class="slider__item">
-                <picture>
-                    <source srcset="image/yasuni.webp" type="image/webp">
-                    <img src="image/yasuni.png" height="230" width="360" class="d-block " alt="Parque Nacional Yasuní">
-                </picture>
                 <div class="slider__description">
                     <h2 class="titulo-slider">Parque Nacional Yasuní</h2>
                     <div class="description">
-                        <p>Viaja Seguro en familia con <span>Tour Ecuador</span></p>
+                        <p>Viaja Seguro y en Familia con <span> Tour Ecuador</span></p>
                     </div>
                 </div>
+                <picture>
+                    <source srcset="image/yasuni.webp" type="image/webp">
+                    <img class="slider__image" src="image/yasuni.png" height="230" width="360" alt="Parque Nacional Yasuní">
+                </picture>
             </div>
             <div class="slider__item">
-                <picture>
-                    <source srcset="image/isla-lobos.webp" type="image/webp">
-                    <img src="image/isla-lobos.png" height="230" width="360" class="d-block " alt="Isla Lobos">
-                </picture>
                 <div class="slider__description">
                     <h2 class="titulo-slider">Isla Lobos</h2>
                     <div class="description">
-                        <p>Viaja Seguro en familia con <span>Tour Ecuador</span></p>
+                        <p>Viaja Seguro y en Familia con <span> Tour Ecuador</span></p>
                     </div>
                 </div>
+                <picture>
+                    <source srcset="image/isla-lobos.webp" type="image/webp">
+                    <img class="slider__image" src="image/isla-lobos.png" height="230" width="360"  alt="Isla Lobos">
+                </picture>
+                
             </div>
         </section>
-        <section class="experience container">
-            <div class="experience__group">
+        <section class=" container-principal d-md-flex">
+            <div class="block-video">
                 <h2 class="title-section">Te Ofrecemos la Mejor Experiencia</h2>
-                <div class="experience__media">
+                <div class="block-video__media">
                     <video controls width="300" height="200" preload="none" poster="image/tren.jpg">
                         <source src="image/video-galapagos.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="experience__description">
+                <div class="block-video__description">
                     <p>Somos una empresa especializada en turismo que inicio sus actividades en la
                          cuidad de Guayaquil,en el 2016 y hasta la actualidad seguimos brindando 
                          servicios turísticos de una manera responsable, amable y segura,
                         alentando la unión familiar.</p>
                 </div>
-                <div class="experience__link">
+                <div class="block-video__link">
                     <a class=" btn btn-secondary small" href="#">Más Información<span
                             class="icon-chevron-right"></span></a>
                 </div>
             </div>
-            <aside class="feed">
-                <h3 class="subtitle-section">Publicaciones Favoritas</h3>
+            <aside class="block-aside">
+                <h3 class="block-aside__title">Publicaciones Favoritas</h3>
                 <div class="linea"></div>
-                <div class="feed__card">
-                    <div class="feed__cantidad">
+                <div class="block-aside__card">
+                    <div class="block-aside__cantidad">
                         <p>1</p>
                     </div>
                     <picture>
                         <source srcset="image/hoteles.webp" type="image/webp">
-                        <img class="feed__image" src="image/hoteles.png" width="199" height="150"
+                        <img class="block-aside__image" src="image/hoteles.png" width="199" height="150"
                          alt="Mejores hoteles de Ecuador">
                     </picture>
                     
-                    <div class="feed__description">
+                    <div class="block-aside__description">
                         <p>Los mejores hoteles de Ecuador</p>
                     </div>
                 </div>
-                <div class="feed__card">
-                    <div class="feed__cantidad">
+                <div class="block-aside__card">
+                    <div class="block-aside__cantidad">
                         <p>2</p>
                     </div>
                     <picture>
                         <source srcset="image/lugares-turisticos.webp" type="image/webp">
-                        <img class="feed__image" src="image/lugares-turisticos.png" width="199" 
+                        <img class="block-aside__image" src="image/lugares-turisticos.png" width="199" 
                         height="150" alt="Lugares turisticos">
                     </picture>
-                    <div class="feed__description">
+                    <div class="block-aside__description">
                         <p>5 Lugares Turísticos más visitado de Ecuador</p>
                     </div>
                 </div>
-                <div class="feed__card">
-                    <div class="feed__cantidad">
+                <div class="block-aside__card">
+                    <div class="block-aside__cantidad">
                         <p>3</p>
                     </div>
                     <picture>
                         <source srcset="image/gastronomia.webp" type="image/webp">
-                        <img class="feed__image" src="image/gastronomia.png" width="199" 
+                        <img class="block-aside__image" src="image/gastronomia.png" width="199" 
                         height="150" alt="gastronomia de Ecuador">
                     </picture>
-                    <div class="feed__description">
+                    <div class="block-aside__description">
                         <p>Diversidad en la Economía de Ecuador</p>
                     </div>
                 </div>
             </aside>
         </section>
-        <section class="awards">
+        <section class="card">
             <h2 class="title-section">Gana premios junto a Tour Ecuador</h2>
-            <div class="awards-ecuador container">
-                <div class="awards__card">
+            <div class="card__awards container-principal">
+                <div class="card__group">
                     <picture>
                         <source srcset="image/registar.webp" type="image/webp">
-                        <img src="image/registar.png" width=" 200" height="200" class="awards__image" 
+                        <img src="image/registar.png" width=" 200" height="200" class="card__image" 
                         alt="registrarse">
                     </picture>
-                    <div class="card-body">
-                        <h4 class="card-title"><a href="#">Registrate</a></h4>
-                        <div class="card-text">
+                    <div class="card__body">
+                        <h4 class="card__title"><a href="#">Registrate</a></h4>
+                        <div class="card__text">
                             <p>Da clic en la opción de login, luego crea tu usuario y contraseña</p>
                         </div>
                     </div>
                 </div>
-                <div class="awards__card">
+                <div class="card__group">
                     <picture>
                         <source srcset="image/acumular-puntos.webp" type="image/webp">
-                        <img src="image/acumular-puntos.png" width="200" height="200" class="awards__image"
+                        <img src="image/acumular-puntos.png" width="200" height="200" class="card__image"
                             alt="Acumular puntos">
                     </picture>
-                    <div class="card-body">
-                        <h4 class="card-title"><a href="#">Acumular Puntos</a></h4>
-                        <div class="card-text">
-                            <p>Da clic en la opción de login, luego crea tu usuario y contraseña</p>
+                    <div class="card__body">
+                        <h4 class="card__title"><a href="#">Acumula Puntos</a></h4>
+                        <div class="card__text">
+                            <p>Por cada viaje, nuestra compañia te regalará puntos que se convierten en premios</p>
                         </div>
                     </div>
                 </div>
-                <div class="awards__card">
+                <div class="card__group">
                     <picture>
                         <source srcset="image/premios.webp" type="image/webp">
-                        <img class="awards__image" src="image/premios.png" width="200" height="200" 
+                        <img class="card__image" src="image/premios.png" width="200" height="200" 
                             alt="Listas de premios">
                     </picture>
-                    <div class="card-body">
-                        <h4 class="card-title"><a href="#">Escoge tu Premio</a></h4>
-                        <div class="card-text">
-                            <p>Da clic en la opción de login, luego crea tu usuario y contraseña</p>
+                    <div class="card__body">
+                        <h4 class="card__title"><a href="#">Escoge tu Premio</a></h4>
+                        <div class="card__text">
+                            <p>Puedes escoger un premio de acuerdo a tus puntos acumulados</p>
                         </div>
                     </div>
                 </div>
@@ -233,100 +230,100 @@
                     <h5>Has tus reservaciones con tiempo.</h5>
                 </div>
                 <div class="banner__link">
-                    <a class="btn btn-secondary" href="#">Haga clic aquí <span class="icon-chevron-right">
+                    <a class="btn btn-secondary " href="#">Haga clic aquí <span class="icon-chevron-right">
                     </span></a>
                 </div>
             </div>
         </section>
-        <section class="ecuador-places">
+        <section class="galery">
             <div class="container">
-                <div class="ecuador-places__top">
+                <div class="galery__top">
                     <h2 class="title-section">Lugares Turísticos de Ecuador</h2>
-                    <div class="ecuador-places__link">
-                        <a class="btn btn-secondary small" href="#">Ver más
+                    <div class="galery__link">
+                        <a class="btn btn-secondary" href="#">Ver más
                             <span class="icon-chevron-right"></span></a>
                     </div>
                                 </div>
-                <div class="ecuador-places__body grid">
-                    <div class="grid-6 grid-sm-4 grid-ss-4 grid-md-3">
+                <div class="galery__body grid">
+                    <div class="galery__group grid-6 grid-sm-4 grid-ss-4 grid-md-3">
                         <picture>
                             <source srcset="image/Leon-marino-de-Galapagos.webp" type="image/webp">
-                            <img class="ecuador-places__image" src="image/Leon-marino-de-Galapagos.jpg"
+                            <img class="galery__image" src="image/Leon-marino-de-Galapagos.jpg"
                              width="140" height="200" alt="Galápagos-Isla Isabel">
                         </picture>
-                        <div class="ecuador-places__description">
-                            <p>Galápagos-Isla Isabel</p>
+                        <div class="galery__description">
+                            <p>Galápagos-  Isla Isabel</p>
                         </div>
                     </div>
-                    <div class="grid-6 grid-sm-4 grid-ss-4 grid-md-3">
+                    <div class="galery__group grid-6 grid-sm-4 grid-ss-4 grid-md-3">
                         <picture>
                             <source srcset="image/baños.webp" type="image/webp">
-                            <img class="ecuador-places__image" src="image/baños.jpg" width="140"
+                            <img class="galery__image" src="image/baños.jpg" width="140"
                              height="200" alt="Ambato-Baños">
                         </picture>
-                        <div class="ecuador-places__description">
+                        <div class="galery__description">
                             <p>Ambato-Baños</p>
                         </div>
                     </div>
-                    <div class="grid-6 grid-sm-4  grid-ss-4 grid-md-3">
+                    <div class="galery__group grid-6 grid-sm-4  grid-ss-4 grid-md-3">
                         <picture>
                             <source srcset="image/montañita.webp" type="image/webp">
-                            <img class="ecuador-places__image" src="image/montañita.jpg" width="140"
+                            <img class="galery__image" src="image/montañita.jpg" width="140"
                              height="200" alt="Santa Elena- Montañita">
                         </picture>
-                        <div class="ecuador-places__description">
+                        <div class="galery__description">
                             <p>Santa Elena- Montañita</p>
                         </div>
                     </div>
-                    <div class="grid-6 grid-sm-4 grid-ss-4 grid-md-3">
-                        <picture>
-                            <source srcset="image/quito.webp" type="image/webp">
-                            <img class="ecuador-places__image" src="image/quito.jpg" 
-                            width="140" height="200" alt="Pichincha- Quito">
-                        </picture>
-                        <div class="ecuador-places__description">
-                            <p>Pichincha- Quito</p>
-                        </div>
-                    </div>
-                    <div class="grid-6 grid-sm-4 grid-ss-4 grid-md-3">
+                    <div class="galery__group grid-6 grid-sm-4 grid-ss-4 grid-md-3">
                         <picture>
                             <source srcset="image/Guayaquil.webp" type="image/webp">
-                            <img class="ecuador-places__image" src="image/Guayaquil.png" 
+                            <img class="galery__image" src="image/Guayaquil.png" 
                             width="140" height="200"
                                 alt="Guayas- Guayaquil">
                         </picture>
-                        <div class="ecuador-places__description">
+                        <div class="galery__description">
                             <p>Guayas- Guayaquil</p>
                         </div>
                     </div>
-                    <div class="grid-6 grid-sm-4 grid-ss-4 grid-md-3">
+                    <div class="galery__group grid-6 grid-sm-4 grid-ss-4 grid-md-3">
                         <picture>
                             <source srcset="image/Santa-elena.webp" type="image/webp">
-                            <img class="ecuador-places__image" src="image/Santa-elena.jpg"
+                            <img class="galery__image" src="image/Santa-elena.jpg"
                              width="140" height="200" alt="Santa Elena- Salinas">
                         </picture>
-                        <div class="ecuador-places__description">
+                        <div class="galery__description">
                             <p>Santa Elena- Salinas</p>
                         </div>
                     </div>
-                    <div class="grid-6 grid-sm-4 grid-ss-4 grid-md-3">
+                    <div class="galery__group grid-6 grid-sm-4 grid-ss-4 grid-md-3">
                         <picture>
                             <source srcset="image/Chimborazo.webp" type="image/webp">
-                            <img class="ecuador-places__image" src="image/Chimborazo.png"
+                            <img class="galery__image" src="image/Chimborazo.png"
                              width="140" height="200" alt="Chimborazo- Riobamba">
                         </picture>
-                        <div class="ecuador-places__description">
+                        <div class="galery__description">
                             <p>Chimborazo- Riobamba</p>
                         </div>
                     </div>
-                    <div class="grid-6 grid-sm-4 grid-ss-4 grid-md-3">
+                    <div class="galery__group grid-6 grid-sm-4 grid-ss-4 grid-md-3">
+                        <picture>
+                            <source srcset="image/quito.webp" type="image/webp">
+                            <img class="galery__image" src="image/quito.jpg" 
+                            width="140" height="200" alt="Pichincha- Quito">
+                        </picture>
+                        <div class="galery__description">
+                            <p>Pichincha- Quito</p>
+                        </div>
+                    </div>
+                    <div class="galery__group grid-6 grid-sm-4 grid-ss-4 grid-md-3">
                         <picture>
                             <source srcset="image/quilotoa.webp" type="image/webp">
-                            <img class="ecuador-places__image" src="image/quilotoa.jpg"
+                            <img class="galery__image" src="image/quilotoa.jpg"
                              width="140" height="200" alt="Santo Domingo- Quilotoa">
                         </picture>
-                        <div class="ecuador-places__description">
-                            <p>Santo Domingo- Quilotoa</p>
+                        <div class="galery__description">
+                            <p>Santo Domingo - Quilotoa</p>
                         </div>
                     </div>
                 </div>
@@ -345,11 +342,11 @@
                 </div>
                 <div class="contacto__form">
                     <div class="contacto__header">
-                        <h2>Contactanos</h2>
+                        <h2>CONTACTENOS</h2>
                         <ul>
                             <li class="contacto-item"><a href="https://wa.me/593968636340 " rel="nofollow noopener"
                                     target="_blank" title="WhatsApp">
-                                    <span class="icon-settings_phone"></span> (+593) 968636340</a></li>
+                                    <span class="icon-settings_phone"></span> (+593) 968636341</a></li>
                             <li class="contacto-item"><a href="mailto:tourecuardo@gmail.com" rel="nofollow noopener"
                                     target="_blank" title="Correo">
                                     <span class="icon-email"></span> tourecuardo@gmail.com</a></li>
@@ -361,8 +358,8 @@
                             <div class="contacto__group">
                                 <label for="name">Nombre:</label>
                                 <input type="text" placeholder="" id="name" name="user_name" 
-                                 value="Ingrese su Nombre">
-                                <label for="mail">Correo electrónico:</label>
+                                 value="Escriba su Nombre">
+                                <label for="mail">E-mail:</label>
                                 <input type="email" id="mail" name="user_email" value="Ingrese su Correo">
                                 <label for="msg">Mensaje:</label>
                                 <textarea id="msg" name="user_message">Escriba un Mensaje</textarea>
@@ -378,13 +375,10 @@
     </main>
     <footer class="footer">
         <section class="footer__left">
-            <picture>
-                <source srcset="image/logo5.webp" type="image/webp">
-                <img src="image/logo5.png" width="90" height="90" alt="logo Tour Ecuador">
-            </picture>
+                <img src="image/logo7.png" width="90" height="90" alt="logo Tour Ecuador">
             <div class="footer__left-redes">
                 <p> Siguenos en </p>
-                <nav class="nav-social">
+                <nav class="footer__social">
                     <a class="btn-facebook" aria-label="Ir a Facebook" rel="nofollow noopener" target="_blank"
                         href="https://www.facebook.com/Nivelics"><span class="icon-facebook1"></span></a>
                     <a class="btn-instagram" aria-label="Ir a Instagram" rel="nofollow noopener" target="_blank"
@@ -395,9 +389,9 @@
             </div>
         </section>
         <section class="footer__center">
-            <div class="block-servicios">
-                <div class="block-menu">
-                    <div class="block-submenu">
+            <div class="footer__servicios">
+                <div class="footer__menu">
+                    <div class="footer__submenu">
                         <ul>
                             <li><a href="#" aria-label="Acerca de Nosotros">Acerca de Nosotros</a></li>
                             <li><a href="#" aria-label="Blog">Blog</a></li>
@@ -409,27 +403,27 @@
                         <li><a href="#" aria-label="Ir a Registrarse">Registrarse</a></li>
                     </ul>
                 </div>
-                <div class="block-menu">
-                    <h2>Tour</h2>
+                <div class="footer__menu-tour">
+                    <h2>Tour en Ecuador</h2>
                     <ul>
                         <li><a href="#" aria-label="Ir a Full Day">Full Day</a></li>
-                        <li><a href="#" aria-label="Ir a Tours Costa">Tours Costa</a></li>
-                        <li><a href="#" aria-label="Ir a Tours Sierra">Tours Sierra</a></li>
-                        <li><a href="#" aria-label="Ir a Tours Amazonía">Tours Amazonía</a></li>
-                        <li><a href="#" aria-label="Ir a Tours Galápagos">Tours Galápagos</a></li>
+                        <li><a href="#" aria-label="Ir a Tours Costa">Costa</a></li>
+                        <li><a href="#" aria-label="Ir a Tours Sierra">Sierra</a></li>
+                        <li><a href="#" aria-label="Ir a Tours Amazonía">Amazonía</a></li>
+                        <li><a href="#" aria-label="Ir a Tours Galápagos">Galápagos</a></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="block-contacto">
+            <div class="footer__contacto">
                 <h2>Contactenos</h2>
-                <ul>
+                <ul class="footer__contacto-body">
                     <li><a href="https://wa.me/593968636340 " rel="nofollow noopener" class="btn-wsp"
-                        target="_blank" title="WhatsApp"><span class="icon-whatsapp"></span> (+593) 968636340</a></li>
+                        target="_blank" title="WhatsApp"><span class="icon-whatsapp"></span> (593) 968636341</a></li>
                     <li><a aria-label="Ir a Telegram" href="https://t.me/keylatriana" rel="nofollow noopener"
                             target="_blank"><span class="icon-paper-plane"></span>  TourEcuador</a></li>
                     <li><a href="mailto:tourecuardo@gmail.com" rel="nofollow noopener" target="_blank"
-                        title="Correo"><span class="icon-map-marker"></span>  tourecuardo@gmail.com</a></li>
+                        title="Correo"><span class="icon-map-marker"></span>  Alborada mz 234</a></li>
                 </ul>
             </div>
         </section>

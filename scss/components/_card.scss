@@ -1,78 +1,168 @@
 main{
-    .awards{
-        height: auto;
-        margin-bottom: 20px;
-        text-align: center;
-        &__card{
-            background-color:color(complementary,five);
+    .card{
+        .title-section{
+            @extend %title;
+            padding: 25px 30px 17px 30px;
+        }
+        &__group{
+            background-color:color(secondary,light);
             border-radius: 5px;
             line-height: 30px;
-            margin-bottom: 20px;
-            margin-left: auto; 
-            margin-right: auto;
+            margin: {
+                left: auto;
+                right: auto;
+                bottom: 32px;
+            }
             padding: 10px;
             text-align: center;
             width: 30rem;
-            .card-title{
-              @extend %subtitle;
-              a{
-                color:color(grayscale,black);
-                &:hover{
-                    color: color(complementary,three);
-                }
-              }
-            }
-            .card-text{
-               font-weight: 500
-            }
         }
         &__image{
             background-color: color(grayscale,white);
             border-radius: 5px;
             width: 25rem;
         }
+        &__title{
+            @extend %subtitle;
+            a{
+              color:color(grayscale,black);
+              &:hover{
+                  color: color(complementary,three);
+              }
+            }
+        }
+        &__text{
+            font-weight: 500;
+            p{
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+@include mq-min(ss){
+    main{
+        .card{
+            .title-section{
+                line-height: 28px;
+                width: 100%;
+            }
+            &__title{
+               padding: 0 0 0 11px;
+            }
+            &__image{
+                border-radius: 5px;
+                height: 214.48px;
+                width: 30rem;
+                padding: 38px 65px 28px 65px;
+            }
+            &__awards{
+                padding: 0 0px 10px 21px;
+            }
+            &__group{
+                height: 330px;
+                width: 330px;
+            }
+            &__text{
+                p{
+                    font-size: 1.4rem;
+                    line-height: 15px;
+                    padding:6px 0 0 13px;
+                }
+            }
+        }
     }
 }
 @include mq-min(md){
    main{
-        .awards-ecuador{
+        .card{
+            &__awards{
             display:flex ;
-            &__card{
-                border-radius: 5px;
-                line-height: 30px;
-                margin-bottom: 20px;
-                margin-left: auto; 
-                margin-right: auto;
-                padding: 10px;
-                text-align: center;
-                width: 23rem;
+            padding: 1px;
             }
             &__image{
-                background-color: white;
-                border-radius: 5px;
                 width: 20rem;
+                padding: 0px;
+            }
+            &__group{
+                width: 24rem;
             }
         }
    }
 }
 @include mq-min(lg){
     main{
-        .awards-ecuador{
-            display:flex ;
-            &__card{
-                border-radius: 5px;
-                line-height: 30px;
-                margin-bottom: 20px;
-                margin-left: auto; 
-                margin-right: auto;
-                padding: 10px;
-                text-align: center;
+        .card{
+            &__group{
                 width: 30rem;
             }
+        }
+    }
+}
+@include mq-min(xl){
+    main{
+        .card{
+            padding-bottom: 98px;
+            &__group{
+                height:500px;
+                margin-left: 35px;
+                padding-top: 20px;
+                width: 400px;
+            }
+            
+            .title-section{
+                padding: 50px 0px 40px 0px;
+            }
+            
             &__image{
-                background-color: white;
-                border-radius: 5px;
-                width: 25rem;
+                width: 30rem;
+                height:293px;
+                padding: 10px;
+            }
+            
+            &__title{
+                padding: 20px 0 0 11px;
+             }
+            &__text{
+                p{
+                    font-size: 1.7rem;
+                    line-height: 30px;
+                    padding:6px 10px 0 10px;
+                } 
+            }
+        }
+    }
+}
+@include mq-min(xxl){
+    main{
+        .card{
+            &__awards{
+                padding-left: 23px;
+            }
+            &__group{
+                height:592px;
+                padding: 20px 0 0 0px ;
+                width: 417px;
+            }
+            .title-section{
+                padding: 90px 0px 43px 40px;
+            }
+            &__image{
+                height:383.81px;
+                padding: 30px 6px 30px 10px;
+                width: 380.66px;
+            }
+            
+            &__title{
+                font-size: 3.5rem;
+                font-weight: 600;
+                padding: 18px 0 0 0px;
+             }
+            &__text{
+                p{
+                    font-size: 2rem;
+                    line-height: 26px;
+                    padding:12px 14px 0px 33px;
+                } 
             }
         }
     }

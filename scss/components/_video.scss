@@ -1,38 +1,40 @@
 main{
-    .title-section{
-        @extend %title;
-    }
-    .experience{
-        top: 20px;
-        text-align: center;
-        &__group{
-            margin-bottom:map-get($sizes,medium);
-        }  
+    .block-video{
+        .title-section{
+            @extend %title;
+            padding: 20px 0 0px 0px;
+        }
+        &__media{ 
+            text-align: center;
+        }
         &__description{
             font-weight: 500;
-            padding: 20px;
+            padding: 10px 20px 0px 20px;
             text-align: justify;
+            p{
+                font-size: 1.4rem;
+            }
         }
         &__link{
-            margin-top: -20px;
+            padding: 0px 20px 50px 20px;
+            text-align: center;
         }
     }    
 } 
 @include mq-min(ss){
     main{
-        .experience{
-            top: 20px;
-            text-align: center;
-            &__group{
-                margin-bottom:map-get($sizes,medium);
-            }  
+        .block-video{ 
+            .title-section{
+                padding: 17px 0px 10px 5px;
+            }
             &__description{
                 font-weight: 500;
-                padding: 20px;
+                padding: 5px 18px 0px 18px;
                 text-align: justify;
             }
             &__link{
-                margin-top: -20px;
+                padding: 0px 25px 22px 20px;
+                margin-top: -6px;
             }
             
             &__media{
@@ -46,16 +48,13 @@ main{
 }
 @include mq-min(md){
    main{
-        .experience{
-            display:flex;
+        .block-video{
             justify-content: space-evenly;
-            &__group{
-                width: 95%;
-                
-            }
+            padding: 20px;
+            width: 90%;
             &__description{
                 font-weight: 500;
-                padding: 50px;
+                padding: 0px;
                 text-align: justify;
             }
         }
@@ -63,16 +62,11 @@ main{
 }
 @include mq-min(lg){
     main{
-        .experience{
-            display:flex;
-            justify-content: flex-end;
-            &__group{
-                width: 85%;
-                
-            }
+        .block-video{
+            width: 93%;
             &__description{
                 font-weight: 500;
-                padding: 50px;
+                padding:10px;
                 text-align: justify;
             }
             &__media{
@@ -86,25 +80,56 @@ main{
 } 
 @include mq-min(xl){
     main{
-        .experience{
-            display:flex;
-            &__group{
-               margin-left: -60px;
-                width: 110%;
-            }
-            &__description{
-                font-weight: 500;
-                padding: 50px;
-                text-align: justify;
-            }
-            &__media{
-                video{
-                    height:320px;
-                    width:650px;
-                    margin-bottom: -40px;
-                }  
+        .container-principal{
+            padding-top: 40px;
+            padding-right: 40px;
+            .block-video{
+                width: 98%;
+                position: relative;
+                justify-content:center;
+                &__description{
+                    font-size: map-get($sizes,thumb);
+                    font-weight: 500;
+                    padding: 10px 90px 20px 90px;
+                    text-align: justify;
+                }
+                &__media{
+                    video{
+                        height:320px;
+                        width:650px;
+                    }  
+                }
             }
         }
+        
+    }    
+}
+@include mq-min(xxl){
+    main{
+        .container-principal{
+            .title-section{
+                padding: 0px 0 16px 0px;
+            }
+            .block-video{
+                &__description{
+                    padding: 13px 50px 20px 50px;
+                    text-align: justify;
+                    p{
+                        font-size: 2rem;
+                    }
+                }
+                &__media{
+                    video{
+                        height:383px;
+                        width:805px;
+                    }  
+                }
+                &__link{
+                    padding: 0px 25px 0px 20px;
+                }
+            }
+        }
+        
     }    
 }
 

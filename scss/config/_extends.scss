@@ -1,54 +1,48 @@
 %title{
     font-family: $font-primary ;
-    font-size: map-get($sizes,thumb);
-    margin-top: 30px;
-    margin-bottom: 20px;
+    font-size: map-get($sizes,base);
+    text-align: center;
     
 }
 %subtitle{
-    font-family: $font-primary ;
-    font-size: map-get($sizes,thumb);
-    margin-top: 20px;
-    text-align: center;
+    font-size:1.8rem;
+}
+@include mq-min(s){
+    %title{
+        font-size: map-get($sizes,thumb);
+    }
 }
 @include mq-min(ss){
     %title{
-        font-family: $font-primary ;
-        font-size: 2rem;
-        margin-bottom: 20px;
-      
-    }
-    %subtitle{
-        font-family: $font-primary ;
-        font-size: 2rem;
-        margin-top: 20px;
-        text-align: center;
+        font-size: map-get($sizes,half);
+        font-size: 600;
+
     }
 }
 @include mq-min(md){
     %title{
-        font-family: $font-primary ;
         font-size: map-get($sizes,half);
-        margin-bottom: 20px;
-      
-    }
-    %subtitle{
-        font-family: $font-primary ;
-        font-size: map-get($sizes,thumb);
-        margin-top: 20px;
-        text-align: center;
+        padding: 0px 0 0px 0px;
     }
 }
 @include mq-min(lg){
     %title{
-        font-family: $font-primary ;
-        font-size: map-get($sizes,slarge);
-        margin-bottom: 20px;
+        font-size: 3.4rem;
     }
     %subtitle{
-        font-family: $font-primary ;
         font-size: map-get($sizes,half);
-        margin-top: 20px;
-        text-align: center;
+    }
+}
+@include mq-min(xl){
+    %title{
+        font-size: 4rem;
+    }
+    %subtitle{
+        font-size: map-get($sizes,half);
+    }
+}
+@include mq-min(xxl){
+    %title{
+        font-size: 5rem;
     }
 }

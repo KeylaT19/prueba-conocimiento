@@ -1,7 +1,7 @@
 main{
     .contacto{
         color: color(grayscale,white);
-        margin-bottom: 30px;
+        margin-bottom: 26px;
         .container-contacto{
             display: block;
             flex-direction: column;
@@ -21,6 +21,10 @@ main{
             text-align: center;
             top: 3%;
             width: 100%;
+            p{
+                font-size: 2rem;
+                font-weight: 500;
+            }
         }
         &__title{
             font-size:3rem;
@@ -66,6 +70,8 @@ main{
                 border: none;
                 border-radius: 5px;
                 font-family: $font-primary;
+                font-size: map-get($sizes,tiny);
+                font-weight: 600;
                 height:30px;
                 margin: 0 auto 10px auto;
                 width: 100%;
@@ -78,7 +84,7 @@ main{
                 border: none;
                 border-radius: 5px;
                 font-family: $font-primary;
-                height:75px;
+                height:73.72px;
                 width: 100%;
                 &:focus { 
                     cursor: pointer;
@@ -88,90 +94,71 @@ main{
         }
         &__actions{
             text-align: center;
-            width: 40%;
+            width: 98px;
             padding: 0 auto 10px auto ;
             margin-left: auto;
             margin-right: auto;
         }
     }
 }
-@include mq-min(md){
+@include mq-min(ss){
     main{
         .contacto{
-            color: color(grayscale,white);
-            margin-bottom: 30px;
             .container-contacto{
-                display: flex;
-                position: relative;
-                text-align: center;
                 .linea {
-                    border-top: 1.5px solid black;
-                    height: 2px;
-                    padding: 0;
-                    width: 90%;
-                    margin: 0 auto 10px auto;
+                    margin: 5px auto 0 auto;
                   }
             }
             &__information{
-                padding: 20px;
-                position:absolute;
-                text-align: center;
-                top: 36%;
-                width: 50%;
-                p{
-                    font-size:2rem;
-                }
-            }
-            &__image{
-                width: 100%;
-            }
-            &__title{
-                font-size:3.5rem;
-                margin-bottom: 20px;
+                padding: 10px;
+                top: 0%;
             }
             &__form{
-                background-color:color(complementary,seven);
-                border-radius: 12px;
-                color: color(grayscale,black);
-                height: 440px;
-                left: 50%;
-                position: absolute;
-                text-align: center;
-                top: 13%;
-                width: 45%;
+                height: 451.14px;
+                left: 8.5%;
+                top: 16.5%;
+                width:359px;
             }
-            &__link{
-                position: absolute;
-                top: 70%;
-                width: 100%;
+            &__actions{
+                padding-top: 7px;
+                p{
+                    height:40px ;
+                    font-size: 1.6rem;
+                    padding: 0px;
+                }
             }
             &__header{
                 line-height: 30px;
-                padding: 20px;
                 h2{
-                    font-size: 2.5rem;
-                    margin-bottom: 10px;
+                    font-size: 2rem;
+                    padding: 8px 10px 0px 0;
                 }
                 a{
                     color: color(grayscale,black);
+                    font-size: 1.6rem;
                     font-weight: 600;
+                    padding: 10px 10px 0px 18px;
+                }
+                span{
+                    font-size: 2rem;
                 }
             }
             &__group{
                 display: block;
-                margin: 10px auto 0 auto;
+                margin: 5px auto 0 auto;
                 text-align: left;
                 width: 87%;
                 label {
-                    font-family: $font-primary;
-                    font-weight: 600;
+                    font-size: 1.6rem;
+                    padding: 10px 0 0 13px ;
                 }
                 input{
                     border: none;
                     border-radius: 5px;
-                    font-family: $font-primary;
+                    color: gray;
                     height:30px;
-                    margin: 0 auto 10px auto;
+                    margin: 0 auto 5px auto;
+                    padding: 18px 0px 18px 21px;
                     width: 100%;
                     &:focus { 
                         cursor: pointer;
@@ -179,23 +166,66 @@ main{
                      }
                 }
                 textarea{
-                    border: none;
-                    border-radius: 5px;
-                    font-family: $font-primary;
-                    height:75px;
-                    width: 100%;
-                    &:focus { 
-                        cursor: pointer;
-                        outline: none;
-                     }
+                    color: gray;
+                    font-size: map-get($sizes,tiny);
+                    font-weight: 600;
+                    padding: 5px 0px 18px 18px;
                 }
             }
+        }
+    }
+}
+@include mq-min(sm){
+    main{
+        .contacto{
+            &__form{
+                left:16%
+            }
+        }
+    }
+
+}
+@include mq-min(md){
+    main{
+        .contacto{
+            .container-contacto{
+                display: flex;
+            }
+            &__information{
+                top: 36%;
+                width: 50%;
+            }
+            &__image{
+                width: 100%;
+            }
+            &__title{
+                font-size:3.5rem;
+                padding-bottom: 20px;
+            }
+            &__form{
+                height: 480px;
+                left: 50%;
+                top: 10%;
+                width: 45%;
+            }
+            &__group{
+                label {
+                    font-family: $font-primary;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                }
+                input{
+                    font-size: 1.4rem;
+                }
+                textarea{
+                    height:75px;
+                }
+                
+            }
+            
             &__actions{
                 text-align: center;
                 width: 40%;
-                padding: 0 auto 10px auto ;
-                margin-left: auto;
-                margin-right: auto;
             }
         }
     }
@@ -218,69 +248,105 @@ main{
             &__form{
                 height: 500px;
                 left: 50%;
-                position: absolute;
-                text-align: center;
                 top: 10%;
                 width: 534px;
             }
-            &__link{
-                position: absolute;
-                top: 70%;
-                width: 100%;
-            }
             &__header{
                 line-height: 40px;
-                padding: 20px;
                 h2{
                     font-size: 4rem;
                     margin: 10px auto 10px auto;
                 }
                 a{
-                    color: color(grayscale,black);
                     font-size: 2rem;
-                    font-weight: 600;
                 }
             }
             &__group{
-                display: block;
-                margin: 10px auto 0 auto;
-                text-align: left;
                 width: 77%;
+                input{
+                    height:30px;
+                }
+            }
+            &__actions{
+                width: 40%;
+            }
+        }
+    }
+}
+@include mq-min(xxl){
+    main{
+        .contacto{
+            .linea {
+                width: 77%;
+              }
+            &__information{
+                position: absolute;
+                top:35%;
+                left: 2%;
+                p{
+                    font-size: 3rem;
+                    width: 80%;
+                }
+            }
+            &__title{
+                font-size:5rem;
+                width: 80%;
+            }
+            &__image{
+                height: 590px;
+            }
+            &__form{
+                height: 533px;
+                left: 54.9%;
+                top: 4%;
+                width: 534px;
+            }
+            &__header{
+                line-height: 40px;
+                h2{
+                    font-size: 4rem;
+                    margin: 2px auto 23px auto;
+                }
+                a{
+                    line-height: 30px;
+                    font-size: 2.5rem;
+                    padding: 0px;
+                    span{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+            &__group{
+                width: 77%;
+                padding-left: 20px;
                 label {
-                    font-family: $font-primary;
-                    font-weight: 600;
+                    font-size: 2.2rem;
+                    padding: 0px 0px 5px 0px ;
                 }
                 input{
                     border: none;
                     border-radius: 5px;
-                    font-family: $font-primary;
-                    height:30px;
-                    margin: 0 auto 10px auto;
-                    width: 100%;
+                    color: gray;
+                    font-size: 2rem;
+                    height:37px;
+                    padding: 18px 0px 18px 10px;
+                    width: 382px;
                     &:focus { 
                         cursor: pointer;
                         outline: none;
                      }
                 }
                 textarea{
-                    border: none;
-                    border-radius: 5px;
-                    font-family: $font-primary;
-                    height:75px;
-                    width: 100%;
-                    &:focus { 
-                        cursor: pointer;
-                        outline: none;
-                     }
+                    color: gray;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    padding: 5px 0px 18px 18px;
+                    width: 382px;
                 }
             }
             &__actions{
-                text-align: center;
-                width: 40%;
-                margin-top: 10px;
-                padding: 0 auto 10px auto ;
-                margin-left: auto;
-                margin-right: auto;
+                left: 27%;
+                position: absolute;
             }
         }
     }

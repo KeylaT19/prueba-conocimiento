@@ -1,120 +1,191 @@
-.experience{
-    .feed{
-        background-color: color(grayscale,gray-2);
-        text-align: center;
-        .subtitle-section{
-            @extend %subtitle
+.block-aside{
+    background-color: color(grayscale,gray-2);
+    text-align: center;
+    &__title{
+        font-size: 2rem;
+    }
+    .linea {
+        border-top: 3px solid white;
+        height: 5px;
+        padding: 0;
+        width: 90%;
+        margin: 10px auto 10px auto;
+      }
+    
+    &__card{
+        display: flex;
+        padding: 15px;
+    }
+    &__description{
+        background-color:color(grayscale,white);
+        p{  
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-top: 25%;
         }
-        .linea {
-            border-top: 3px solid white;
-            height: 5px;
-            padding: 0;
-            width: 90%;
-            margin: 10px auto 10px auto;
-          }
-        &__card{
-            display: flex;
-            padding: 15px;
-        }
-        
-        &__description{
-            background-color:color(grayscale,white);
-            margin-bottom: 6px;
-            p{  
-                font-weight: 600;
-                margin-top: 25%;
-            }
-        }
-        &__image{
-            width: 10rem;
+    }
+    &__image{
+        width: 10rem;
+    } 
+    &__cantidad{
+        background-color:color(complementary,seven);
+        position: relative;
+        text-align: left;
+        width: 6rem;
+        p{
+            font-size:4rem;
+            font-weight: 600;
+            padding: 20px 10px 0px 10px;
         } 
+    }
+}
+@include mq-min(s){
+    .block-aside{
+        &__image{
+            width: 15rem;
+        }    
         &__cantidad{
             background-color:color(complementary,seven);
-            margin-bottom: 6px;
+            /* margin-bottom: 6px; */
             position: relative;
             text-align: left;
             width: 6rem;
             p{
-                font-size:4rem;
+                font-size:5rem;
                 font-weight: 600;
-                padding: 20px 10px 0px 10px;
+                padding: 30px 10px 0px 10px;
             } 
-        }
+        } 
     }
 }
-@include mq-min(s){
-    .experience{
-        .feed{
-            &__image{
-                width: 15rem;
-            }    
-            &__cantidad{
-                background-color:color(complementary,seven);
-                margin-bottom: 6px;
-                position: relative;
-                text-align: left;
-                width: 6rem;
-                p{
-                    font-size:5rem;
-                    font-weight: 600;
-                    padding: 30px 10px 0px 10px;
-                } 
+@include mq-min(ss){
+    .block-aside{
+        &__title{
+            padding: 6px 5px 0 0;
+        }
+        &__image{
+            width: 140px;
+            height: 87.36px;
+        }   
+        &__card{
+            padding: 0px 20px 9px 10px;
+        } 
+        &__cantidad{
+            background-color:color(complementary,seven);
+            height: 87.36px;
+            position: relative;
+            text-align: center;
+            width: 6rem;
+            p{
+                font-size:5rem;
+                font-weight: 700;
+                padding: 5px 10px 0px 20px;
             } 
+        } 
+        &__description{
+            height: 87.36px;
+            p{  
+                line-height: 20px;
+                margin-top: 0;
+                padding: 17px 0 0 0;
+            }
         }
     }
 }
 @include mq-min(sm){
-    .experience{
-        .feed{
-            &__image{
-                width: 20rem;
-            }  
-        }
-    }
-}
-@include mq-min(md){
-    .feed{
-        text-align: center;
-        margin-bottom: 30px;
-        &__card{
-            display: flex;
-            padding: 10px;
-            margin-bottom: -5px;
-        }
+    .block-aside{
         &__image{
             width: 20rem;
         }
+    }    
+}
+@include mq-min(md){
+    .block-aside{
+        &__card{
+            display: flex;
+            padding: 10px;
+        }
+        &__image{
+            width: 8rem;
+        }
+        &__cantidad{
+            position: relative;
+            text-align: center;
+            width: 4rem;
+            p{
+                font-size:4.5rem;
+                font-weight: 700;
+                padding: 0;
+            } 
+        } 
         &__description{
             background-color:color(grayscale,white);
-            margin-bottom: 6px;
             text-align: center;
+            p{
+                font-size:1.2rem;
+                line-height: 20px;
+                padding: 0px 0 0 0;
+            }
         }
 
     }
 }
 @include mq-min(lg){
-    .feed{ 
-        margin-bottom: 150px;
-        text-align: center;
+    .block-aside{ 
+        &__title{
+            font-size: 3rem;
+        }
         justify-content: flex-end;
         &__card{    
             display: flex;
-            padding: 15px;
+            padding: 10px;
         }
         &__image{
-            width: 20rem;
+            height: 150px;
+            width: 15rem;
         }
+        &__cantidad{
+            height: 150px;
+            width: 5rem;
+            p{
+                font-size:5rem;
+                font-weight: 700;
+                padding: 30px 10px 10px 10px;
+            } 
+        } 
         &__description{
-            background-color:color(grayscale,white);
-            margin-bottom: 6px;
+            height: 150px;
+            p{
+                font-size:2rem;
+                line-height: 30px;
+                padding: 30px 0px 10px 5px;
+            }
         }
     }
 }
-@include mq-min(xl){
-    .feed{
-        margin-left: 100px;
-        margin-right: -5%;
-        margin-bottom: 50px;
-    }  
+@include mq-min(xxl){
+    .block-aside{
+        margin: { 
+        top: 23px;
+        left:0;
+        }
+        &__title{
+            font-size: 3.5rem;
+            font-weight: 600;
+            padding: 12px 0 0 17px ;
+            text-align: left;
+        }
+        &__card{    
+            padding: 8px;
+        }
+        &__cantidad{
+            p{
+                padding: 35px 10px 10px 18px;
+            } 
+        } 
+        &__image{
+            width: 150px;
+        } 
+    }
 }
 
