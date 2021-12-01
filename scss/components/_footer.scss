@@ -40,8 +40,8 @@
     &__center{
         h2{
             color: color(grayscale,white);
-            font-weight: 700;
             font-size: map-get($sizes,base);
+            font-weight: 700;
         }
     }
     &__servicios{
@@ -82,15 +82,15 @@
                 padding: 9px 10px 0px 0px;
             }
             p{
-                padding: 0;
                 color: white;
                 font-size: map-get($sizes,thumb);
                 font-weight: 700;
+                padding: 0;
             }
         }
         &__social{
-            word-spacing: 10px;
             margin-left: -5px;
+            word-spacing: 10px;
             a{
                 background-color:color(grayscale,white);
                 border-radius: 50px;
@@ -138,11 +138,11 @@
         &__contacto{
             line-height: 20px;
             h2{
-                width: 98%;
+                width: 97%;
             }  
             &-body{
-                width: 97%;
                 padding-top: 5px ;
+                width: 96%;
             } 
         }       
         &__bottom{
@@ -166,8 +166,8 @@
 @include mq-min(md){
     .footer{
         display:flex;
-        width: 100%;
         flex-flow: row wrap;
+        width: 100%;
         a{
         color: color(grayscale,white);
         font-size: map-get($sizes,small);
@@ -258,8 +258,8 @@
             }
         }
         &__social{
-            word-spacing: 20px;
             padding: 4px 0 0 61px;
+            word-spacing: 20px;
             a{
                 font-size: map-get($sizes,half);
                 span{
@@ -293,8 +293,8 @@
         &__submenu{
             a{
                 color:color(grayscale,white);
-                font-weight: 700;
                 font-size: 2.2rem;
+                font-weight: 700;
                 line-height: 50px;
                 padding-left: 0px;
             }
@@ -335,8 +335,8 @@
             }
         }
         &__menu{
-            padding-left: 0px;
             line-height: 45px;
+            padding-left: 0px;
             &-tour{
                 padding-top: 10px;
                 padding-left: 120px;
@@ -345,14 +345,12 @@
         &__submenu{
             a{
                 font-size: 2.5rem;
-                line-height: 50px;
-                padding-left: 20px;
             }
         }
         &__contacto{
             line-height: 36px;
-            width: 30%;
             padding-left: 95px;
+            width: 30%;
             h2{
                 font-size: 2.5rem;
                 padding: 7px 0 12px 0;

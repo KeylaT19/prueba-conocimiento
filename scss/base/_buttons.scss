@@ -23,7 +23,7 @@
       opacity: 0.9;
       &.outline {
          @include button( transparent, color( complementary,three) );
-         border: .13rem solid color(complementary,three);
+         border:  solid 4px color(complementary,three);
          &:hover, &:active {
             @include button( color(complementary,three) );
          }
@@ -33,7 +33,7 @@
       @include button( color( secondary, base ), color( grayscale, base ) );
       &.outline {
          @include button( transparent, color( secondary, base ) );
-         border: .15rem solid color( secondary, base );
+         border:  solid 4px color( secondary, base );
          &:hover, &:active {
             @include button( color( secondary, base ), color( grayscale, white ));
          }

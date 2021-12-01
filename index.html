@@ -17,41 +17,41 @@
 
 <body class="container-body">
     <header>
-        <nav class="nav">
+        <nav class="nav" >
             <div class="nav__logo">
                     <img class="logo" src="image/logo7.png" data-scr="image/logo5.png" width="80" height="80"
                         alt="logo Tour Ecuador">
-                <span class="navbar" id="btnmenu">Tour Ecuador<i class="icon-menu"></i></span>
+                <span class="navbar" aria-label="menu" id="btnmenu">Tour Ecuador<i aria-selected="true" tabindex="0" class="icon-menu"></i></span>
             </div>
-            <ul class="nav__menu" id="menu">
+            <ul class="nav__menu" role="menu" id="menu">
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Home <span class="icon-home1"></span></a>
+                    <a class="nav__link " role="menuitem" href="#">Home <span class="icon-home1"></span></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Acerca de Nosotros <span class="icon-group1"></span></a>
+                    <a class="nav__link" role="menuitem" href="#">Acerca de Nosotros <span class="icon-group1"></span></a>
                 </li>
                 <li class="nav__item container-submenu">
-                    <a class="nav__link submenu" href="#"> Tours <span class="icon-chevron-small-down"></span></a>
-                    <ul class="nav__dropdown ">
-                        <li class="nav__dropdown-item"><a class="nav__link" href="#">Full Day</a></li>
-                        <li class="nav__dropdown-item"><a class="nav__link" href="#">Tours a la Costa y Playas</a></li>
-                        <li class="nav__dropdown-item"><a class="nav__link" href="#">Tours a la Siera y Andes</a></li>
-                        <li class="nav__dropdown-item"><a class="nav__link" href="#">Tours a la Amazonía </a></li>
-                        <li class="nav__dropdown-item"><a class="nav__link" href="#">Tours a las Islas Galápagos</a></li>
+                    <a class="nav__link submenu" role="menuitem" href="#"> Tours <span class="icon-chevron-small-down"></span></a>
+                    <ul class="nav__dropdown " role="list" >
+                        <li class="nav__dropdown-item"><a class="nav__link"  aria-owns="submenu" href="#">Full Day</a></li>
+                        <li class="nav__dropdown-item"><a class="nav__link"  aria-owns="submenu" href="#">Tours a la Costa y Playas</a></li>
+                        <li class="nav__dropdown-item"><a class="nav__link"  aria-owns="submenu" href="#">Tours a la Siera y Andes</a></li>
+                        <li class="nav__dropdown-item"><a class="nav__link" aria-owns="submenu"  href="#">Tours a la Amazonía </a></li>
+                        <li class="nav__dropdown-item"><a class="nav__link" aria-owns="submenu"  href="#">Tours a las Islas Galápagos</a></li>
                     </ul>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Blogs</a>
+                    <a class="nav__link" role="menuitem" href="#">Blogs</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Contactanos</a>
+                    <a class="nav__link"  role="menuitem"href="#">Contactanos</a>
                 </li>
                 <li class="nav__item container-submenu ">
-                    <a class="nav__link submenu login" id="submenu" href="#">Login <span
+                    <a class="nav__link submenu login" role="menuitem" id="submenu" href="#">Login <span
                             class="icon-person"></span></a>
-                    <ul class="nav__dropdown">
-                        <li class="nav__dropdown-item"><a class="nav__link" href="#">Iniciar Sesión</a></li>
-                        <li class="nav__dropdown-item"><a class="nav__link" href="#">Registrate</a></li>
+                    <ul class="nav__dropdown" role="list">
+                        <li class="nav__dropdown-item"><a class="nav__link" aria-owns="submenu" href="#">Iniciar Sesión</a></li>
+                        <li class="nav__dropdown-item"><a class="nav__link"aria-owns="submenu"  href="#">Registrate</a></li>
                     </ul>
                 </li>
             </ul>
@@ -124,7 +124,7 @@
                         alentando la unión familiar.</p>
                 </div>
                 <div class="block-video__link">
-                    <a class=" btn btn-secondary small" href="#">Más Información<span
+                    <a class=" btn btn-secondary small" role="button" href="#">Más Información<span
                             class="icon-chevron-right"></span></a>
                 </div>
             </div>
@@ -142,7 +142,7 @@
                     </picture>
                     
                     <div class="block-aside__description">
-                        <p>Los mejores hoteles de Ecuador</p>
+                        <a href="#" >Los mejores hoteles de Ecuador</a>
                     </div>
                 </div>
                 <div class="block-aside__card">
@@ -155,7 +155,7 @@
                         height="150" alt="Lugares turisticos">
                     </picture>
                     <div class="block-aside__description">
-                        <p>5 Lugares Turísticos más visitado de Ecuador</p>
+                        <a href="#" >5 Lugares Turísticos más visitado de Ecuador</a>
                     </div>
                 </div>
                 <div class="block-aside__card">
@@ -168,7 +168,7 @@
                         height="150" alt="gastronomia de Ecuador">
                     </picture>
                     <div class="block-aside__description">
-                        <p>Diversidad en la Economía de Ecuador</p>
+                        <a href="#">Diversidad en la Economía de Ecuador</a>
                     </div>
                 </div>
             </aside>
@@ -406,7 +406,7 @@
                 <div class="footer__menu-tour">
                     <h2>Tour en Ecuador</h2>
                     <ul>
-                        <li><a href="#" aria-label="Ir a Full Day">Full Day</a></li>
+                        <li><a href="#" aria-label="Ir a Full Day">Full day</a></li>
                         <li><a href="#" aria-label="Ir a Tours Costa">Costa</a></li>
                         <li><a href="#" aria-label="Ir a Tours Sierra">Sierra</a></li>
                         <li><a href="#" aria-label="Ir a Tours Amazonía">Amazonía</a></li>

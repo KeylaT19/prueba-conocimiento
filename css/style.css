@@ -263,11 +263,16 @@ p {
   min-height: 100vh;
 }
 
+/* line 30, ../scss/base/_body.scss */
+a:hover {
+  color: aqua;
+}
+
 /* line 1, ../scss/base/_links.scss */
 a, button {
   color: #0074FC;
   text-decoration: none;
-  outline: 0;
+  outline: 1;
   transition: color .1s ease-out;
 }
 /* line 8, ../scss/base/_links.scss */
@@ -286,14 +291,13 @@ a:hover, a:focus, button:hover, button:focus {
 }
 /* line 19, ../scss/base/_links.scss */
 a.underline-link, button.underline-link {
-  color: #0074FC;
   cursor: pointer;
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
   text-decoration: underline;
 }
-/* line 27, ../scss/base/_links.scss */
+/* line 26, ../scss/base/_links.scss */
 a.text-link, button.text-link {
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
@@ -309,30 +313,30 @@ a.text-link, button.text-link {
   padding: 0;
   cursor: pointer;
 }
-/* line 41, ../scss/base/_links.scss */
+/* line 40, ../scss/base/_links.scss */
 a.text-link.text-primary-base, button.text-link.text-primary-base {
   color: #0F752C;
 }
-/* line 43, ../scss/base/_links.scss */
+/* line 42, ../scss/base/_links.scss */
 a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   color: #132A13;
 }
-/* line 47, ../scss/base/_links.scss */
+/* line 46, ../scss/base/_links.scss */
 a.text-link.text-secondary-base, button.text-link.text-secondary-base {
   color: rgba(209, 209, 209, 0.66);
 }
-/* line 49, ../scss/base/_links.scss */
+/* line 48, ../scss/base/_links.scss */
 a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hover {
   color: #c2d3cdb2;
 }
-/* line 53, ../scss/base/_links.scss */
+/* line 52, ../scss/base/_links.scss */
 a.text-link.text-primary-base, button.text-link.text-primary-base {
   color: #132A13;
   font-size: 2rem;
   text-decoration: underline;
   text-transform: none;
 }
-/* line 58, ../scss/base/_links.scss */
+/* line 57, ../scss/base/_links.scss */
 a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   color: #0F752C;
 }
@@ -1111,7 +1115,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 .btn.btn-primary.outline {
   background: transparent;
   color: rgba(14, 94, 14, 0.677);
-  border: 0.13rem solid rgba(14, 94, 14, 0.677);
+  border: solid 4px rgba(14, 94, 14, 0.677);
 }
 /* line 68, ../scss/config/_mixins.scss */
 .btn.btn-primary.outline:hover {
@@ -1226,7 +1230,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 .btn.btn-secondary.outline {
   background: transparent;
   color: rgba(209, 209, 209, 0.66);
-  border: 0.15rem solid rgba(209, 209, 209, 0.66);
+  border: solid 4px rgba(209, 209, 209, 0.66);
 }
 /* line 68, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline:hover {
@@ -1345,18 +1349,17 @@ header .nav .navbar i {
 }
 /* line 27, ../scss/components/_header.scss */
 header .nav__menu, header .nav__dropdown {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
-/* line 32, ../scss/components/_header.scss */
+/* line 31, ../scss/components/_header.scss */
 header .nav__menu {
   background-color: rgba(20, 20, 20, 0.96);
-  width: 100%;
   margin-left: -105%;
-  transition: all 0.5s;
   position: absolute;
+  transition: all 0.5s;
   top: 62.45%;
+  width: 100%;
 }
 /* line 41, ../scss/components/_header.scss */
 header .nav__item span {
@@ -1521,13 +1524,13 @@ header .nav .mostrar {
   /* line 176, ../scss/components/_header.scss */
   header .nav__menu {
     display: flex;
+    height: 100%;
     justify-content: space-evenly;
     position: absolute;
-    top: 37%;
     right: 4px;
-    height: 100%;
-    width: 65.1%;
     text-align: left;
+    top: 37%;
+    width: 65.1%;
   }
   /* line 186, ../scss/components/_header.scss */
   header .nav__item {
@@ -1587,8 +1590,8 @@ header .nav .mostrar {
 /* line 41, ../scss/components/_footer.scss */
 .footer__center h2 {
   color: #ffffff;
-  font-weight: 700;
   font-size: 1.6rem;
+  font-weight: 700;
 }
 /* line 47, ../scss/components/_footer.scss */
 .footer__servicios {
@@ -1635,15 +1638,15 @@ header .nav .mostrar {
   }
   /* line 84, ../scss/components/_footer.scss */
   .footer__left p {
-    padding: 0;
     color: white;
     font-size: 2rem;
     font-weight: 700;
+    padding: 0;
   }
   /* line 91, ../scss/components/_footer.scss */
   .footer__social {
-    word-spacing: 10px;
     margin-left: -5px;
+    word-spacing: 10px;
   }
   /* line 94, ../scss/components/_footer.scss */
   .footer__social a {
@@ -1700,12 +1703,12 @@ header .nav .mostrar {
   }
   /* line 140, ../scss/components/_footer.scss */
   .footer__contacto h2 {
-    width: 98%;
+    width: 97%;
   }
   /* line 143, ../scss/components/_footer.scss */
   .footer__contacto-body {
-    width: 97%;
     padding-top: 5px;
+    width: 96%;
   }
   /* line 148, ../scss/components/_footer.scss */
   .footer__bottom {
@@ -1729,8 +1732,8 @@ header .nav .mostrar {
   /* line 167, ../scss/components/_footer.scss */
   .footer {
     display: flex;
-    width: 100%;
     flex-flow: row wrap;
+    width: 100%;
   }
   /* line 171, ../scss/components/_footer.scss */
   .footer a {
@@ -1834,8 +1837,8 @@ header .nav .mostrar {
   }
   /* line 260, ../scss/components/_footer.scss */
   .footer__social {
-    word-spacing: 20px;
     padding: 4px 0 0 61px;
+    word-spacing: 20px;
   }
   /* line 263, ../scss/components/_footer.scss */
   .footer__social a {
@@ -1876,8 +1879,8 @@ header .nav .mostrar {
   /* line 294, ../scss/components/_footer.scss */
   .footer__submenu a {
     color: #ffffff;
-    font-weight: 700;
     font-size: 2.2rem;
+    font-weight: 700;
     line-height: 50px;
     padding-left: 0px;
   }
@@ -1920,8 +1923,8 @@ header .nav .mostrar {
   }
   /* line 337, ../scss/components/_footer.scss */
   .footer__menu {
-    padding-left: 0px;
     line-height: 45px;
+    padding-left: 0px;
   }
   /* line 340, ../scss/components/_footer.scss */
   .footer__menu-tour {
@@ -1931,21 +1934,19 @@ header .nav .mostrar {
   /* line 346, ../scss/components/_footer.scss */
   .footer__submenu a {
     font-size: 2.5rem;
-    line-height: 50px;
-    padding-left: 20px;
   }
-  /* line 352, ../scss/components/_footer.scss */
+  /* line 350, ../scss/components/_footer.scss */
   .footer__contacto {
     line-height: 36px;
-    width: 30%;
     padding-left: 95px;
+    width: 30%;
   }
-  /* line 356, ../scss/components/_footer.scss */
+  /* line 354, ../scss/components/_footer.scss */
   .footer__contacto h2 {
     font-size: 2.5rem;
     padding: 7px 0 12px 0;
   }
-  /* line 361, ../scss/components/_footer.scss */
+  /* line 359, ../scss/components/_footer.scss */
   .footer__bottom {
     font-size: 2rem;
     padding: 50px 45px 10px 70px;
@@ -1966,8 +1967,8 @@ header .nav .mostrar {
   border-top: 3px solid white;
   height: 5px;
   padding: 0;
-  width: 90%;
   margin: 10px auto 10px auto;
+  width: 90%;
 }
 /* line 15, ../scss/components/_aside.scss */
 .block-aside__card {
@@ -1979,23 +1980,24 @@ header .nav .mostrar {
   background-color: #ffffff;
 }
 /* line 21, ../scss/components/_aside.scss */
-.block-aside__description p {
+.block-aside__description a {
+  color: black;
   font-size: 1.8rem;
   font-weight: 600;
   margin-top: 25%;
 }
-/* line 27, ../scss/components/_aside.scss */
+/* line 28, ../scss/components/_aside.scss */
 .block-aside__image {
   width: 10rem;
 }
-/* line 30, ../scss/components/_aside.scss */
+/* line 31, ../scss/components/_aside.scss */
 .block-aside__cantidad {
   background-color: rgba(255, 255, 255, 0.72);
   position: relative;
   text-align: left;
   width: 6rem;
 }
-/* line 35, ../scss/components/_aside.scss */
+/* line 36, ../scss/components/_aside.scss */
 .block-aside__cantidad p {
   font-size: 4rem;
   font-weight: 600;
@@ -2003,11 +2005,11 @@ header .nav .mostrar {
 }
 
 @media (min-width: 360px) {
-  /* line 44, ../scss/components/_aside.scss */
+  /* line 45, ../scss/components/_aside.scss */
   .block-aside__image {
     width: 15rem;
   }
-  /* line 47, ../scss/components/_aside.scss */
+  /* line 48, ../scss/components/_aside.scss */
   .block-aside__cantidad {
     background-color: rgba(255, 255, 255, 0.72);
     /* margin-bottom: 6px; */
@@ -2015,7 +2017,7 @@ header .nav .mostrar {
     text-align: left;
     width: 6rem;
   }
-  /* line 53, ../scss/components/_aside.scss */
+  /* line 54, ../scss/components/_aside.scss */
   .block-aside__cantidad p {
     font-size: 5rem;
     font-weight: 600;
@@ -2023,20 +2025,20 @@ header .nav .mostrar {
   }
 }
 @media (min-width: 428px) {
-  /* line 63, ../scss/components/_aside.scss */
+  /* line 64, ../scss/components/_aside.scss */
   .block-aside__title {
     padding: 6px 5px 0 0;
   }
-  /* line 66, ../scss/components/_aside.scss */
+  /* line 67, ../scss/components/_aside.scss */
   .block-aside__image {
-    width: 140px;
     height: 87.36px;
+    width: 140px;
   }
-  /* line 70, ../scss/components/_aside.scss */
+  /* line 71, ../scss/components/_aside.scss */
   .block-aside__card {
     padding: 0px 20px 9px 10px;
   }
-  /* line 73, ../scss/components/_aside.scss */
+  /* line 74, ../scss/components/_aside.scss */
   .block-aside__cantidad {
     background-color: rgba(255, 255, 255, 0.72);
     height: 87.36px;
@@ -2044,126 +2046,126 @@ header .nav .mostrar {
     text-align: center;
     width: 6rem;
   }
-  /* line 79, ../scss/components/_aside.scss */
+  /* line 80, ../scss/components/_aside.scss */
   .block-aside__cantidad p {
     font-size: 5rem;
     font-weight: 700;
     padding: 5px 10px 0px 20px;
   }
-  /* line 85, ../scss/components/_aside.scss */
+  /* line 86, ../scss/components/_aside.scss */
   .block-aside__description {
     height: 87.36px;
   }
-  /* line 87, ../scss/components/_aside.scss */
-  .block-aside__description p {
-    line-height: 20px;
+  /* line 88, ../scss/components/_aside.scss */
+  .block-aside__description a {
+    line-height: 30px;
     margin-top: 0;
-    padding: 17px 0 0 0;
+    padding: 30px 0px 10px 0px;
   }
 }
 @media (min-width: 540px) {
-  /* line 97, ../scss/components/_aside.scss */
+  /* line 98, ../scss/components/_aside.scss */
   .block-aside__image {
     width: 20rem;
   }
 }
 @media (min-width: 720px) {
-  /* line 104, ../scss/components/_aside.scss */
+  /* line 105, ../scss/components/_aside.scss */
   .block-aside__card {
     display: flex;
     padding: 10px;
   }
-  /* line 108, ../scss/components/_aside.scss */
+  /* line 109, ../scss/components/_aside.scss */
   .block-aside__image {
     width: 8rem;
   }
-  /* line 111, ../scss/components/_aside.scss */
+  /* line 112, ../scss/components/_aside.scss */
   .block-aside__cantidad {
     position: relative;
     text-align: center;
     width: 4rem;
   }
-  /* line 115, ../scss/components/_aside.scss */
+  /* line 116, ../scss/components/_aside.scss */
   .block-aside__cantidad p {
     font-size: 4.5rem;
     font-weight: 700;
     padding: 0;
   }
-  /* line 121, ../scss/components/_aside.scss */
+  /* line 122, ../scss/components/_aside.scss */
   .block-aside__description {
     background-color: #ffffff;
     text-align: center;
   }
-  /* line 124, ../scss/components/_aside.scss */
-  .block-aside__description p {
+  /* line 125, ../scss/components/_aside.scss */
+  .block-aside__description a {
     font-size: 1.2rem;
     line-height: 20px;
     padding: 0px 0 0 0;
   }
 }
 @media (min-width: 960px) {
-  /* line 134, ../scss/components/_aside.scss */
+  /* line 135, ../scss/components/_aside.scss */
   .block-aside {
     justify-content: flex-end;
   }
-  /* line 135, ../scss/components/_aside.scss */
+  /* line 136, ../scss/components/_aside.scss */
   .block-aside__title {
     font-size: 3rem;
   }
-  /* line 139, ../scss/components/_aside.scss */
+  /* line 140, ../scss/components/_aside.scss */
   .block-aside__card {
     display: flex;
     padding: 10px;
   }
-  /* line 143, ../scss/components/_aside.scss */
+  /* line 144, ../scss/components/_aside.scss */
   .block-aside__image {
     height: 150px;
     width: 15rem;
   }
-  /* line 147, ../scss/components/_aside.scss */
+  /* line 148, ../scss/components/_aside.scss */
   .block-aside__cantidad {
     height: 150px;
     width: 5rem;
   }
-  /* line 150, ../scss/components/_aside.scss */
+  /* line 151, ../scss/components/_aside.scss */
   .block-aside__cantidad p {
     font-size: 5rem;
     font-weight: 700;
     padding: 30px 10px 10px 10px;
   }
-  /* line 156, ../scss/components/_aside.scss */
+  /* line 157, ../scss/components/_aside.scss */
   .block-aside__description {
     height: 150px;
   }
-  /* line 158, ../scss/components/_aside.scss */
-  .block-aside__description p {
+  /* line 159, ../scss/components/_aside.scss */
+  .block-aside__description a {
     font-size: 2rem;
     line-height: 30px;
     padding: 30px 0px 10px 5px;
   }
 }
 @media (min-width: 1440px) {
-  /* line 167, ../scss/components/_aside.scss */
+  /* line 168, ../scss/components/_aside.scss */
   .block-aside {
-    margin-top: 23px;
     margin-left: 0;
+    margin-top: 23px;
   }
-  /* line 172, ../scss/components/_aside.scss */
+  /* line 173, ../scss/components/_aside.scss */
   .block-aside__title {
     font-size: 3.5rem;
     font-weight: 600;
     padding: 12px 0 0 17px;
     text-align: left;
   }
-  /* line 178, ../scss/components/_aside.scss */
+  /* line 179, ../scss/components/_aside.scss */
   .block-aside__card {
     padding: 8px;
   }
-  /* line 182, ../scss/components/_aside.scss */
+  /* line 183, ../scss/components/_aside.scss */
   .block-aside__cantidad p {
     padding: 35px 10px 10px 18px;
   }
-  /* line 186, ../scss/components/_aside.scss */
+  /* line 187, ../scss/components/_aside.scss */
   .block-aside__image {
     width: 150px;
   }
@@ -2531,40 +2533,40 @@ main .galery__body {
 main .galery__link a {
   height: 29px;
   font-size: 12px;
+  left: 35%;
   padding: 8px 10px 10px 20px;
   position: absolute;
-  width: 100px;
   top: 92%;
-  left: 35%;
+  width: 100px;
 }
 /* line 25, ../scss/components/_galery.scss */
 main .galery__group {
-  position: relative;
   display: inline-block;
+  position: relative;
 }
 /* line 29, ../scss/components/_galery.scss */
 main .galery__description {
-  text-align: center;
   padding: 0 0 0 5px;
+  text-align: center;
 }
 /* line 32, ../scss/components/_galery.scss */
 main .galery__description p {
   background-color: rgba(20, 20, 20, 0.66);
   color: #ffffff;
+  left: auto;
   padding: 10px;
   position: absolute;
   top: 81%;
-  left: auto;
   width: 140px;
 }
 
 @media (min-width: 360px) {
   /* line 49, ../scss/components/_galery.scss */
   main .galery__link a {
-    position: absolute;
-    width: 11rem;
-    top: 100%;
     left: 35%;
+    position: absolute;
+    top: 100%;
+    width: 11rem;
   }
   /* line 56, ../scss/components/_galery.scss */
   main .galery__image {
@@ -2572,8 +2574,8 @@ main .galery__description p {
   }
   /* line 59, ../scss/components/_galery.scss */
   main .galery__group {
-    position: relative;
     display: inline-block;
+    position: relative;
   }
   /* line 63, ../scss/components/_galery.scss */
   main .galery__description {
@@ -2583,10 +2585,10 @@ main .galery__description p {
   main .galery__description p {
     font-size: 1.5rem;
     height: 57px;
+    left: auto;
     padding: 10px;
     position: absolute;
     top: 70%;
-    left: auto;
     width: 160px;
   }
 }
@@ -2600,10 +2602,10 @@ main .galery__description p {
   main .galery__link a {
     height: 29px;
     left: 72%;
+    padding: 10px 0 0 15px;
     position: absolute;
     top: 75.5%;
     width: 84px;
-    padding: 10px 0 0 15px;
   }
   /* line 97, ../scss/components/_galery.scss */
   main .galery__body {
@@ -2653,9 +2655,9 @@ main .galery__description p {
   main .galery__description p {
     font-size: 1.5rem;
     font-weight: 500;
+    height: 45px;
     padding: 10px;
     width: 168px;
-    height: 45px;
   }
   /* line 146, ../scss/components/_galery.scss */
   main .galery__image {
@@ -2692,8 +2694,8 @@ main .galery__description p {
   }
   /* line 187, ../scss/components/_galery.scss */
   main .galery__link a {
-    top: 4%;
     left: 84%;
+    top: 4%;
   }
   /* line 192, ../scss/components/_galery.scss */
   main .galery__description {
@@ -2711,37 +2713,37 @@ main .galery__description p {
   }
   /* line 204, ../scss/components/_galery.scss */
   main .galery__image {
-    width: 220px;
     height: 250px;
+    width: 220px;
   }
 }
 @media (min-width: 1140px) {
-  /* line 216, ../scss/components/_galery.scss */
+  /* line 215, ../scss/components/_galery.scss */
   main .galery__link a {
     font-size: 1.4rem;
     left: 84%;
     top: 5%;
     width: 10rem;
   }
-  /* line 223, ../scss/components/_galery.scss */
+  /* line 222, ../scss/components/_galery.scss */
   main .galery__description {
     padding-left: 1px;
   }
-  /* line 225, ../scss/components/_galery.scss */
+  /* line 224, ../scss/components/_galery.scss */
   main .galery__description p {
     font-size: 2.3rem;
+    height: 77px;
     line-height: 30px;
     position: absolute;
     text-align: center;
-    height: 77px;
     width: 270px;
   }
-  /* line 236, ../scss/components/_galery.scss */
+  /* line 235, ../scss/components/_galery.scss */
   main .galery__group {
     cursor: pointer;
     overflow: hidden;
   }
-  /* line 239, ../scss/components/_galery.scss */
+  /* line 238, ../scss/components/_galery.scss */
   main .galery__group::before {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.929);
@@ -2761,63 +2763,63 @@ main .galery__description p {
     top: 0;
     z-index: 100;
   }
-  /* line 258, ../scss/components/_galery.scss */
+  /* line 257, ../scss/components/_galery.scss */
   main .galery__group:hover::before {
     transform: scale(1) rotate(360deg);
   }
-  /* line 261, ../scss/components/_galery.scss */
+  /* line 260, ../scss/components/_galery.scss */
   main .galery__group:hover {
+    transform: scale(0.9);
     transition: transform .5s;
     -webkit-transform: scale(0.9);
-    transform: scale(0.9);
   }
-  /* line 268, ../scss/components/_galery.scss */
+  /* line 267, ../scss/components/_galery.scss */
   main .galery__image {
-    width: 270px;
     height: 300px;
+    width: 270px;
   }
 }
 @media (min-width: 1440px) {
-  /* line 279, ../scss/components/_galery.scss */
+  /* line 278, ../scss/components/_galery.scss */
   main .galery__top .title-section {
     padding: 75px 0px 52px 7px;
   }
-  /* line 283, ../scss/components/_galery.scss */
+  /* line 282, ../scss/components/_galery.scss */
   main .galery__body {
     padding: 0 0 100px 0;
   }
-  /* line 287, ../scss/components/_galery.scss */
+  /* line 286, ../scss/components/_galery.scss */
   main .galery__link a {
     font-size: 1.8rem;
-    top: 8.7%;
-    left: 87.5%;
+    left: 86.5%;
     padding: 15px 0px 30px 24px;
+    top: 8.7%;
     width: 13rem;
   }
-  /* line 295, ../scss/components/_galery.scss */
+  /* line 294, ../scss/components/_galery.scss */
   main .galery__description {
     padding-left: 6.5px;
   }
-  /* line 298, ../scss/components/_galery.scss */
+  /* line 297, ../scss/components/_galery.scss */
   main .galery__description p {
     font-size: 2rem;
-    line-height: 30px;
     height: 68px;
-    top: 70.7%;
+    line-height: 30px;
     padding: 20px 20px 0 0px;
+    top: 70.7%;
     width: 314px;
   }
-  /* line 307, ../scss/components/_galery.scss */
+  /* line 306, ../scss/components/_galery.scss */
   main .galery__group {
     padding-bottom: 34px;
   }
-  /* line 309, ../scss/components/_galery.scss */
+  /* line 308, ../scss/components/_galery.scss */
   main .galery__group::before {
     height: 326px;
-    width: 314.5px;
     left: 6px;
+    width: 314.5px;
   }
-  /* line 315, ../scss/components/_galery.scss */
+  /* line 314, ../scss/components/_galery.scss */
   main .galery__image {
     width: 314px;
     height: 326px;
@@ -3039,8 +3041,8 @@ main .block-video__link {
 @media (min-width: 1140px) {
   /* line 83, ../scss/components/_video.scss */
   main .container-principal {
-    padding-top: 40px;
     padding-right: 40px;
+    padding-top: 40px;
   }
   /* line 86, ../scss/components/_video.scss */
   main .container-principal .block-video {
@@ -3101,9 +3103,9 @@ main .contacto .container-contacto {
 main .contacto .container-contacto .linea {
   border-top: 1.5px solid black;
   height: 2px;
+  margin: 0 auto 10px auto;
   padding: 0;
   width: 90%;
-  margin: 0 auto 10px auto;
 }
 /* line 18, ../scss/components/_contacto.scss */
 main .contacto__information {
@@ -3188,15 +3190,16 @@ main .contacto__group textarea {
   border: none;
   border-radius: 5px;
   font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
   height: 73.72px;
   width: 100%;
 }
-/* line 89, ../scss/components/_contacto.scss */
+/* line 90, ../scss/components/_contacto.scss */
 main .contacto__group textarea:focus {
   cursor: pointer;
   outline: none;
 }
-/* line 95, ../scss/components/_contacto.scss */
+/* line 96, ../scss/components/_contacto.scss */
 main .contacto__actions {
   text-align: center;
   width: 98px;
@@ -3206,65 +3209,65 @@ main .contacto__actions {
 }
 
 @media (min-width: 428px) {
-  /* line 108, ../scss/components/_contacto.scss */
+  /* line 109, ../scss/components/_contacto.scss */
   main .contacto .container-contacto .linea {
     margin: 5px auto 0 auto;
   }
-  /* line 112, ../scss/components/_contacto.scss */
+  /* line 113, ../scss/components/_contacto.scss */
   main .contacto__information {
     padding: 10px;
     top: 0%;
   }
-  /* line 116, ../scss/components/_contacto.scss */
+  /* line 117, ../scss/components/_contacto.scss */
   main .contacto__form {
     height: 451.14px;
     left: 8.5%;
     top: 16.5%;
     width: 359px;
   }
-  /* line 122, ../scss/components/_contacto.scss */
+  /* line 123, ../scss/components/_contacto.scss */
   main .contacto__actions {
     padding-top: 7px;
   }
-  /* line 124, ../scss/components/_contacto.scss */
+  /* line 125, ../scss/components/_contacto.scss */
   main .contacto__actions p {
     height: 40px;
     font-size: 1.6rem;
     padding: 0px;
   }
-  /* line 130, ../scss/components/_contacto.scss */
+  /* line 131, ../scss/components/_contacto.scss */
   main .contacto__header {
     line-height: 30px;
   }
-  /* line 132, ../scss/components/_contacto.scss */
+  /* line 133, ../scss/components/_contacto.scss */
   main .contacto__header h2 {
     font-size: 2rem;
     padding: 8px 10px 0px 0;
   }
-  /* line 136, ../scss/components/_contacto.scss */
+  /* line 137, ../scss/components/_contacto.scss */
   main .contacto__header a {
     color: #000000;
     font-size: 1.6rem;
     font-weight: 600;
     padding: 10px 10px 0px 18px;
   }
-  /* line 142, ../scss/components/_contacto.scss */
+  /* line 143, ../scss/components/_contacto.scss */
   main .contacto__header span {
     font-size: 2rem;
   }
-  /* line 146, ../scss/components/_contacto.scss */
+  /* line 147, ../scss/components/_contacto.scss */
   main .contacto__group {
     display: block;
     margin: 5px auto 0 auto;
     text-align: left;
     width: 87%;
   }
-  /* line 151, ../scss/components/_contacto.scss */
+  /* line 152, ../scss/components/_contacto.scss */
   main .contacto__group label {
     font-size: 1.6rem;
     padding: 10px 0 0 13px;
   }
-  /* line 155, ../scss/components/_contacto.scss */
+  /* line 156, ../scss/components/_contacto.scss */
   main .contacto__group input {
     border: none;
     border-radius: 5px;
@@ -3274,12 +3277,7 @@ main .contacto__actions {
     padding: 18px 0px 18px 21px;
     width: 100%;
   }
-  /* line 163, ../scss/components/_contacto.scss */
-  main .contacto__group input:focus {
-    cursor: pointer;
-    outline: none;
-  }
-  /* line 168, ../scss/components/_contacto.scss */
+  /* line 165, ../scss/components/_contacto.scss */
   main .contacto__group textarea {
     color: gray;
     font-size: 1.2rem;
@@ -3288,165 +3286,164 @@ main .contacto__actions {
   }
 }
 @media (min-width: 540px) {
-  /* line 181, ../scss/components/_contacto.scss */
+  /* line 178, ../scss/components/_contacto.scss */
   main .contacto__form {
     left: 16%;
   }
 }
 @media (min-width: 720px) {
-  /* line 191, ../scss/components/_contacto.scss */
+  /* line 188, ../scss/components/_contacto.scss */
   main .contacto .container-contacto {
     display: flex;
   }
-  /* line 194, ../scss/components/_contacto.scss */
+  /* line 191, ../scss/components/_contacto.scss */
   main .contacto__information {
     top: 36%;
     width: 50%;
   }
-  /* line 198, ../scss/components/_contacto.scss */
+  /* line 195, ../scss/components/_contacto.scss */
   main .contacto__image {
     width: 100%;
   }
-  /* line 201, ../scss/components/_contacto.scss */
+  /* line 198, ../scss/components/_contacto.scss */
   main .contacto__title {
     font-size: 3.5rem;
     padding-bottom: 20px;
   }
-  /* line 205, ../scss/components/_contacto.scss */
+  /* line 202, ../scss/components/_contacto.scss */
   main .contacto__form {
     height: 480px;
     left: 50%;
     top: 10%;
     width: 45%;
   }
-  /* line 212, ../scss/components/_contacto.scss */
+  /* line 209, ../scss/components/_contacto.scss */
   main .contacto__group label {
-    font-family: "Raleway", sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
   }
-  /* line 217, ../scss/components/_contacto.scss */
+  /* line 213, ../scss/components/_contacto.scss */
   main .contacto__group input {
     font-size: 1.4rem;
   }
-  /* line 220, ../scss/components/_contacto.scss */
+  /* line 216, ../scss/components/_contacto.scss */
   main .contacto__group textarea {
+    font-size: 1.4rem;
     height: 75px;
   }
-  /* line 226, ../scss/components/_contacto.scss */
+  /* line 223, ../scss/components/_contacto.scss */
   main .contacto__actions {
     text-align: center;
     width: 40%;
   }
 }
 @media (min-width: 1140px) {
-  /* line 235, ../scss/components/_contacto.scss */
+  /* line 232, ../scss/components/_contacto.scss */
   main .contacto {
     margin-bottom: 100px;
   }
-  /* line 238, ../scss/components/_contacto.scss */
+  /* line 235, ../scss/components/_contacto.scss */
   main .contacto .container-contacto .linea {
     width: 77%;
   }
-  /* line 242, ../scss/components/_contacto.scss */
+  /* line 239, ../scss/components/_contacto.scss */
   main .contacto__title {
     font-size: 5rem;
   }
-  /* line 245, ../scss/components/_contacto.scss */
+  /* line 242, ../scss/components/_contacto.scss */
   main .contacto__image {
     height: 590px;
   }
-  /* line 248, ../scss/components/_contacto.scss */
+  /* line 245, ../scss/components/_contacto.scss */
   main .contacto__form {
     height: 500px;
     left: 50%;
     top: 10%;
     width: 534px;
   }
-  /* line 254, ../scss/components/_contacto.scss */
+  /* line 251, ../scss/components/_contacto.scss */
   main .contacto__header {
     line-height: 40px;
   }
-  /* line 256, ../scss/components/_contacto.scss */
+  /* line 253, ../scss/components/_contacto.scss */
   main .contacto__header h2 {
     font-size: 4rem;
     margin: 10px auto 10px auto;
   }
-  /* line 260, ../scss/components/_contacto.scss */
+  /* line 257, ../scss/components/_contacto.scss */
   main .contacto__header a {
     font-size: 2rem;
   }
-  /* line 264, ../scss/components/_contacto.scss */
+  /* line 261, ../scss/components/_contacto.scss */
   main .contacto__group {
     width: 77%;
   }
-  /* line 266, ../scss/components/_contacto.scss */
+  /* line 263, ../scss/components/_contacto.scss */
   main .contacto__group input {
     height: 30px;
   }
-  /* line 270, ../scss/components/_contacto.scss */
+  /* line 267, ../scss/components/_contacto.scss */
   main .contacto__actions {
     width: 40%;
   }
 }
 @media (min-width: 1440px) {
-  /* line 279, ../scss/components/_contacto.scss */
+  /* line 276, ../scss/components/_contacto.scss */
   main .contacto .linea {
     width: 77%;
   }
-  /* line 282, ../scss/components/_contacto.scss */
+  /* line 279, ../scss/components/_contacto.scss */
   main .contacto__information {
     position: absolute;
     top: 35%;
     left: 2%;
   }
-  /* line 286, ../scss/components/_contacto.scss */
+  /* line 283, ../scss/components/_contacto.scss */
   main .contacto__information p {
     font-size: 3rem;
     width: 80%;
   }
-  /* line 291, ../scss/components/_contacto.scss */
+  /* line 288, ../scss/components/_contacto.scss */
   main .contacto__title {
     font-size: 5rem;
     width: 80%;
   }
-  /* line 295, ../scss/components/_contacto.scss */
+  /* line 292, ../scss/components/_contacto.scss */
   main .contacto__form {
     height: 533px;
     left: 54.9%;
     top: 4%;
     width: 534px;
   }
-  /* line 301, ../scss/components/_contacto.scss */
+  /* line 298, ../scss/components/_contacto.scss */
   main .contacto__header {
     line-height: 40px;
   }
-  /* line 303, ../scss/components/_contacto.scss */
+  /* line 300, ../scss/components/_contacto.scss */
   main .contacto__header h2 {
     font-size: 4rem;
     margin: 2px auto 23px auto;
   }
-  /* line 307, ../scss/components/_contacto.scss */
+  /* line 304, ../scss/components/_contacto.scss */
   main .contacto__header a {
     line-height: 30px;
     font-size: 2.5rem;
     padding: 0px;
   }
-  /* line 311, ../scss/components/_contacto.scss */
+  /* line 308, ../scss/components/_contacto.scss */
   main .contacto__header a span {
     font-size: 2.5rem;
   }
-  /* line 316, ../scss/components/_contacto.scss */
+  /* line 313, ../scss/components/_contacto.scss */
   main .contacto__group {
-    width: 77%;
     padding-left: 20px;
   }
-  /* line 319, ../scss/components/_contacto.scss */
+  /* line 315, ../scss/components/_contacto.scss */
   main .contacto__group label {
     font-size: 2.2rem;
     padding: 0px 0px 5px 0px;
   }
-  /* line 323, ../scss/components/_contacto.scss */
+  /* line 319, ../scss/components/_contacto.scss */
   main .contacto__group input {
     border: none;
     border-radius: 5px;
@@ -3456,12 +3453,7 @@ main .contacto__actions {
     padding: 18px 0px 18px 10px;
     width: 382px;
   }
-  /* line 331, ../scss/components/_contacto.scss */
-  main .contacto__group input:focus {
-    cursor: pointer;
-    outline: none;
-  }
-  /* line 336, ../scss/components/_contacto.scss */
+  /* line 328, ../scss/components/_contacto.scss */
   main .contacto__group textarea {
     color: gray;
     font-size: 2rem;
@@ -3469,7 +3461,7 @@ main .contacto__actions {
     padding: 5px 0px 18px 18px;
     width: 382px;
   }
-  /* line 344, ../scss/components/_contacto.scss */
+  /* line 336, ../scss/components/_contacto.scss */
   main .contacto__actions {
     left: 27%;
     position: absolute;

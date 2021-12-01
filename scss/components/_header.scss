@@ -25,17 +25,17 @@ header{
             }
         }
         &__menu, &__dropdown{
-            list-style: none;
-            padding:0;
             margin:0;
+            padding:0;
         }
         &__menu{
             background-color:color(complementary,one);
-            width: 100%;
             margin-left: -105%;
-            transition: all 0.5s;
             position: absolute;
+            transition: all 0.5s;
             top: 62.45%;
+            width: 100%;
+            
         }
         &__item{
             span{
@@ -175,13 +175,13 @@ header{
             }
             &__menu{
                 display: flex;
+                height: 100%;
                 justify-content: space-evenly;
                 position: absolute;
-                top:37%;
                 right: 4px;
-                height: 100%;
-                width: 65.1%;
                 text-align: left;
+                top:37%;
+                width: 65.1%;
             }
             &__item {
                 font-size: 2.1rem;

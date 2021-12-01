@@ -10,9 +10,9 @@ main{
             .linea {
                 border-top: 1.5px solid black;
                 height: 2px;
+                margin: 0 auto 10px auto;
                 padding: 0;
                 width: 90%;
-                margin: 0 auto 10px auto;
               }
         }
         &__information{
@@ -84,6 +84,7 @@ main{
                 border: none;
                 border-radius: 5px;
                 font-family: $font-primary;
+                font-size: map-get($sizes,tiny);
                 height:73.72px;
                 width: 100%;
                 &:focus { 
@@ -160,10 +161,6 @@ main{
                     margin: 0 auto 5px auto;
                     padding: 18px 0px 18px 21px;
                     width: 100%;
-                    &:focus { 
-                        cursor: pointer;
-                        outline: none;
-                     }
                 }
                 textarea{
                     color: gray;
@@ -210,7 +207,6 @@ main{
             }
             &__group{
                 label {
-                    font-family: $font-primary;
                     font-size: 1.4rem;
                     font-weight: 600;
                 }
@@ -218,6 +214,7 @@ main{
                     font-size: 1.4rem;
                 }
                 textarea{
+                    font-size: 1.4rem;
                     height:75px;
                 }
                 
@@ -314,7 +311,6 @@ main{
                 }
             }
             &__group{
-                width: 77%;
                 padding-left: 20px;
                 label {
                     font-size: 2.2rem;
@@ -328,10 +324,6 @@ main{
                     height:37px;
                     padding: 18px 0px 18px 10px;
                     width: 382px;
-                    &:focus { 
-                        cursor: pointer;
-                        outline: none;
-                     }
                 }
                 textarea{
                     color: gray;

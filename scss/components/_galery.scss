@@ -15,27 +15,27 @@ main{
             a{
                 height: 29px;
                 font-size: 12px;
+                left: 35%;
                 padding: 8px 10px 10px 20px;
                 position: absolute;
-                width:100px;
                 top:92%;
-                left: 35%;
+                width:100px;
             }
         }
         &__group{
-            position: relative;
             display: inline-block;
+            position: relative;
         }
         &__description{
-            text-align: center;
             padding: 0 0 0 5px;
+            text-align: center;
             p{
                 background-color: color(complementary,six);
                 color: color(grayscale,white);
+                left: auto;
                 padding:10px;
                 position: absolute;
                 top:81%;
-                left: auto;
                 width: 140px;
             }
         }
@@ -47,28 +47,28 @@ main{
         .galery{
             &__link{
                 a{
-                    position: absolute;
-                    width:11rem;
-                    top:100%;
                     left: 35%;
+                    position: absolute;
+                    top:100%;
+                    width:11rem;
                 }
             }
             &__image{
                width: 160px;
             }
             &__group{
-                position: relative;
                 display: inline-block;
+                position: relative;
             }
             &__description{
                 text-align: center;
                 p{
                     font-size: 1.5rem;
                     height: 57px;
+                    left: auto;
                     padding:10px;
                     position: absolute;
                     top:70%;
-                    left: auto;
                     width: 160px;
                 }
             }
@@ -88,10 +88,10 @@ main{
                 a{
                     height: 29px;
                     left: 72%;
+                    padding: 10px 0 0 15px;
                     position: absolute;
                     top:75.5%;
                     width:84px;
-                    padding: 10px 0 0 15px;
                 }
             }
             &__body{
@@ -138,9 +138,9 @@ main{
                 p{
                     font-size: 1.5rem;
                     font-weight: 500;
+                    height: 45px;
                     padding: 10px;
                     width: 168px;
-                    height: 45px;
                 }
             }
             &__image{
@@ -185,8 +185,8 @@ main{
             }
             &__link{
                 a{
-                    top:4%;
                     left: 84%;
+                    top:4%;
                 }
             }
             &__description{
@@ -202,12 +202,11 @@ main{
                 }
             }
             &__image{
-                width: 220px;
                 height: 250px;
+                width: 220px;
             }
         }
     }
-
 }
 @include mq-min(xl){
     main{
@@ -224,10 +223,10 @@ main{
                 padding-left: 1px;
                 p{
                     font-size: 2.3rem;
+                    height: 77px;
                     line-height: 30px;
                     position: absolute;
                     text-align: center;
-                    height: 77px;
                     width: 270px;
                     
                 }
@@ -259,15 +258,15 @@ main{
                     transform:scale(1) rotate(360deg); 
                 }
                 &:hover{
+                    transform:scale(0.9); 
                     transition:transform .5s;
                     -webkit-transform:scale(0.9);
-                    transform:scale(0.9) ; 
                 }
                 
             }
             &__image{
+                height: 300px;
                 width: 270px;
-                height: 300px
             }
         }
     }
@@ -286,9 +285,9 @@ main{
             &__link{
                 a{
                     font-size: 1.8rem;
-                    top:8.7%;
-                    left: 87.5%;
+                    left: 86.5%;
                     padding:  15px 0px 30px 24px;
+                    top:8.7%;
                     width: 13rem;
                 }
             }
@@ -297,10 +296,10 @@ main{
 
                 p{
                     font-size: 2rem;
-                    line-height: 30px;
                     height: 68px;
-                    top:70.7%;
+                    line-height: 30px;
                     padding: 20px 20px 0 0px;
+                    top:70.7%;
                     width: 314px;
                 }
             }
@@ -308,8 +307,8 @@ main{
                 padding-bottom: 34px;
                 &::before{
                     height: 326px; 
-                    width: 314.5px; 
                     left: 6px;
+                    width: 314.5px; 
                 }
             }
             &__image{

@@ -1,7 +1,7 @@
 a, button {
 	color: color( controls, base );
 	text-decoration: none;
-	outline: 0;
+	outline: 1;
    transition: color .1s ease-out;
 
    &.button {
@@ -17,7 +17,6 @@ a, button {
       }
    }
    &.underline-link{
-      color: color(controls,base);
       cursor: pointer;
       font-family: $font-primary;
       font-size: $font-size;
