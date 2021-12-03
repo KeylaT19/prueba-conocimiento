@@ -80,7 +80,6 @@ main{
         .galery{
             &__top{
                 .title-section{
-                    text-align: center;
                     padding: 25px 0px 23px 0px;
                 }
             }
@@ -178,16 +177,21 @@ main{
     main{
         .galery{
             &__top{
+                display: flex;
                 .title-section{
                     padding: 20px 10px 30px 10px;
                     text-align: left;
+                    width: 82%;
                 }
             }
             &__link{
-                a{
-                    left: 84%;
-                    top:4%;
-                }
+                width:15% ;
+               a{
+                padding-bottom: 10px;
+                padding-right: 10px;
+                position: relative;
+                top: 45%;
+               }
             }
             &__description{
                 padding: 0 0 0 12px;
@@ -214,8 +218,6 @@ main{
             &__link{
                 a{
                     font-size: 1.4rem;
-                    left: 84%;
-                    top:5%;
                     width: 10rem;
                 }
             }
@@ -235,7 +237,7 @@ main{
             &__group{
                 cursor: pointer;
                 overflow: hidden;
-                &::before{
+                /* &::before{
                     align-items: center;
                     background-color: rgba(0, 0, 0, 0.929);
                     bottom: 0;
@@ -256,7 +258,7 @@ main{
                 }
                 &:hover::before{
                     transform:scale(1) rotate(360deg); 
-                }
+                } */
                 &:hover{
                     transform:scale(0.9); 
                     transition:transform .5s;
@@ -284,11 +286,16 @@ main{
             }
             &__link{
                 a{
+                    left:47%;
                     font-size: 1.8rem;
-                    left: 86.5%;
-                    padding:  15px 0px 30px 24px;
-                    top:8.7%;
+                    padding:  13px 20px 13px 24px;
+                    top:49%;
                     width: 13rem;
+                }
+                span{
+                    display:inline-flex;
+                    font-size: 2.5rem;
+                    vertical-align:bottom;
                 }
             }
             &__description{
@@ -305,11 +312,11 @@ main{
             }
             &__group{
                 padding-bottom: 34px;
-                &::before{
+                /* &::before{
                     height: 326px; 
                     left: 6px;
                     width: 314.5px; 
-                }
+                } */
             }
             &__image{
                 width:314px;

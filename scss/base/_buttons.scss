@@ -7,8 +7,8 @@
    cursor: pointer;
    font-weight: 700;
    line-height: 1;
-   outline: none;
-   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.25);
+   outline: 1;
+   box-shadow: 2px 4px 4px 0 rgba(255, 255, 255, 0.25);
    width: 100%;
    @include mq-min(md) {
       width: auto;
@@ -20,22 +20,24 @@
    }
    &.btn-primary {
       @include button( color(complementary,three ) );
-      opacity: 0.9;
+      opacity: 1;
       &.outline {
-         @include button( transparent, color( complementary,three) );
-         border:  solid 4px color(complementary,three);
+         @include button(color( complementary,three) );
+         border: 4px  solid color(complementary,three);
+         box-shadow: 2px 4px 4px 0 rgba(124, 17, 17, 0.25);
          &:hover, &:active {
             @include button( color(complementary,three) );
          }
       }
    }
    &.btn-secondary {
-      @include button( color( secondary, base ), color( grayscale, base ) );
+      @include button( color( secondary, base ), color( grayscale, black ) );
       &.outline {
-         @include button( transparent, color( secondary, base ) );
-         border:  solid 4px color( secondary, base );
+         @include button( color( secondary, base ) );
+         border: 4px solid color( secondary, base );
+         box-shadow: 2px 4px 4px 0 rgba(167, 19, 19, 0.25);
          &:hover, &:active {
-            @include button( color( secondary, base ), color( grayscale, white ));
+            @include button( color(secondary, base  ), color( grayscale, white ));
          }
       }
    }

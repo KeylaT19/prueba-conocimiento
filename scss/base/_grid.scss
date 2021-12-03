@@ -18,6 +18,11 @@
       max-width: 1360px;
       margin-left: 42px;
    }
+   @include mq-min(xxxl) {
+      /* max-width: 1360px; */
+      margin-left: auto;
+      margin-right: auto;
+   }
 }
 .container-principal {
    width: 100%;

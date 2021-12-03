@@ -16,7 +16,7 @@
 </head>
 
 <body class="container-body">
-    <header>
+    <header >
         <nav class="nav" >
             <div class="nav__logo">
                     <img class="logo" src="image/logo7.png" data-scr="image/logo5.png" width="80" height="80"
@@ -135,40 +135,46 @@
                     <div class="block-aside__cantidad">
                         <p>1</p>
                     </div>
-                    <picture>
-                        <source srcset="image/hoteles.webp" type="image/webp">
-                        <img class="block-aside__image" src="image/hoteles.png" width="199" height="150"
-                         alt="Mejores hoteles de Ecuador">
-                    </picture>
+                    <a href="#">
+                        <picture>
+                            <source srcset="image/hoteles.webp" type="image/webp">
+                            <img class="block-aside__image" src="image/hoteles.png" width="199" height="150"
+                                alt="Mejores hoteles de Ecuador">
+                        </picture>
+                    </a>
                     
                     <div class="block-aside__description">
-                        <a href="#" >Los mejores hoteles de Ecuador</a>
+                        <p> <a href="#" >Los mejores Hoteles de Ecuador</a></p> 
                     </div>
                 </div>
                 <div class="block-aside__card">
                     <div class="block-aside__cantidad">
                         <p>2</p>
                     </div>
-                    <picture>
-                        <source srcset="image/lugares-turisticos.webp" type="image/webp">
-                        <img class="block-aside__image" src="image/lugares-turisticos.png" width="199" 
-                        height="150" alt="Lugares turisticos">
-                    </picture>
+                    <a href="#">
+                        <picture>
+                            <source srcset="image/lugares-turisticos.webp" type="image/webp">
+                            <img class="block-aside__image" src="image/lugares-turisticos.png" width="199" height="150"
+                                alt="Lugares turisticos">
+                        </picture>
+                    </a>
                     <div class="block-aside__description">
-                        <a href="#" >5 Lugares Turísticos más visitado de Ecuador</a>
+                        <p> <a  href="#" >5 Lugares Turísticos más visitados en Ecuador</a> </p> 
                     </div>
                 </div>
                 <div class="block-aside__card">
                     <div class="block-aside__cantidad">
                         <p>3</p>
                     </div>
-                    <picture>
-                        <source srcset="image/gastronomia.webp" type="image/webp">
-                        <img class="block-aside__image" src="image/gastronomia.png" width="199" 
-                        height="150" alt="gastronomia de Ecuador">
-                    </picture>
+                    <a  href="#">
+                        <picture>
+                            <source srcset="image/gastronomia.webp" type="image/webp">
+                            <img class="block-aside__image" src="image/gastronomia.png" width="199" height="150"
+                                alt="gastronomia de Ecuador">
+                        </picture>
+                    </a>
                     <div class="block-aside__description">
-                        <a href="#">Diversidad en la Economía de Ecuador</a>
+                        <p> <a href="#">Diversidad en la Gastronomía de Ecuador</a> </p> 
                     </div>
                 </div>
             </aside>
@@ -224,14 +230,16 @@
                     <img class="banner__image" src="image/banner-galapagos.jpg" height="500" width="600" 
                     alt="Promociones de viajes a Galápagos">
                 </picture>
-                <h3 class="banner__title">Se acerca el Feriado de Diciembre</h3>
-                <div class="banner__text">
-                    <p>Para este feriado se ha realizado paquetes turisticos para que disfrutes en familia.</p>
-                    <h5>Has tus reservaciones con tiempo.</h5>
-                </div>
-                <div class="banner__link">
-                    <a class="btn btn-secondary " href="#">Haga clic aquí <span class="icon-chevron-right">
-                    </span></a>
+                <div class="banner__comment">
+                    <h3 class="banner__title">Se acerca el Feriado de Diciembre</h3>
+                    <div class="banner__text">
+                        <p>Para este feriado se ha realizado paquetes turisticos para que disfrutes en familia.</p>
+                        <h5>Has tus reservaciones con tiempo.</h5>
+                    </div>
+                    <div class="banner__link">
+                        <a class="btn btn-secondary" role="button"  href="#">Haga clic aquí <span class="icon-chevron-right">
+                        </span></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -240,10 +248,10 @@
                 <div class="galery__top">
                     <h2 class="title-section">Lugares Turísticos de Ecuador</h2>
                     <div class="galery__link">
-                        <a class="btn btn-secondary" href="#">Ver más
-                            <span class="icon-chevron-right"></span></a>
+                        <a class="btn btn-secondary" role="button" href="#">Ver más<span class="icon-chevron-right">
+                        </span></a>
                     </div>
-                                </div>
+                </div>
                 <div class="galery__body grid">
                     <div class="galery__group grid-6 grid-sm-4 grid-ss-4 grid-md-3">
                         <picture>
@@ -349,7 +357,7 @@
                                     <span class="icon-settings_phone"></span> (+593) 968636341</a></li>
                             <li class="contacto-item"><a href="mailto:tourecuardo@gmail.com" rel="nofollow noopener"
                                     target="_blank" title="Correo">
-                                    <span class="icon-email"></span> tourecuardo@gmail.com</a></li>
+                                    <span class="icon-email mail"></span>tourecuardo@gmail.com</a></li>
                         </ul>
                     </div>
                     <div class="linea"></div>
@@ -419,11 +427,11 @@
                 <h2>Contactenos</h2>
                 <ul class="footer__contacto-body">
                     <li><a href="https://wa.me/593968636340 " rel="nofollow noopener" class="btn-wsp"
-                        target="_blank" title="WhatsApp"><span class="icon-whatsapp"></span> (593) 968636341</a></li>
+                        target="_blank" title="WhatsApp"><span class=" icon-whatsapp"></span> (593) 968636341</a></li>
                     <li><a aria-label="Ir a Telegram" href="https://t.me/keylatriana" rel="nofollow noopener"
-                            target="_blank"><span class="icon-paper-plane"></span>  TourEcuador</a></li>
+                            target="_blank"><span class="icon-paper-plane plane"></span>  TourEcuador</a></li>
                     <li><a href="mailto:tourecuardo@gmail.com" rel="nofollow noopener" target="_blank"
-                        title="Correo"><span class="icon-map-marker"></span>  Alborada mz 234</a></li>
+                        title="Correo"><span class="icon-location_on"></span>  Alborada mz 234</a></li>
                 </ul>
             </div>
         </section>

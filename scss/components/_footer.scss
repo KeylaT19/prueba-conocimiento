@@ -227,6 +227,17 @@
     .footer{
         &__contacto{
             line-height: 27px;
+            &-body{
+                span{   
+                 text-align: left;
+                 font-size: 2rem;
+                 padding: 5px;
+                }
+                
+                .plane{
+                    font-size: 1.7rem;
+                }
+            }
         } 
 
     }

@@ -37,8 +37,8 @@ $colors: (
       info     : #0074FC
    ),
    controls:(
-      base     : #0074FC,
-      dark     : #0056B3,
+      base     : black,
+      dark     : #02680b,
    ),
    grayscale: (
       white    : #ffffff,
@@ -87,6 +87,7 @@ $breakpoints: (
    lg  : 960px,
    xl  : 1140px,
    xxl : 1440px,
+   xxxl : 1540px,
 );
 
 // ==========================================================================
