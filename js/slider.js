@@ -9,7 +9,7 @@ $('.slider').slick(
 );
 
 // SCROLL AL HEADER 
- $(function() {
+/*  $(function() {
     var elemento = document.getElementById("header");
     $(window).scroll(function() {
       if ($(this).scrollTop() > 0) {
@@ -18,14 +18,14 @@ $('.slider').slick(
         elemento.classList.remove('change');
       }
     })
-  }); 
+  });  */
 
- /*  $(document).ready(function(){
+ $(document).ready(function(){
       $(window).scroll(function(){
         if ($(this).scrollTop() > 0) {
-            $('header').addClass('change');
+            $("header").addClass('.change');
           } else {
-            $('header').removeClass('change');
+            $("header").removeClass('.change');
           }
       });
-  }); */
+  });

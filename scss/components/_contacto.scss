@@ -233,7 +233,9 @@ main{
             margin-bottom: 100px;
             .container-contacto{
                 .linea {
-                    width: 77%;
+                    margin: 0 auto 0 65px;
+                    width: 79%;
+
                   }
             }
             &__title{
@@ -299,7 +301,7 @@ main{
                 line-height: 40px;
                 h2{
                     font-size: 4rem;
-                    margin: 2px auto 22px auto;
+                    margin: 1px auto 22px auto;
                 }
                 a{
                     line-height: 29px;
@@ -310,9 +312,13 @@ main{
                         font-size: 2.5rem;
                     }
                     
-                .mail{
-                    font-size: 3rem;
-                 }
+                    .mail{
+                        font-size: 3rem;
+                    }
+                }
+                
+                .contacto-cell{
+                    width: 95%;
                 }
 
             }
@@ -320,7 +326,7 @@ main{
                 padding-left: 20px;
                 label {
                     font-size: 2.2rem;
-                    padding: 0px 0px 5px 0px ;
+                    padding: 0px;
                 }
                 input{
                     border: none;
@@ -328,14 +334,15 @@ main{
                     color: gray;
                     font-size: 2rem;
                     height:37px;
-                    padding: 18px 0px 18px 10px;
+                    padding: 14px 0px 14px 10px;
                     width: 382px;
                 }
                 textarea{
                     color: gray;
                     font-size: 2rem;
                     font-weight: 600;
-                    padding: 5px 0px 18px 18px;
+                    margin-top: -5px;
+                    padding: 5px 0px 13px 3px;
                     width: 382px;
                 }
             }
