@@ -90,23 +90,24 @@ main{
         .banner{
             
             &__comment{
-                left: 45%;
+                padding-left: 400px;
+                padding-right: 0;
                 width: 100%;
             }
             &__title{
                 font-size:4.2rem;
                 line-height: 40px;
-                width: 50%;
+                width: 100%;
             }
             &__text{
-                width: 50%;
+                width: 90%;
                 p{
                     font-size: 2.5rem;
-                    padding: 0 10px 15px 10px;
+                    padding: 0 0px 15px 60px;
                 }
             }
             &__link{
-                width: 50%;
+                width: 100%;
             }
         }
     }
@@ -135,7 +136,7 @@ main{
                     font-size: 2.8rem;
                     font-weight: 500;
                     line-height: 40px;
-                    padding: 23px 16px 15px 595px;
+                    padding: 23px 16px 15px 300px;
                     text-align: center;
                 }
                 h5{
