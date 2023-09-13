@@ -10,6 +10,7 @@ main{
         &__body{
             padding: 0 0 100px 0;
             text-align: center;
+            height: 700px;
         }
         &__link{
             a{
@@ -39,6 +40,41 @@ main{
                 width: 140px;
             }
         }
+        .grid-item {
+            float: left;
+            margin: 5px 5px 0px 0px ;
+            &:hover{
+                transform:scale(0.9); 
+                transition:transform .5s;
+                -webkit-transform:scale(0.9);
+            }
+        }
+          .grid-sizer,
+          .grid-item {
+            width: 48%;
+          }
+          .grid-item--height2 { height: 96px;
+            img {
+                height: 96px;
+            } }
+        .grid-item--height3 { height: 200px; 
+            img{
+                height: 200px;
+            }
+        }
+        .grid-item--height4 { height: 200px; 
+            img{
+                height: 200px;
+            }
+        }
+          
+          .grid-item img {
+            display: block;
+            width: 100%;
+            margin: 0;
+          }
+          .grid-item--width2 { width: 48%; }
+          .grid-item--width3 { width: 20%; }
     }
     
 }
@@ -49,9 +85,12 @@ main{
                 a{
                     left: 35%;
                     position: absolute;
-                    top:100%;
+                    top:92%;
                     width:11rem;
                 }
+            }
+            &__body{
+                height: 690px;
             }
             &__image{
                width: 160px;
@@ -126,11 +165,23 @@ main{
     main{
         .galery{
             bottom: 0;
-            &__link{
-                a{
-                    top:73%;
-                    left: 73%;
+            &__top{
+                display: flex;
+                .title-section{
+                    padding: 20px 10px 30px 10px;
+                    text-align: left;
+                    width: 75%;
                 }
+            }
+            &__link{
+                width:30% ;
+               a{
+                padding-bottom: 10px;
+                padding-right: 40px;
+                position: relative;
+                left: 20%;
+                top: 45%;
+               }
             }
             &__description{
                 padding:0px;
@@ -156,8 +207,10 @@ main{
             &__link{
                 a{
                     left: 43%;
-                    top:88%;
                 }
+            }
+            &__body{
+                height: 500px;
             }
             &__description{
                 padding: 0 0 0 6px;
@@ -170,28 +223,53 @@ main{
                 height:200px;
                 width: 168px;
             }
+            .grid-sizer,
+          .grid-item {
+            width: 24%;
+          }
+          .grid-item--height2 { height: 96px;
+            img {
+                height: 96px;
+            } }
+        .grid-item--height3 { height: 200px; 
+            img{
+                height: 200px;
+            }
         }
+        .grid-item--height4 { height: 200px; 
+            img{
+                height: 200px;
+            }
+        }
+          
+          .grid-item img {
+            display: block;
+            width: 100%;
+            margin: 0;
+          }
+          .grid-item--width2 { width: 48%; }
+          .grid-item--width3 { width: 20%; }
+            
+        }
+        
     }
 }
 @include mq-min(lg){
     main{
         .galery{
             &__top{
-                display: flex;
                 .title-section{
-                    padding: 20px 10px 30px 10px;
-                    text-align: left;
                     width: 82%;
                 }
             }
             &__link{
                 width:15% ;
                a{
-                padding-bottom: 10px;
                 padding-right: 10px;
-                position: relative;
-                top: 45%;
                }
+            }
+            &__body{
+                height: 700px;
             }
             &__description{
                 padding: 0 0 0 12px;
@@ -209,6 +287,32 @@ main{
                 height: 250px;
                 width: 220px;
             }
+            .grid-sizer,
+            .grid-item {
+              width: 30%;
+            }
+            .grid-item--height2 { height: 176px;
+              img {
+                  height: 176px;
+              } }
+          .grid-item--height3 { height: 360px; 
+              img{
+                  height: 360px;
+              }
+          }
+          .grid-item--height4 { height: 230px; 
+              img{
+                  height: 230px;
+              }
+          }
+            
+            .grid-item img {
+              display: block;
+              width: 100%;
+              margin: 0;
+            }
+            .grid-item--width2 { width: 38%; }
+            .grid-item--width3 { width: 20%; }
         }
     }
 }

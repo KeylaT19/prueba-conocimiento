@@ -9,15 +9,16 @@
     <meta name="autor" content="keyla Triana">
     <title>Tour Ecuador</title>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="preload">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="preload">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="preload">  
     <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/icon.css" media="print" onload="this.media='all'">
+    <link href="css/aos.css" rel="stylesheet">
     <link rel=" icon " href="image/logo5.ico">
 </head>
 
 <body class="container-body">
     <header >
-        <nav class="nav" >
+        <nav class="nav" id="left-panel">
             <div class="nav__logo">
                     <img class="logo" src="image/logo7.png" data-scr="image/logo5.png" width="80" height="80"
                         alt="logo Tour Ecuador">
@@ -182,7 +183,7 @@
         <section class="card">
             <h2 class="title-section">Gana premios junto a Tour Ecuador</h2>
             <div class="card__awards container-principal">
-                <div class="card__group">
+                <div  class="card__group">
                     <picture>
                         <source srcset="image/registar.webp" type="image/webp">
                         <img src="image/registar.png" width=" 200" height="200" class="card__image" 
@@ -230,9 +231,9 @@
                     <img class="banner__image" src="image/banner-galapagos.jpg" height="500" width="600" 
                     alt="Promociones de viajes a Galápagos">
                 </picture>
-                <div class="banner__comment">
+                <div class="banner__comment" data-aos="flip-left" >
                     <h3 class="banner__title">Se acerca el Feriado de Diciembre</h3>
-                    <div class="banner__text">
+                    <div class="banner__text" >
                         <p>Para este feriado se ha realizado paquetes turisticos para que disfrutes en familia.</p>
                         <h5>Has tus reservaciones con tiempo.</h5>
                     </div>
@@ -252,87 +253,51 @@
                         </span></a>
                     </div>
                 </div>
-                <div class="galery__body grid">
-                    <div class="galery__group grid-6 grid-sm-4 grid-ss-4 grid-md-3">
+                <div class=" galery__body grid4 ">
+                    <div class="grid-sizer"></div>
+                    <div class="grid-sizer "></div>
+                    <div class="grid-item grid-item--height4 ">
                         <picture>
                             <source srcset="image/Leon-marino-de-Galapagos.webp" type="image/webp">
-                            <img class="galery__image" src="image/Leon-marino-de-Galapagos.jpg"
-                             width="140" height="200" alt="Galápagos-Isla Isabel">
+                            <img  src="image/Leon-marino-de-Galapagos.jpg"
+                             alt="Galápagos-Isla Isabel">
                         </picture>
-                        <div class="galery__description">
-                            <p>Galápagos-  Isla Isabel</p>
-                        </div>
                     </div>
-                    <div class="galery__group grid-6 grid-sm-4 grid-ss-4 grid-md-3">
+                    <div class="grid-item grid-item--height4 ">
                         <picture>
                             <source srcset="image/baños.webp" type="image/webp">
-                            <img class="galery__image" src="image/baños.jpg" width="140"
-                             height="200" alt="Ambato-Baños">
+                            <img  src="image/baños.jpg"  alt="Ambato-Baños">
                         </picture>
-                        <div class="galery__description">
-                            <p>Ambato-Baños</p>
-                        </div>
                     </div>
-                    <div class="galery__group grid-6 grid-sm-4  grid-ss-4 grid-md-3">
+                    <div class="grid-item grid-item--width2 grid-item--height4">
                         <picture>
                             <source srcset="image/montañita.webp" type="image/webp">
-                            <img class="galery__image" src="image/montañita.jpg" width="140"
-                             height="200" alt="Santa Elena- Montañita">
+                            <img src="image/montañita.jpg"alt="Santa Elena- Montañita">
                         </picture>
-                        <div class="galery__description">
-                            <p>Santa Elena- Montañita</p>
-                        </div>
                     </div>
-                    <div class="galery__group grid-6 grid-sm-4 grid-ss-4 grid-md-3">
-                        <picture>
-                            <source srcset="image/Guayaquil.webp" type="image/webp">
-                            <img class="galery__image" src="image/Guayaquil.png" 
-                            width="140" height="200"
-                                alt="Guayas- Guayaquil">
-                        </picture>
-                        <div class="galery__description">
-                            <p>Guayas- Guayaquil</p>
-                        </div>
-                    </div>
-                    <div class="galery__group grid-6 grid-sm-4 grid-ss-4 grid-md-3">
+                    <div class="grid-item grid-item--width2 grid-item--height3 ">
                         <picture>
                             <source srcset="image/Santa-elena.webp" type="image/webp">
-                            <img class="galery__image" src="image/Santa-elena.jpg"
-                             width="140" height="200" alt="Santa Elena- Salinas">
+                            <img  src="image/Santa-elena.jpg" alt="Santa Elena- Salinas">
                         </picture>
-                        <div class="galery__description">
-                            <p>Santa Elena- Salinas</p>
-                        </div>
                     </div>
-                    <div class="galery__group grid-6 grid-sm-4 grid-ss-4 grid-md-3">
+                    <div class="grid-item grid-item--height3 ">
                         <picture>
                             <source srcset="image/Chimborazo.webp" type="image/webp">
-                            <img class="galery__image" src="image/Chimborazo.png"
-                             width="140" height="200" alt="Chimborazo- Riobamba">
+                            <img  src="image/Chimborazo.png"alt="Chimborazo- Riobamba">
                         </picture>
-                        <div class="galery__description">
-                            <p>Chimborazo- Riobamba</p>
-                        </div>
                     </div>
-                    <div class="galery__group grid-6 grid-sm-4 grid-ss-4 grid-md-3">
+                    <div class="grid-item grid-item--height2">
                         <picture>
                             <source srcset="image/quito.webp" type="image/webp">
-                            <img class="galery__image" src="image/quito.jpg" 
-                            width="140" height="200" alt="Pichincha- Quito">
+                            <img src="image/quito.jpg"  alt="Pichincha- Quito">
                         </picture>
-                        <div class="galery__description">
-                            <p>Pichincha- Quito</p>
-                        </div>
                     </div>
-                    <div class="galery__group grid-6 grid-sm-4 grid-ss-4 grid-md-3">
+                    <div class="grid-item grid-item--height2">
                         <picture>
                             <source srcset="image/quilotoa.webp" type="image/webp">
-                            <img class="galery__image" src="image/quilotoa.jpg"
-                             width="140" height="200" alt="Santo Domingo- Quilotoa">
+                            <img  src="image/quilotoa.jpg" alt="Santo Domingo- Quilotoa">
                         </picture>
-                        <div class="galery__description">
-                            <p>Santo Domingo - Quilotoa</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -341,14 +306,13 @@
             <div class="container-contacto">
                 <picture>
                     <source srcset="image/telegrafo.webp" type="image/webp">
-                    <img class="contacto__image" src="image/telegrafo.jpg" height="572" 
-                    width="600" alt="Imagen del Telegrafo en Quito">
+                    <img class="contacto__image" src="image/telegrafo.jpg" height="500" width="600" alt="Imagen del Telegrafo en Quito">
                 </picture>
                 <div class="contacto__information">
                     <h3 class="contacto__title">¿Deseas Acesoría?</h3>
                     <p>Con gustos te ayudaremos</p>
                 </div>
-                <div class="contacto__form">
+                <div data-aos="flip-right" class="contacto__form">
                     <div class="contacto__header">
                         <h2>CONTACTENOS</h2>
                         <ul>
@@ -397,7 +361,7 @@
             </div>
         </section>
         <section class="footer__center">
-            <div class="footer__servicios">
+            <div class="footer__servicios" data-aos="fade-right">
                 <div class="footer__menu">
                     <div class="footer__submenu">
                         <ul>
@@ -423,7 +387,7 @@
                 </div>
             </div>
 
-            <div class="footer__contacto">
+            <div class="footer__contacto" data-aos="fade-right">
                 <h2>Contactenos</h2>
                 <ul class="footer__contacto-body">
                     <li><a href="https://wa.me/593968636340 " rel="nofollow noopener" class="btn-wsp"
@@ -441,8 +405,14 @@
     </footer>
     <script src="js/dropdown.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scroll.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/masonry-docs.min.js"></script>    
     <script src="js/slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

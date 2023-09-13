@@ -100,6 +100,10 @@ main{
             margin-left: auto;
             margin-right: auto;
         }
+        &__image{
+            height: 600px;
+            width: 100%;
+        }
     }
 }
 @include mq-min(ss){
